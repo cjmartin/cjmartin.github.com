@@ -1,2 +1,2 @@
-permalink: pretty
+permalink: /journal/:title
 pygments: true

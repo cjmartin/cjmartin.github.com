@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Install X11 on Tiger without the Tiger install DVD
+title: Install X11 on Mac OS X 10.4 Tiger without the install DVD
 ---
 
 h1. {{ page.title }}
