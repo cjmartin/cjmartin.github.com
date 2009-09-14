@@ -22,6 +22,7 @@ p{
 
 ul, ol{
 	margin-left:1em;
+	padding-left:0;
 }
 
 #container{
@@ -44,6 +45,7 @@ ul, ol{
 
 #text{
 	font-family: didot, Palatino, Georgia, 'Times New Roman', serif;
+	border-bottom:2px dashed #CCCCCC;
 }
 
 #disqus_thread{
