@@ -34,7 +34,7 @@ p{margin: .5em 20px}. <small>I hope I'm right, all I want to do is help people o
 
 p{margin: .5em 20px}. <small>Some have suggested that I set up a way for people to leave small donations for my hosting of the files. Here's my idea, why don't you treat yourself and help me out at the same time! Below are a couple links to the amazon product pages for OSX Leopard. If you buy Leopard through one of these links then I get a small amount of money through the Amazon Associates program. The cost to you is the same (actually less than buying Leopard from Apple), and you can help me save money to get myself a copy!</small>
 
-p{margin: .5em 20px}. <small>Even if you don't want Leopard, use one of these links then buy a book... I'll still get ~10¢, Yay!</small>
+p{margin: .5em 20px}. <small>Even if you don't want Leopard, use one of these links then buy a book... I'll still get ~10$cent;, Yay!</small>
 
 * <small>"OSX Leopard (Single User)":http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FApple-Mac-Version-10-5-Leopard%2Fdp%2FB000FK88JK%3Fie%3DUTF8%26s%3Dsoftware%26qid%3D1193067759%26sr%3D8-1&amp;tag=roundherenet-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325</small>
 * <small>"OSX Leopard (5 User Family Pack)":http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FApple-Version-Leopard-5-User-Family%2Fdp%2FB000BR0NPO%3Fie%3DUTF8%26s%3Dsoftware%26qid%3D1193067759%26sr%3D8-2&amp;tag=roundherenet-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325</small>

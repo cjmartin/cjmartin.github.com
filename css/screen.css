@@ -46,6 +46,7 @@ ul, ol{
 #text{
 	font-family: didot, Palatino, Georgia, 'Times New Roman', serif;
 	border-bottom:2px dashed #CCCCCC;
+	padding:0 0 1em;
 }
 
 #disqus_thread{
