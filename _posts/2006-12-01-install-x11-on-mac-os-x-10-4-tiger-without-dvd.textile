@@ -5,6 +5,8 @@ title: Install X11 on Mac OS X 10.4 Tiger without the install DVD
 
 h1. {{ page.title }}
 
+p(meta). 12 Dec 2006 - Atlanta, GA
+
 !(alignright)http://files.cjmart.in/images/x11.jpg! The other day I was at school and I needed to install "X11":http://images.apple.com/macosx/features/x11/ on my intel mac in order to run an "NX Client":http://www.nomachine.com/download-client-macosx.php session into my linux box at home.
 
 However, apple doesn't seem to want to put the X11 User package for Tiger online anywhere... You can find the package for &lt;=10.3 but what good is that!?
