@@ -7,9 +7,13 @@ html, body{
 	height:100%;
 }
 
-body, h1, h2, h3, h4{
+body{
 	color:#333333;
 	font: 15px/1.4 Verdana, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4{
+	font-family:Verdana, Helvetica, Arial, sans-serif;
 }
 
 #container{
@@ -18,7 +22,7 @@ body, h1, h2, h3, h4{
 }
 
 #text{
-	font: didot, Palatino, Georgia, 'Times New Roman', serif;
+	font-family: didot, Palatino, Georgia, 'Times New Roman', serif;
 }
 
 .alignright{
