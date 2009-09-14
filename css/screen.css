@@ -10,3 +10,11 @@ html, body{
 body{
 	font-family:Verdana, Helvetica, Arial, sans-serif;
 }
+
+.alignright{
+	float:right;
+}
+
+.alignleft{
+	float:left;
+}
