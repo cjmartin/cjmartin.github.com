@@ -9,7 +9,7 @@ html, body{
 
 body{
 	color:#333333;
-	font: 15px/1.4 Verdana, Helvetica, Arial, sans-serif;
+	font: 16px/20px Verdana, Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4{
@@ -19,6 +19,14 @@ h1, h2, h3, h4{
 #container{
 	width:960px;
 	margin:0px auto;
+}
+
+.post-title{
+	font: 24px/30px normal;
+}
+
+.meta{
+	color:#CCCCCC;
 }
 
 #text{
