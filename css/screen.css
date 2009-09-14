@@ -7,7 +7,7 @@ html, body{
 	height:100%;
 }
 
-body{
+body, h1, h2, h3, h4{
 	color:#333333;
 	font: 15px/1.4 Verdana, Helvetica, Arial, sans-serif;
 }
@@ -15,6 +15,10 @@ body{
 #container{
 	width:960px;
 	margin:0px auto;
+}
+
+#text{
+	font: didot, Palatino, Georgia, 'Times New Roman', serif;
 }
 
 .alignright{
