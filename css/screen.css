@@ -20,6 +20,10 @@ p{
 	margin:1em 0;
 }
 
+ul, ol{
+	margin-left:1em;
+}
+
 #container{
 	width:960px;
 	margin:0px auto;
@@ -40,6 +44,10 @@ p{
 
 #text{
 	font-family: didot, Palatino, Georgia, 'Times New Roman', serif;
+}
+
+#disqus_thread{
+	margin:1em 0 0;
 }
 
 .alignright{
