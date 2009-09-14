@@ -16,7 +16,6 @@ For anyone like me who doesn't carry their Tiger install DVD at all times, I am 
 "You can download them here.":http://idt.lcc.gatech.edu/~cmartin9/files/X11Tiger.zip <small>- zip file ~60MB</small>
 
 If the link above doesn't work: <small>please try above first</small>
-
 "You can download them here.":http://files.cjmart.in/X11Tiger.zip <small>- zip file ~60MB</small>
 
 The .zip file contains 2 packages, X11User.pkg and X11SDK.pkg. I think you need to install the X11SDK.pkg first, however if you have the dev tools installed it's probably already there. After the install run software update as apple has released "an update":http://www.apple.com/support/downloads/x11update2006113.html for this version of X11.
