@@ -61,11 +61,11 @@ hr {
 #sider{
 	width:300;
 	margin:0 20px 0 0;
-	float:left;
 }
 
 #page{
 	width:640px;
+	float:right;
 }
 
 .post{
