@@ -5,10 +5,10 @@
 
 html, body{
 	height:100%;
-	margin:50px 0;
 }
 
 body{
+	margin:50px 0;
 	color:#333333;
 	font: 16px/20px Verdana, Helvetica, Arial, sans-serif;
 }
@@ -34,7 +34,7 @@ h4{
 	font-size:16px;
 }
 
-p{
+p, h1, h2, h3, h4{
 	margin:1em 0;
 }
 
@@ -74,10 +74,6 @@ hr {
 #page{
 	width:640px;
 	float:right;
-}
-
-.post{
-	margin:1em 0;
 }
 
 .meta{
