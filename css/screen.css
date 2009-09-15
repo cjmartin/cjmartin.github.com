@@ -18,19 +18,19 @@ h1, h2, h3, h4{
 }
 
 h1{
-	font-size:24px;
-}
-
-h2{
 	font-size:22px;
 }
 
-h3{
+h2{
 	font-size:20px;
 }
 
-h4{
+h3{
 	font-size:18px;
+}
+
+h4{
+	font-size:16px;
 }
 
 p{
@@ -59,14 +59,20 @@ hr {
 }
 
 #sider{
-	width:300;
+	width:300px;
 	margin:0 20px 0 0;
 	float:left;
+	font-size:14px;
 	text-align:right;
 }
 
+.by-cjm{
+	font-size:12px;
+	color:#CCCCCC;
+}
+
 #page{
-	width:640px;
+	width:620px;
 	float:right;
 }
 
