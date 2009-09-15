@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Install X11 on Mac OS X 10.4 Tiger Without the Install DVD
+title: Install X11 on OS X 10.4 Tiger Without the Install DVD
 ---
 
 h1(post-title). {{ page.title }}
