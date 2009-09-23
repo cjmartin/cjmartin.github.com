@@ -12,9 +12,13 @@ p(meta). 08 Sept 2005 - Athens, GA
 Been learning tons about podcasting, not only how to actually make podcasts and post them on the net so that our fans can listen, but also how important it is to have the right equipment and ideas.
 
 I went out on a limb and used my bluetooth headset to record audio straight onto my powerbook and it worked well to an extent... I think this method has potential as a great way to podcast out in public without looking (too) crazy, at least you could get away with the excuse that you're talking to some really good looking girl on the phone and she NEEDS a detailed description of everything you're doing... I'll keep telling myself that.
+
 "Audacity":http://audacity.sourceforge.net/ works great as an audio editor. I was surprised when I originally started out using "GarageBand":http://www.apple.com/ilife/garageband/ with it's complexity; I didn't think an apple product could _actually_ be confusing. "Audacity":http://audacity.sourceforge.net/ on the other hand was very easy to figure out.
+
 After creating an audio file in "Audacity":http://audacity.sourceforge.net/, I exported it out to an "mp3":http://en.wikipedia.org/wiki/Mp3 ("LameLib":http://spaghetticode.org/lame/ was required for "mp3":http://en.wikipedia.org/wiki/Mp3  export) and used "Podcast AV":http://www.oldjewelsoftware.com/products/podcastav/ to add all my pictures and chapters and export the m4b file that is an enhanced podcast.
+
 With the  mp3 and m4b flies created, I was practically finished, I threw together some XML so that people can subscribe and that was it!
+
 -Sounds so easy right... some real tutorials can be found "here":http://www.podcast411.com/howto_1.html - Normal mp3 podcast, and "here":http://www.makezine.com/blog/archive/2005/07/how_to_make_enh.html - Enhanced m4b podcast.
 
 You want to check out the finished product right??
