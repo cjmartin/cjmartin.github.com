@@ -3,7 +3,6 @@ layout: post
 title: Michael's Podcast
 time: 5:07pm
 wordpress_id: 5
-wordpress_url: http://www.roundhere.net/nmi/?p=5
 ---
 
 h1(post-title). {{ page.title }}

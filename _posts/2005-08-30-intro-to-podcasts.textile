@@ -3,7 +3,6 @@ layout: post
 title: Intro To PodCasts
 time: 4:42pm
 wordpress_id: 3
-wordpress_url: http://www.roundhere.net/nmi/?p=3
 ---
 
 h1(post-title). {{ page.title }}
