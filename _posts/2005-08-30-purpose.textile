@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: Purpose
+time: 9:09am
+wordpress_id: 2
+wordpress_url: http://www.roundhere.net/nmi/?p=2
+---
+
+h1(post-title). {{ page.title }}
+
+p(meta). 30 Aug 2005 - Athens, GA
+
+This blog has been created to track my thoughts, revelations, discoveries, and everything else during my time as a "Mobile Media Scholor":http://www.nmi.uga.edu/mmrl/scholar/index.asp in the "New Media Institute":http://www.nmi.uga.edu/ at "The University of Georgia":http://www.uga.edu and beyond. Come back often to see what I'm thinking and getting excited about!

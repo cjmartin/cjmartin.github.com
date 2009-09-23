@@ -1,9 +1,15 @@
 --- 
 layout: post
 title: Michael's Podcast
+time: 5:07pm
 wordpress_id: 5
 wordpress_url: http://www.roundhere.net/nmi/?p=5
 ---
+
+h1(post-title). {{ page.title }}
+
+p(meta). 30 Aug 2005 - Athens, GA
+
 While I've been bumming around trying to get the creative juices flowing by listening to a bunch of other podcasts, "Michael":http://www.gomobilemedia.blogspot.com/ has actually created one - an enhanced one at that!
 
 Thanks Michael for showing me that it can be done... maybe I'll actually think of something to make mine about now.
