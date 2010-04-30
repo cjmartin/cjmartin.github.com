@@ -16,25 +16,57 @@ However, some sites don't work with the commonly available tools, or maybe you w
 Say you want to grab a wonderful video about "Happy Feet" from Reuters.com...
 
 <ol>
-	<li>*Using Safari* navigate to the page that contains the video.!http://files.cjmart.in/curlVideos/Picture1.png!</li>
-	<li>Open the "Activity" window from the Safari Window menu.!http://files.cjmart.in/curlVideos/Picture2.png!</li>
-	<li>In the Activity window, find the page that contains the video, and click on the triangle to show all the elements loaded in the page.!{margin:0 0 0 -30px; width: 550px;}http://files.cjmart.in/curlVideos/Picture3.png!</li>
-	<li>Scan the list until you find a video file (in this case a .flv flash video file). It is easy to pick out the video files as they are generally much larger in size than everything else. Also note that a page might contain more than one video file (if the movie first loads with an advertisement etc.) you generally want to pick the biggest one.!{margin:0 0 0 -30px; width: 550px;}http://files.cjmart.in/curlVideos/Picture4.png!
-
-<small>Edit (Dec 1, 2006)</small>
-It seems that some sites (I've seen it at youTube) actually load the video without the extension. In this case, just look for a large file (it's called get_video on youTube) and add the proper extension to the end (ie. for youTube, .flv).</li>
-	<li>Double click on the url of the video file and a new Safari window will open. At this point, safari might start downloading the video. If it does not and a bunch of random text starts displaying in the browser that's ok, continue by selecting the url and copying it.!{margin:0 0 0 -30px; width: 550px;}http://files.cjmart.in/curlVideos/Picture5.png!</li>
-	<li>Open up a terminal (Terminal.app is located in the Utilities folder inside your Applications folder).
-In the terminal, type (leave out the "&lt;&gt;"):<code>$curl
-<paste> -o <where>/<what></what></where></paste></code></p>
-Make sure that whatever you chose to name the video ends with the same extension as the original file, in this case .flv
-Here's what it would look like for the "Happy Feet" video:
-
-<code>$curl http://int1.fp.sandpiper.net/reuters/t_assets/20061127/a72e...f2943.flv -o ~/Desktop/HappyFeet.flv</code>
-
-This would save the video to my desktop and name it HappyFeet.flv</li>
-	<li>Press enter and you should see something like this as the video downloads:!http://files.cjmart.in/curlVideos/Picture7.png!</li>
-	<li>When it's done, you should have a copy of the video file on your local disk. You'll need an application that can play flash video to watch .flv files, I recommend "VLC":http://www.videolan.org/vlc/ or the "Perian plugin for QuickTime":http://perian.org/.!http://files.cjmart.in/curlVideos/Picture8.png!</li>
+	<li>
+		*Using Safari* navigate to the page that contains the video.
+		
+		!http://files.cjmart.in/curlVideos/Picture1.png!
+	</li>
+	<li>
+		Open the "Activity" window from the Safari Window menu.
+		
+		!http://files.cjmart.in/curlVideos/Picture2.png!
+	</li>
+	<li>
+		In the Activity window, find the page that contains the video, and click on the triangle to show all the elements loaded in the page.
+		
+		!{margin:0 0 0 -30px; width: 550px;}http://files.cjmart.in/curlVideos/Picture3.png!
+	</li>
+	<li>
+		Scan the list until you find a video file (in this case a .flv flash video file). It is easy to pick out the video files as they are generally much larger in size than everything else. Also note that a page might contain more than one video file (if the movie first loads with an advertisement etc.) you generally want to pick the biggest one.
+		
+		!{margin:0 0 0 -30px; width: 550px;}http://files.cjmart.in/curlVideos/Picture4.png!
+		
+		<small>Edit (Dec 1, 2006)</small>
+		It seems that some sites (I've seen it at youTube) actually load the video without the extension. In this case, just look for a large file (it's called get_video on youTube) and add the proper extension to the end (ie. for youTube, .flv).
+	</li>
+	<li>
+		Double click on the url of the video file and a new Safari window will open. At this point, safari might start downloading the video. If it does not and a bunch of random text starts displaying in the browser that's ok, continue by selecting the url and copying it.
+		!{margin:0 0 0 -30px; width: 550px;}http://files.cjmart.in/curlVideos/Picture5.png!
+	</li>
+	<li>
+		Open up a terminal (Terminal.app is located in the Utilities folder inside your Applications folder).
+In the terminal, type (leave out the "&lt;&gt;"):
+		
+		<code>$curl <paste> -o <where>/<what></code>
+		
+		Make sure that whatever you chose to name the video ends with the same extension as the original file, in this case .flv
+		
+		Here's what it would look like for the "Happy Feet" video:
+		
+		<code>$curl http://int1.fp.sandpiper.net/reuters/t_assets/20061127/a72e...f2943.flv -o ~/Desktop/HappyFeet.flv</code>
+		
+		This would save the video to my desktop and name it HappyFeet.flv
+	</li>
+	<li>
+		Press enter and you should see something like this as the video downloads:
+		
+		!http://files.cjmart.in/curlVideos/Picture7.png!
+	</li>
+	<li>
+		When it's done, you should have a copy of the video file on your local disk. You'll need an application that can play flash video to watch .flv files, I recommend "VLC":http://www.videolan.org/vlc/ or the "Perian plugin for QuickTime":http://perian.org/.
+		
+		!http://files.cjmart.in/curlVideos/Picture8.png!
+	</li>
 </ol>
 
 -Enjoy!
