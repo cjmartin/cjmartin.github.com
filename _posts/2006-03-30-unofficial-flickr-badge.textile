@@ -6,6 +6,6 @@ wordpress_url: http://cjmart.in/2006/03/30/unofficial-flickr-badge/
 ---
 I randomly found a site tonight that all "flickr":http://www.flickr.com/photos/cjmartin lovers will enjoy, "create your own personal flickr badge":http://flagrantdisregard.com/flickr/badge.php.
 
-<a href="http://www.flickr.com/photos/cjmartin/120180438/" title="Photo Sharing"><img src="http://static.flickr.com/44/120180438_f0f5dab46e_m.jpg" width="240" height="180" alt="I'm a Professional." /></a>
+<a href="http://www.flickr.com/photos/cjmartin/120180438/" title="Photo Sharing"><img src="http://static.flickr.com/44/120180438_f0f5dab46e.jpg" width="240" height="180" alt="I'm a Professional." /></a>
 
 "I'm a Professional!"
