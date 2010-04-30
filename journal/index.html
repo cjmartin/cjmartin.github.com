@@ -1,0 +1,18 @@
+---
+layout: default
+title: Roundhere.net by Chris Martin
+---
+
+<p>Welcome to roundhere.net, I'm currently in the process of moving most of my original content here from <a href="http://cjmart.in">cjmart.in</a>.</p>
+
+<p>This will be the home of my journal and other things that I want to share, I'll keep stuff explicitly about myself over on the other domain. Probably as one of those sites that collects all the stuff I do online into one place, those are so hot right now.</p>
+
+<p>Here are some old posts as I move them over:</p>
+
+<ul class="posts">
+  {% for post in site.posts %}
+  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> - <a href="{{ post.url }}/#disqus_thread">comments</a></li>
+  {% endfor %}
+</ul>
+
+<p>&copy;2009 Chris James Martin</p>
