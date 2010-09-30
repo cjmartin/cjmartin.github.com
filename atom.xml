@@ -1,0 +1,29 @@
+---
+layout: nil
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>Roundhere.net by Chris Martin</title>
+  <subtitle>A collection of things.</subtitle>
+  <link href="http://roundhere.net/atom.xml" rel="self"/>
+  <link href="http://roundhere.net/"/>
+  <id>http://roundhere.net/</id>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <author>
+    <name>Chris James Martin</name>
+    <email>cj@cjmart.in</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="http://roundhere.net{{ post.url }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>http://roundhere.net{{ post.id }}</id>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>
