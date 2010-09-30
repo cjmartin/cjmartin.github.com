@@ -3,7 +3,11 @@ layout: default
 ---
 
 <div class="post">
-  <!-- <h1 class="post-title">{{ page.title }}</h1> -->
+  <!--
+  <h1 class="post-title">{{ post.title }}</h1>
+  
+  <p class="meta">{{ post.date | date_to_string }}{% if post.place %} - {{ post.place }}{% endif %}</p>
+  -->
   
   <div class="text">
     {{ content }}
