@@ -8,7 +8,7 @@ wordpress_id: 3
 
 h1(post-title). {{ page.title }}
 
-p(meta). {{ page.date | date_to_string }}{% if page.place %} - {{ page.place }}{% endif %}
+p(meta). {{ page.date | date_to_string }}{% if page.place %} &#8212; {{ page.place }}{% endif %}
 
 I started off this Mobile Media Adventure by cracking open my New Media "toy-box" and pulling out the shiny new -"15in PowerBook":http://www.apple.com/powerbook/index15.html- and the amazing color screen -"60gig iPod":http://www.apple.com/ipod/color/- to dive into this world of "podcasting":http://en.wikipedia.org/wiki/Podcast a little deeper.
 
