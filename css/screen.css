@@ -71,9 +71,14 @@ hr {
 	color:#333333;
 }
 
-#by-cjm{
+#by-cjm, #by-cjm a{
 	font-size:11px;
+	text-decoration:none;
 	color:#CCCCCC;
+}
+
+#by-cjm a:hover{
+	color:#333333;
 }
 
 #page{
