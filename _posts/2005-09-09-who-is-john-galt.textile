@@ -1,13 +1,10 @@
 --- 
 layout: post
 title: Who is John Galt?
+place: Athens, GA
 time: 11:24am
 wordpress_id: 7
 ---
-
-h1(post-title). {{ page.title }}
-
-p(meta). 09 Sept 2005 - Athens, GA
 
 It's come to my attention that people reading all about this cool mobile media stuff might actually like to know who this "Chris Martin" person really is...
 

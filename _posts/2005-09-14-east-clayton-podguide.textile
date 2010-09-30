@@ -1,13 +1,10 @@
 --- 
 layout: post
 title: East Clayton PodGuide
+place: Athens, GA
 time: 11:31am
 wordpress_id: 9
 ---
-
-h1(post-title). {{ page.title }}
-
-p(meta). 14 Sept 2005 - Athens, GA
 
 After using "Podcast AV":http://www.oldjewelsoftware.com/products/podcastav/ for my first podcast and having a fairly painless experience, with the exception of having to manually write the final "XML":http://en.wikipedia.org/wiki/XML for the "RSS":http://en.wikipedia.org/wiki/RSS feed, I thought I'd go out on a limb and try a new piece of software called "Podcast Maker":http://www.apple.com/downloads/macosx/internet_utilities/ this time around. Podcast Maker was appealing because it's supposed to do everything from enhancement to writing the final XML all for you in a "GUI":http://en.wikipedia.org/wiki/GUI interface.
 

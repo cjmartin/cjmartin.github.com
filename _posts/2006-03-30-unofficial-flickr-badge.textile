@@ -1,13 +1,10 @@
 --- 
 layout: post
 title: (Un)Official Flickr Badge
+place: Athens, GA
 wordpress_id: 64
 wordpress_url: http://cjmart.in/2006/03/30/unofficial-flickr-badge/
 ---
-
-h1(post-title). {{ page.title }}
-
-p(meta). 30 Mar 2006 - Athens, GA
 
 I randomly found a site tonight that all "flickr":http://www.flickr.com/photos/cjmartin lovers will enjoy, "create your own personal flickr badge":http://flagrantdisregard.com/flickr/badge.php.
 
