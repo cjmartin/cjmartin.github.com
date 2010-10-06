@@ -5,7 +5,7 @@ place: San Francisco, CA
 time: 5:51pm
 ---
 
-For the next month and a half, anyone visiting this site will see a widget on the right side of the page showing the progress of the Hayes Valley Farm "Kickstarter project":http://www.kickstarter.com/projects/hayesvalleyfarm/hayes-valley-farm-a-freeway-food-forest-and-educat to help fund the farm in the coming year, here's why:
+For the next month and a half, anyone visiting this site will see a widget on the left side of the page showing the progress of the Hayes Valley Farm "Kickstarter project":http://www.kickstarter.com/projects/hayesvalleyfarm/hayes-valley-farm-a-freeway-food-forest-and-educat to help fund the farm in the coming year, here's why:
 
 !http://farm3.static.flickr.com/2677/4433747577_145aa54e2b_z.jpg(Liquid Light)!:http://www.flickr.com/photos/cjmartin/4433747577/in/set-72157623666806379/
 
