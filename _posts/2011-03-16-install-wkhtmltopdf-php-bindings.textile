@@ -21,10 +21,8 @@ Installation:
 If development tools aren't installed:
 <code>$apt-get install build-essential php5-dev</code> (ubuntu)
 
-<code>
-	$phpize
-	$./configure
-	$make install
-</code>
+<code>$phpize</code>
+<code>$./configure</code>
+<code>$make install</code>
 
 <small>P.S. These instructions are for Ubuntu. If you're on centOS, things are more difficult, good luck.</small>
