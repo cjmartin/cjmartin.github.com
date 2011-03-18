@@ -5,4 +5,25 @@ place: San Francisco, CA
 time: 11:55am
 ---
 
-Testing
+This isn't a difficult process, but I'm sure I'll need it again, so here it is.
+
+Pre-requisites:
+# Download the latest version of libwkhtmltox and the source of wkhtmltopdf "from google code":http://code.google.com/p/wkhtmltopdf/downloads/list
+# Copy lib/libwkhtmltox.so from libwkhtmltox to /usr/local/lib
+# Copy include/wkhtmltox from wkhtmltopdf to /usr/local/include
+# <code>$ldconfig -v | grep wkhtml</code> (just to make sure it's loaded)
+
+PHP Bindings:
+# Grab php-wkhtmltox "from github":https://github.com/mreiferson/php-wkhtmltox
+# Install
+
+Installation:
+
+If development tools aren't installed:
+<code>$apt-get install build-essential php5-dev</code> (ubuntu)
+
+<code>$phpize</code>
+<code>$./configure</code>
+<code>$make install</code>
+
+<small>P.S. These instructions are for Ubuntu. If you're on centOS, things are more difficult, good luck.</small>
