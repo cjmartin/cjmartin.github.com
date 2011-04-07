@@ -22,8 +22,6 @@ try {
 // End Google Analytics
 
 // Woopra
-<!-- Start of Woopra Code -->
-<script type="text/javascript">
 var woo_settings = {idle_timeout:'300000', domain:'roundhere.net'};
 (function(){
 	var wsc = document.createElement('script');
@@ -33,6 +31,4 @@ var woo_settings = {idle_timeout:'300000', domain:'roundhere.net'};
 	var ssc = document.getElementsByTagName('script')[0];
 	ssc.parentNode.insertBefore(wsc, ssc);
 })();
-</script>
-<!-- End of Woopra Code -->
 // End Woopra
