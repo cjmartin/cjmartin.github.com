@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: How To: Install wkhtmltopdf PHP Bindings
+title: How To Install wkhtmltopdf PHP Bindings
 place: San Francisco, CA
 time: 11:55am
 ---
