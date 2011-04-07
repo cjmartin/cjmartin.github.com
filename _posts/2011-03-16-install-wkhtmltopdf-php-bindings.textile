@@ -26,4 +26,6 @@ If development tools aren't installed:
 <code>$./configure</code>
 <code>$make install</code>
 
+Add <code>extension=phpwkhtmltox.so</code> to php.ini.
+
 <small>P.S. These instructions are for Ubuntu. If you're on centOS, things are more difficult, good luck.</small>

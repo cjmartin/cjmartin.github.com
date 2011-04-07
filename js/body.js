@@ -22,6 +22,17 @@ try {
 // End Google Analytics
 
 // Woopra
-var _wh = ((document.location.protocol=='https:') ? "https://sec1.woopra.com" : "http://static.woopra.com");
-document.write(unescape("%3Cscript src='" + _wh + "/js/woopra.js' type='text/javascript'%3E%3C/script%3E"));
+<!-- Start of Woopra Code -->
+<script type="text/javascript">
+var woo_settings = {idle_timeout:'300000', domain:'roundhere.net'};
+(function(){
+	var wsc = document.createElement('script');
+	wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+	wsc.type = 'text/javascript';
+	wsc.async = true;
+	var ssc = document.getElementsByTagName('script')[0];
+	ssc.parentNode.insertBefore(wsc, ssc);
+})();
+</script>
+<!-- End of Woopra Code -->
 // End Woopra
