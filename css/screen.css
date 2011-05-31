@@ -13,6 +13,14 @@ body{
 	font: 14px/16px Verdana, Helvetica, Arial, sans-serif;
 }
 
+a {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
 h1, h2, h3, h4{
 	font-family:Verdana, Helvetica, Arial, sans-serif;
 	font-weight:normal;
