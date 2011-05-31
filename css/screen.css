@@ -50,6 +50,10 @@ hr {
 	height: 0;
 }
 
+code {
+	font-family: "inconsolata-1","inconsolata-2";
+}
+
 #container{
 	width:960px;
 	margin:0px auto;
