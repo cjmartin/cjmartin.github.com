@@ -60,6 +60,7 @@ hr {
 }
 
 #sider{
+	position:fixed;
 	width:280px;
 	float:left;
 	font-size:13px;
