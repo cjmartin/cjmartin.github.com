@@ -99,6 +99,10 @@ code {
 	float:right;
 }
 
+.post-title a{
+	color:#333333;
+}
+
 .meta{
 	color:#CCCCCC;
 }
