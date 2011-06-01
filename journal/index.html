@@ -15,4 +15,16 @@ title: Roundhere.net by Chris Martin
   {% endfor %}
 </ul>
 
+{% for post in site.posts %}
+<div class="post">
+  <h1 class="post-title">{{ post.title }}</h1>
+  <p class="meta">{{ post.date | date_to_string }}{% if post.place %} &#8212; {{ post.place }}{% endif %}</p>
+  
+  <div class="text">
+    {{ post.content }}
+  </div>
+  
+</div>
+{% endfor %}
+
 <p>&copy;2009 Chris James Martin</p>
