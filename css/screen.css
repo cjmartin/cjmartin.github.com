@@ -106,7 +106,6 @@ code {
 .text{
 	font-family: Palatino, Georgia, 'Times New Roman', serif;
 	border-bottom:2px dashed #CCCCCC;
-	padding:0 0 1em;
 	line-height:1.4em;
 }
 
