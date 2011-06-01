@@ -2,16 +2,18 @@
 layout: default
 ---
 
-<p>Welcome to roundhere.net, I'm currently in the process of moving most of my original content here from <a href="http://cjmart.in">cjmart.in</a>.</p>
-
-<p>This will be the home of my journal and other things that I want to share, I'll keep stuff explicitly about myself over on the other domain. Probably as one of those sites that collects all the stuff I do online into one place, those are so hot right now.</p>
-
-<p>Here are some old posts as I move them over:</p>
-
-<ul class="posts">
-  {% for post in site.posts %}
-  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> - <a href="{{ post.url }}/#disqus_thread">comments</a></li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+<div class="post">
+  <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="meta">{{ post.date | date_to_string }}{% if post.place %} &#8212; {{ post.place }}{% endif %}</p>
+  
+  <div class="text">
+    {{ post.content }}
+    
+    <p><a href="{{ post.url }}/#disqus_thread">comments</a></p>
+  </div>
+  
+</div>
+{% endfor %}
 
 <p>&copy;Chris James Martin</p> 
