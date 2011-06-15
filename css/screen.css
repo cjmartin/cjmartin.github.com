@@ -135,7 +135,7 @@ Comments
 
 #dsq-global-toolbar {
 	position:absolute;
-	bottom:-3px;
+	bottom:-18px;
 	right:0;
 }
 
@@ -144,5 +144,5 @@ Comments
 }
 
 .dsq-trackback-url input{
-	width:430px;
+	width:419px;
 }
