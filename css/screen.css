@@ -99,6 +99,10 @@ code {
 	float:right;
 }
 
+.post-title {
+	margin:1em 0 0.5em;
+}
+
 .post-title a{
 	color:#333333;
 }
