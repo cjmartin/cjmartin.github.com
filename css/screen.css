@@ -107,9 +107,12 @@ code {
 	color:#CCCCCC;
 }
 
+.post-content{
+	border-bottom:2px dashed #CCCCCC;
+}
+
 .text{
 	font-family: Palatino, Georgia, 'Times New Roman', serif;
-	border-bottom:2px dashed #CCCCCC;
 	line-height:1.4em;
 }
 
