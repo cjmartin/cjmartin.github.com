@@ -142,10 +142,26 @@ Comments
 	right:0;
 }
 
+#dsq-content #dsq-footer {
+    margin: 0;
+}
+
+#dsq-content h3 {
+    margin: 1em 0;
+}
+
+#dsq-content #dsq-footer .dsq-font {
+    color: #CCCCCC;
+}
+
+a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
+    text-decoration: none;
+}
+
 .dsq-global-toolbar-likes{
 	display:none;
 }
 
 .dsq-trackback-url input{
-	width:419px;
+	width:430px;
 }
