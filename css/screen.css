@@ -113,14 +113,36 @@ code {
 	line-height:1.4em;
 }
 
-#disqus_thread{
-	margin:1em 0 0;
-}
-
 .alignright{
 	float:right;
 }
 
 .alignleft{
 	float:left;
+}
+
+/*------------------------------
+Comments
+------------------------------*/
+
+#disqus_thread{
+	margin:1em 0 0;
+}
+
+#dsq-content {
+	position:relative;
+}
+
+#dsq-global-toolbar {
+	position:absolute;
+	bottom:-3px;
+	right:0;
+}
+
+.dsq-global-toolbar-likes{
+	display:none;
+}
+
+.dsq-trackback-url input{
+	width:430px;
 }
