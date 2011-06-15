@@ -100,7 +100,7 @@ code {
 }
 
 .post-title {
-	margin:1em 0 0;
+	margin-bottom:0;
 }
 
 .post-title a{
@@ -108,6 +108,7 @@ code {
 }
 
 .meta{
+	margin-top:0.5em;
 	color:#CCCCCC;
 }
 
