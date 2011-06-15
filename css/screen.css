@@ -143,19 +143,19 @@ Comments
 }
 
 #dsq-content #dsq-footer {
-    margin: 0;
+    margin: 0 !important;
 }
 
 #dsq-content h3 {
-    margin: 1em 0;
+    margin: 1em 0 !important;
 }
 
 #dsq-content #dsq-footer .dsq-font {
-    color: #CCCCCC;
+    color: #CCCCCC !important;
 }
 
 a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .dsq-global-toolbar-likes{
