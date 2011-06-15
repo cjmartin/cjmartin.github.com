@@ -162,6 +162,10 @@ a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
 	display:none;
 }
 
+.dsq-trackback-url {
+    margin: 1em 0;
+}
+
 .dsq-trackback-url input{
 	width:430px;
 }
