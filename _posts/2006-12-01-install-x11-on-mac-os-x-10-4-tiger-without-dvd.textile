@@ -10,7 +10,7 @@ However, apple doesn't seem to want to put the X11 User package for Tiger online
 
 For anyone like me who doesn't carry their Tiger install DVD at all times, I am going to put the X11 User and X11 SDK packages online.
 
-"You can download them here.":http://idt.lcc.gatech.edu/~cmartin9/files/X11Tiger.zip <small>- zip file ~60MB</small>
+"You can download them here.":http://files.roundhere.net/X11TigerInstall.zip <small>- zip file ~60MB</small>
 
 <!--
 If the link above doesn't work: <small>(please try above first, this one costs me)</small>
