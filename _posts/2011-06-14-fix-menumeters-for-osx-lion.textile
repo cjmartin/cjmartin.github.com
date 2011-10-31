@@ -5,6 +5,8 @@ place: San Francisco, CA
 time: 6:46pm
 ---
 
+Update: The current version of MenuMeters (1.5) supports Lion, "get it here":http://www.ragingmenace.com/software/menumeters/.
+
 "MenuMeters":http://www.ragingmenace.com/software/menumeters/ is one of those little things that I must install immediately after any fresh install of OSX. Unfortunately the current build doesn't run out of the box on OSX 10.7 "Lion", but it's easily fixed.
 
 The problem lies with the hack MenuMeters uses to insert menus into the OSX menu bar, "MenuCracker":http://sourceforge.net/projects/menucracker/. We need to update the version included with MenuMeters to the latest version.
