@@ -100,6 +100,10 @@ code {
 	color:#333333;
 }
 
+.twitter-follow-button {
+    margin-top: 3px;
+}
+
 #page{
 	width:640px;
 	float:right;
