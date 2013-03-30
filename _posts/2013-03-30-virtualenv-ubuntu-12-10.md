@@ -41,11 +41,11 @@ Exit and re-open your shell, or reload .bashrc with the command `. .bashrc` and 
 
 	mkvirtualenv myawesomeproject
 
-to exit your new virtualenv, type `deactivate`
+to exit your new virtualenv, use `deactivate`.
 
 **Switch between enviornments with workon**
 
-To load or switch between virtualenvs, use the `workon` command
+To load or switch between virtualenvs, use the `workon` command:
 
 	workon myawesomeproject
 
