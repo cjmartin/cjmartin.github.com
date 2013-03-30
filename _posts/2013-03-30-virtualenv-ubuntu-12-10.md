@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtualenv with Virtualenvwrapper for Ubuntu
+title: Virtualenv with Virtualenvwrapper on Ubuntu
 place: San Francisco, CA
 time: 1:20pm
 ---
