@@ -8,6 +8,27 @@
 
     <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/css/syntax.css" media="screen">
+
+{% if page.twitter_card %}
+    <meta name="twitter:card" content="{{ page.twitter_card }}">
+  {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}">
+  {% endif %}
+    <meta name="twitter:description" content="{{ page.excerpt }}">
+  {% if page.image %}
+    <meta name="twitter:image:src" content="{{ page.image }}">
+  {% endif %}
+  {% if page.twitter_player %}
+    <meta name="twitter:player" content="http://www.flickr.com/photos/cjmartin/5472282235/in/photolist-9kySRH-9kS5VE/player">
+    <meta name="twitter:player:stream" content="">
+    <meta name="twitter:player:stream:content_type" content="">
+    <meta name="twitter:player:height" content="375">
+    <meta name="twitter:player:width" content="500">
+  {% endif %}
+    <!--<meta name="twitter:site" content="@cjmartin">-->
+    <meta name="twitter:creator" content="@cjmartin">
+    <meta name="twitter:domain" content="roundhere.net">
+{% endif %}
     
     <script type="text/javascript" src="http://use.typekit.com/sdq8vew.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
