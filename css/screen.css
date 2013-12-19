@@ -104,7 +104,7 @@ code {
     margin-top: 3px;
 }
 
-#page .narrow {
+#page.narrow {
 	width:640px;
 	float:right;
 }
