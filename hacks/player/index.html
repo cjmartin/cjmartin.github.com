@@ -2,6 +2,7 @@
 layout: default
 title: Flickr Web Embed Testing
 place: San Francisco, CA
+date: 2013-12-19
 
 twitter_card: summary_large_image
 image: http://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg
@@ -9,17 +10,68 @@ description: Flickr Web Enbed Tests
 ---
 
 <div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <p class="meta">14 Jul 2012{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<h1 class="post-title">{{ page.title }}</h1>
+	<p class="meta">{{ page.date | date_to_string }}{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<p>
+			Below are a couple of blog posts for reference. The first is where we started, the second is the same with a web embed.
+		</p>
+
+		<p>
+			It is my opinion that the embed should be "the same, but better." Without interaction is should look like a normal photo in a blog post. On mouse over (and at initial load) all of the extra awesome stuff should appear.
+		</p>
+
+		<p>
+			Following the test posts are a bunch of different conditions to test the embed.
+		</p>
+	</div>
   
-  <div class="post-content text">
-	<a href="http://www.flickr.com/photos/cjmartin/7568719478/" title="En Route to Photo Hack Day SF"><img src="http://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg" width="640" height="478" alt="En Route to Photo Hack Day SF"></a>
+</div>
 
-	I love hack days. I usually go into these things with either no idea, or an idea that's been bubbling in my head and will almost certainly be too ambitious for a day of hacking. Today is the latter, this should be fun.
+<div class="post">
 
-	A few months ago Cal built <a href="http://thisismyj.am">http://thisismyj.am</a>, a parody of <a href="http://thisismyjam.com">http://thisismyjam.com</a>. This triggered the domain-buying lever in my brain and I wound up with <a href="http://thisismycam.com">http://thisismycam.com</a>, which has been parked ever since. The sliver of an idea that inspired the domain purchase is a site that hooks up to Flickr, looks at a user's photos, and builds a profile of all the cameras that they've used. Simple, right?
+	<h1 class="post-title">Photo Hack Day SF &mdash; The Plan (original)</h1>
+	<p class="meta">14 Jul 2012{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
 
-	The plan, pull in photos, check exif, pull in camera info from amazon, build some pretty pages to display it all. Keep an eye on <a href="http://thisismycam.com">http://thisismycam.com</a> for progress.
-  </div>
+	<div class="post-content text">
+		<a href="http://www.flickr.com/photos/cjmartin/7568719478/" title="En Route to Photo Hack Day SF"><img src="http://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg" width="640" height="478" alt="En Route to Photo Hack Day SF"></a>
+
+		<p>
+			I love hack days. I usually go into these things with either no idea, or an idea that's been bubbling in my head and will almost certainly be too ambitious for a day of hacking. Today is the latter, this should be fun
+		</p>
+
+		<p>
+			A few months ago Cal built <a href="http://thisismyj.am">http://thisismyj.am</a>, a parody of <a href="http://thisismyjam.com">http://thisismyjam.com</a>. This triggered the domain-buying lever in my brain and I wound up with <a href="http://thisismycam.com">http://thisismycam.com</a>, which has been parked ever since. The sliver of an idea that inspired the domain purchase is a site that hooks up to Flickr, looks at a user's photos, and builds a profile of all the cameras that they've used. Simple, right?
+		</p>
+
+		<p>
+			The plan, pull in photos, check exif, pull in camera info from amazon, build some pretty pages to display it all. Keep an eye on <a href="http://thisismycam.com">http://thisismycam.com</a> for progress.
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Photo Hack Day SF &mdash; The Plan (embed)</h1>
+	<p class="meta">14 Jul 2012{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<iframe src="http://www.flickr.com/photos/cjmartin/7568719478/player/" height="478" width="640"  frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+		<p>
+			I love hack days. I usually go into these things with either no idea, or an idea that's been bubbling in my head and will almost certainly be too ambitious for a day of hacking. Today is the latter, this should be fun
+		</p>
+
+		<p>
+			A few months ago Cal built <a href="http://thisismyj.am">http://thisismyj.am</a>, a parody of <a href="http://thisismyjam.com">http://thisismyjam.com</a>. This triggered the domain-buying lever in my brain and I wound up with <a href="http://thisismycam.com">http://thisismycam.com</a>, which has been parked ever since. The sliver of an idea that inspired the domain purchase is a site that hooks up to Flickr, looks at a user's photos, and builds a profile of all the cameras that they've used. Simple, right?
+		</p>
+
+		<p>
+			The plan, pull in photos, check exif, pull in camera info from amazon, build some pretty pages to display it all. Keep an eye on <a href="http://thisismycam.com">http://thisismycam.com</a> for progress.
+		</p>
+	</div>
   
 </div>
