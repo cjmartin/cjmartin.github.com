@@ -78,7 +78,7 @@ description: Flickr Web Enbed Tests
 <div class="post">
 
 	<h1 class="post-title">Rainy Thursday (original, video embed)</h1>
-	<p class="meta">14 Jul 2012{ &#8212; San Francisco, CA</p>
+	<p class="meta">24 Feb 2011 &#8212; San Francisco, CA</p>
 
 	<div class="post-content text">
 		<object type="application/x-shockwave-flash" width="640" height="360" data="http://www.flickr.com/apps/video/stewart.swf?v=137818" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&photo_secret=76b403d99f&photo_id=5475639736&hd_default=false"></param> <param name="movie" value="http://www.flickr.com/apps/video/stewart.swf?v=137818"></param> <param name="bgcolor" value="#000000"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=137818" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&photo_secret=76b403d99f&photo_id=5475639736&hd_default=false" height="360" width="640"></embed></object>
@@ -93,13 +93,34 @@ description: Flickr Web Enbed Tests
 <div class="post">
 
 	<h1 class="post-title">Rainy Thursday (web embed)</h1>
-	<p class="meta">14 Jul 2012{ &#8212; San Francisco, CA</p>
+	<p class="meta">24 Feb 2011 &#8212; San Francisco, CA</p>
 
 	<div class="post-content text">
 		<iframe src="http://www.flickr.com/photos/cjmartin/5475639736/player/" height="360" width="640"  frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 		<p>
 			Even on a rainy Thursday in February, San Francisco is beautiful.
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Privatized Photo</h1>
+	19 Dec 2013{% if page.place %} &#8212; {{ page.place }}{% endif %}
+
+	<div class="post-content text">
+		<a href="http://www.flickr.com/photos/42053363@N04/8269660913/" title="Smooshyface by doppelcjmartin, on Flickr"><img src="http://farm9.staticflickr.com/8216/8269660913_e9839b9bea_z.jpg" width="640" height="480" alt="Smooshyface"></a>
+
+		<p>
+			Standard image "embed" (old way).
+		</p>
+
+		<iframe src="http://www.flickr.com/photos/42053363@N04/8269660913/player/e9839b9bea" height="480" width="640"  frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+		<p>
+			Web Embed
 		</p>
 	</div>
   
