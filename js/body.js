@@ -10,6 +10,7 @@
 			if (frame.offsetWidth <= frame.width) {
 				divisor = frame.width/frame.offsetWidth;
 				height = frame.offsetHeight/divisor;
+				console.log(divisor + " | " + height);
 				frame.style.height = height;
 			}
 		});
