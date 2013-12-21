@@ -1,10 +1,17 @@
 // Flickr Web Embed
 (function() {
 	var frames = Array.prototype.slice.call(document.querySelectorAll("iframe[src*='//www.flickr.com/photos/']"));
+	var divisor;
+	var height;
 
 	function resizeFrames(event){
 		frames.forEach(function(frame, index, array){
-			console.log(frame.width);
+			console.log(frame.offsetWidth);
+			if (frame.offsetWidth <= frame.width) {
+				divisor = frame.width/frame.offsetWidth;
+				height = frame.offsetHeight/divisor;
+				frame.style.height = height;
+			}
 		});
 	}
 
