@@ -6,7 +6,7 @@
 
 	function resizeFrames(event){
 		frames.forEach(function(frame, index, array){
-			console.log(frame.offsetWidth);
+			console.log(frame.offsetWidth + " | " + frame.width);
 			if (frame.offsetWidth <= frame.width) {
 				divisor = frame.width/frame.offsetWidth;
 				height = frame.offsetHeight/divisor;
