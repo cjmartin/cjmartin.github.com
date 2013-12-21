@@ -1,3 +1,19 @@
+// Flickr Web Embed
+(function() {
+	var frames = document.querySelectorAll("iframe[src*='//www.flickr.com/photos/']");
+
+	function resizeFrames(event){
+		frames.forEach(function(frame, index, array){
+			console.log(frame);
+		});
+	}
+
+	if (frames) {
+		resizeFrames();
+		window.addEventListener('resize', resizeFrames, false);
+	}
+})();
+
 // Disqus comment counts
 (function() {
 	var links = document.getElementsByTagName('a');
