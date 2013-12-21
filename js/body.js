@@ -4,7 +4,7 @@
 
 	function resizeFrames(event){
 		frames.forEach(function(frame, index, array){
-			console.log(frame);
+			console.log(frame.width);
 		});
 	}
 
