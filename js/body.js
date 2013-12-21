@@ -2,14 +2,16 @@
 (function() {
 	var frames = Array.prototype.slice.call(document.querySelectorAll("iframe[src*='//www.flickr.com/photos/']"));
 	var divisor;
-	var height;
+	var setHeight;
 
 	function resizeFrames(event){
 		frames.forEach(function(frame, index, array){
-			if (frame.offsetWidth <= frame.width) {
+			if (frame.dataset.lastWidth != frame.offsetWidth && frame.offsetWidth <= frame.width) {
 				divisor = frame.width/frame.offsetWidth;
-				height = frame.offsetHeight/divisor;
-				frame.style.height = height + "px";
+				setHeight = frame.offsetHeight/divisor;
+
+				frame.style.height = setHeight + "px";
+				frame.dataset.lastWidth = frame.offsetWidth;
 			}
 		});
 	}
