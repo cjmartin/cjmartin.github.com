@@ -3,6 +3,7 @@
 	var frames = Array.prototype.slice.call(document.querySelectorAll("iframe[src*='//www.flickr.com/photos/']"));
 	var divisor;
 	var setHeight;
+	var resizeTimer;
 
 	function resizeFrames(event){
 		frames.forEach(function(frame, index, array){
@@ -17,8 +18,12 @@
 	}
 
 	if (frames) {
+		window.addEventListener('resize', function(){
+			clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(resizeFrames, 250);
+		}, false);
+
 		resizeFrames();
-		window.addEventListener('resize', resizeFrames, false);
 	}
 })();
 
