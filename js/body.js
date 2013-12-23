@@ -7,8 +7,8 @@
 
 	function resizeFrames(event){
 		frames.forEach(function(frame, index, array){
-			console.log(getComputedStyle(frame,null).getPropertyValue("maxWidth"));
-			
+			console.log(getComputedStyle(frame,null));
+
 			if (!getComputedStyle(frame,null).getPropertyValue("maxWidth")) {
 				frame.style.maxWidth = "100%";
 			}
