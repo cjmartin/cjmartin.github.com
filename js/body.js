@@ -7,6 +7,12 @@
 
 	function resizeFrames(event){
 		frames.forEach(function(frame, index, array){
+			console.log(getComputedStyle(frame,null).getPropertyValue("maxWidth"));
+			
+			if (!getComputedStyle(frame,null).getPropertyValue("maxWidth")) {
+				frame.style.maxWidth = "100%";
+			}
+
 			if (frame.dataset.lastWidth != frame.offsetWidth && frame.offsetWidth <= frame.width) {
 				divisor = frame.width/frame.offsetWidth;
 				setHeight = frame.offsetHeight/divisor;
