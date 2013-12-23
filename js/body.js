@@ -7,7 +7,8 @@
 
 	function resizeFrames(event){
 		frames.forEach(function(frame, index, array){
-
+			console.log(getComputedStyle(frame,null).getPropertyValue("max-width"));
+			
 			if (!getComputedStyle(frame,null).getPropertyValue("max-width")) {
 				frame.style.maxWidth = "100%";
 			}
@@ -17,8 +18,9 @@
 				setHeight = frame.offsetHeight/divisor;
 
 				frame.style.height = setHeight + "px";
-				frame.dataset.lastWidth = frame.offsetWidth;
 			}
+
+			frame.dataset.lastWidth = frame.offsetWidth;
 		});
 	}
 
