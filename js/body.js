@@ -9,11 +9,11 @@
 			embed = document.createElement("iframe");
 			embed.setAttribute("src", "http://www.flickr.com/photos/cjmartin/7568719478/player/");
 			embed.setAttribute("frameborder", "0");
-			embed.setAttribute("allowfullscreen");
-			embed.setAttribute("webkitallowfullscreen");
-			embed.setAttribute("mozallowfullscreen");
-			embed.setAttribute("oallowfullscreen");
-			embed.setAttribute("msallowfullscreen");
+			embed.setAttribute("allowfullscreen", '');
+			embed.setAttribute("webkitallowfullscreen", '');
+			embed.setAttribute("mozallowfullscreen", '');
+			embed.setAttribute("oallowfullscreen", '');
+			embed.setAttribute("msallowfullscreen", '');
 			embed.style.width = image.offsetWidth+"px"; 
 			embed.style.height = image.offsetHeight+"px";
 
