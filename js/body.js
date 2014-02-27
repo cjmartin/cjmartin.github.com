@@ -6,7 +6,7 @@
 		img[src^='https://farm'][src*='.staticflickr.com'],
 		"));
 
-	alert(images);
+	console.log(images);
 
 })();
 
