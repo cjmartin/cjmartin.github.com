@@ -1,7 +1,7 @@
 (function() {
 
 	// Grab all Flickr hosted images on the page.
-	var images = Array.prototype.slice.call(document.querySelectorAll("img[src*='staticflickr.com']"));
+	var images = Array.prototype.slice.call(document.querySelectorAll("img[src^='https://farm'][src*='flickr.com'][src$='.jpg'],img[src^='http://farm'][src*='flickr.com'][src$='.jpg']"));
 
 	console.log(images);
 
