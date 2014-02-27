@@ -3,6 +3,18 @@
 	// Grab all Flickr hosted images on the page.
 	var images = Array.prototype.slice.call(document.querySelectorAll("img[src^='https://farm'][src*='flickr.com'][src$='.jpg'],img[src^='http://farm'][src*='flickr.com'][src$='.jpg']"));
 
+	// Replace the images with embeds.
+	if (images) {
+		images.forEach(function(image, index, array){
+			embed = document.createElement("iframe");
+			embed.setAttribute("src", "http://www.flickr.com/photos/cjmartin/7568719478/player/");
+			embed.style.width = image.offsetWidth+"px"; 
+			embed.style.height = image.offsetHeight+"px";
+
+			image.parentNode.replaceChild(embed, image);
+		})
+	}
+
 	console.log(images);
 
 })();
