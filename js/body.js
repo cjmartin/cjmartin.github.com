@@ -8,8 +8,8 @@
 	if (images) {
 		images.forEach(function(image, index, array){
 			// Figure out what we're going to embed.
-			if (node.parentNode.nodeName.toLowerCase() === 'a' && node.parentNode.href !== "") {
-				var photoInfo = photoRe.match(node.parentNode.href);
+			if (image.parentNode.nodeName.toLowerCase() === 'a' && image.parentNode.href !== "") {
+				var photoInfo = photoRe.match(image.parentNode.href);
 				console.log(photoInfo);
 			}
 
