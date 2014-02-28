@@ -1,22 +1,20 @@
 (function() {
-
 	// Grab all Flickr hosted images on the page.
 	var images = Array.prototype.slice.call(document.querySelectorAll("img[src^='https://farm'][src*='flickr.com'][src$='.jpg'],img[src^='http://farm'][src*='flickr.com'][src$='.jpg']"));
 	var photoRe = /(flickr.com|flic.kr)\/(photos|p)\/(\w+)\/?(\d+)?\/?(in)?\/?(\w+-\d+|\w+)?/;
+	var photoInfo = null;
+	var embedSrc = null;
 
-	// Replace the images with embeds.
-	if (images) {
-		images.forEach(function(image, index, array){
-			// Figure out what we're going to embed.
-			if (image.parentNode.nodeName.toLowerCase() === 'a' && image.parentNode.href !== "") {
-				var photoInfo = image.parentNode.href.match(photoRe);
-				// console.log(photoInfo);
+	function replaceImg(event) {
+		// Figure out what we're going to embed.
+		if (this.parentNode.nodeName.toLowerCase() === 'a' && this.parentNode.href !== "") {
+			photoInfo = this.parentNode.href.match(photoRe);
+			console.log(photoInfo);
 
-				var embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4]+"/player"; 
-			} else {
-				return;
-			}
+			embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4]+"/player";
+		}
 
+		if (embedSrc) {
 			embed = document.createElement("iframe");
 			embed.setAttribute("src", embedSrc);
 			embed.setAttribute("frameborder", "0");
@@ -25,15 +23,21 @@
 			embed.setAttribute("mozallowfullscreen", '');
 			embed.setAttribute("oallowfullscreen", '');
 			embed.setAttribute("msallowfullscreen", '');
-			embed.style.width = image.offsetWidth+"px"; 
-			embed.style.height = image.offsetHeight+"px";
+			embed.style.width = this.offsetWidth+"px"; 
+			embed.style.height = this.offsetHeight+"px";
 
-			image.parentNode.replaceChild(embed, image);
-		})
+			this.parentNode.replaceChild(embed, this);
+		}
+	}
+
+	// Replace the images with embeds.
+	if (images) {
+		images.forEach(function(image, index, array) {
+			image.addEventListener('load', replaceImage, false);
+		});
 	}
 
 	// console.log(images);
-
 })();
 
 // Flickr Web Embed
