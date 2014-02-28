@@ -11,7 +11,13 @@
 			photoInfo = this.parentNode.href.match(photoRe);
 			console.log(photoInfo);
 
-			embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4]+"/player";
+			embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4];
+
+			if (photoInfo[5]) {
+				embedSrc += "/in/"+photoInfo[6];
+			}
+
+			embedSrc += "/player";
 		}
 
 		if (embedSrc) {
