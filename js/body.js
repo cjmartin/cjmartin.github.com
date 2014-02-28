@@ -1,7 +1,7 @@
 (function() {
 	// Grab all Flickr hosted images on the page.
 	var images = Array.prototype.slice.call(document.querySelectorAll("img[src^='https://farm'][src*='flickr.com'][src$='.jpg'],img[src^='http://farm'][src*='flickr.com'][src$='.jpg']"));
-	var photoRe = /(flickr.com|flic.kr)\/(photos|p)\/(\w+)\/?(\d+)?\/?(in)?\/?(\w+-\d+|\w+)?/;
+	var photoRe = /(flickr.com|flic.kr)\/(photos|p)\/([0-9a-zA-Z-_]+|[0-9]+@N[0-9]+)\/([0-9]+)\/?(in)?\/?([^\/]+)?/;
 	var photoInfo = null;
 	var embedSrc = null;
 	var replaceNode = null;
