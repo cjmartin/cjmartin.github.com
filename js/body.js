@@ -11,7 +11,7 @@
 		if (image.parentNode.nodeName.toLowerCase() === 'a' && image.parentNode.href !== "") {
 			replaceNode = image.parentNode;
 			photoInfo = image.parentNode.href.match(photoRe);
-			//console.log(photoInfo);
+			// console.log(photoInfo);
 
 			embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4];
 
@@ -44,10 +44,10 @@
 	if (images) {
 		images.forEach(function(image, index, array) {
 			if (image.offsetWidth > 0) {
-				console.log("image is loaded");
+				// console.log("image is loaded");
 				replaceImg(image);
 			} else {
-				console.log("will run when image loads");
+				// console.log("will run when image loads");
 				image.addEventListener('load', function(){
 					replaceImg(this);
 				}, false);
@@ -55,7 +55,7 @@
 		});
 	}
 
-	//console.log(images);
+	// console.log(images);
 })();
 
 // Flickr Web Embed
