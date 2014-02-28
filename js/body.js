@@ -4,10 +4,12 @@
 	var photoRe = /(flickr.com|flic.kr)\/(photos|p)\/(\w+)\/?(\d+)?\/?(in)?\/?(\w+-\d+|\w+)?/;
 	var photoInfo = null;
 	var embedSrc = null;
+	var replaceNode = null;
 
 	function replaceImg(event) {
 		// Figure out what we're going to embed.
 		if (this.parentNode.nodeName.toLowerCase() === 'a' && this.parentNode.href !== "") {
+			replaceNode = this.parentNode;
 			photoInfo = this.parentNode.href.match(photoRe);
 			console.log(photoInfo);
 
@@ -32,7 +34,7 @@
 			embed.style.width = this.offsetWidth+"px"; 
 			embed.style.height = this.offsetHeight+"px";
 
-			this.parentNode.replaceChild(embed, this);
+			replaceNode.parentNode.replaceChild(embed, replaceNode);
 		}
 	}
 
