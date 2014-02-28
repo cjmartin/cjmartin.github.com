@@ -6,19 +6,20 @@
 	var embedSrc = null;
 	var replaceNode = null;
 
-	function replaceImg(event) {
+	function replaceImg(image) {
 		// Figure out what we're going to embed.
-		if (this.parentNode.nodeName.toLowerCase() === 'a' && this.parentNode.href !== "") {
-			replaceNode = this.parentNode;
-			photoInfo = this.parentNode.href.match(photoRe);
-			console.log(photoInfo);
+		if (image.parentNode.nodeName.toLowerCase() === 'a' && image.parentNode.href !== "") {
+			replaceNode = image.parentNode;
+			photoInfo = image.parentNode.href.match(photoRe);
+			//console.log(photoInfo);
 
 			embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4];
 
 			if (photoInfo[5]) {
 				embedSrc += "/in/"+photoInfo[6]+"/player";
 			} else {
-				embedSrc += "/frame";
+				// embedSrc += "/frame";
+				embedSrc += "/player";
 			}
 		}
 
@@ -31,8 +32,9 @@
 			embed.setAttribute("mozallowfullscreen", '');
 			embed.setAttribute("oallowfullscreen", '');
 			embed.setAttribute("msallowfullscreen", '');
-			embed.style.width = this.offsetWidth+"px"; 
-			embed.style.height = this.offsetHeight+"px";
+			embed.style.cssText = image.style.cssText;
+			embed.style.width = image.offsetWidth+"px"; 
+			embed.style.height = image.offsetHeight+"px";
 
 			replaceNode.parentNode.replaceChild(embed, replaceNode);
 		}
@@ -41,11 +43,17 @@
 	// Replace the images with embeds.
 	if (images) {
 		images.forEach(function(image, index, array) {
-			image.addEventListener('load', replaceImg, false);
+			if (image.offsetWidth > 0) {
+				console.log("image is loaded");
+				replaceImg(image);
+			} else {
+				console.log("will run when image loads");
+				image.addEventListener('load', replaceImg(this), false);
+			}
 		});
 	}
 
-	console.log(images);
+	//console.log(images);
 })();
 
 // Flickr Web Embed
