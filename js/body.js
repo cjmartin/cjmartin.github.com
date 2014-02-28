@@ -44,6 +44,8 @@
 			image.addEventListener('load', replaceImg, false);
 		});
 	}
+
+	console.log(images);
 })();
 
 // Flickr Web Embed
