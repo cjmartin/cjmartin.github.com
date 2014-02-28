@@ -10,7 +10,7 @@
 			// Figure out what we're going to embed.
 			if (image.parentNode.nodeName.toLowerCase() === 'a' && image.parentNode.href !== "") {
 				var photoInfo = image.parentNode.href.match(photoRe);
-				console.log(photoInfo);
+				// console.log(photoInfo);
 
 				var embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4]+"/player"; 
 			} else {
@@ -32,7 +32,7 @@
 		})
 	}
 
-	console.log(images);
+	// console.log(images);
 
 })();
 
