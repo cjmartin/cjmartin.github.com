@@ -14,7 +14,7 @@
 
 				var embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4]+"/player"; 
 			} else {
-				continue;
+				return;
 			}
 
 			embed = document.createElement("iframe");
