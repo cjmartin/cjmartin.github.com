@@ -9,7 +9,7 @@
 		images.forEach(function(image, index, array){
 			// Figure out what we're going to embed.
 			if (image.parentNode.nodeName.toLowerCase() === 'a' && image.parentNode.href !== "") {
-				var photoInfo = photoRe.match(image.parentNode.href);
+				var photoInfo = image.parentNode.href.match(photoRe);
 				console.log(photoInfo);
 			}
 
