@@ -12,7 +12,7 @@
 				var photoInfo = image.parentNode.href.match(photoRe);
 				console.log(photoInfo);
 
-				embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4]+"/player"; 
+				var embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4]+"/player"; 
 			} else {
 				continue;
 			}
