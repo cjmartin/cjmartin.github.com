@@ -48,7 +48,9 @@
 				replaceImg(image);
 			} else {
 				console.log("will run when image loads");
-				image.addEventListener('load', replaceImg(image), false);
+				image.addEventListener('load', function(){
+					replaceImg(this);
+				}, false);
 			}
 		});
 	}
