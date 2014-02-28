@@ -14,10 +14,10 @@
 			embedSrc = "https://www.flickr.com/photos/"+photoInfo[3]+"/"+photoInfo[4];
 
 			if (photoInfo[5]) {
-				embedSrc += "/in/"+photoInfo[6];
+				embedSrc += "/in/"+photoInfo[6]+"/player";
+			} else {
+				embedSrc += "/frame";
 			}
-
-			embedSrc += "/player";
 		}
 
 		if (embedSrc) {
@@ -42,8 +42,6 @@
 			image.addEventListener('load', replaceImg, false);
 		});
 	}
-
-	// console.log(images);
 })();
 
 // Flickr Web Embed
