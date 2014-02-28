@@ -33,7 +33,7 @@
 	// Replace the images with embeds.
 	if (images) {
 		images.forEach(function(image, index, array) {
-			image.addEventListener('load', replaceImage, false);
+			image.addEventListener('load', replaceImg, false);
 		});
 	}
 
