@@ -1,4 +1,2 @@
 permalink: /journal/:title
 pygments: true
-
-include: ["hacks/player"]
