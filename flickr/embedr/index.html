@@ -1,0 +1,276 @@
+--- 
+layout: page
+title: Flickr Web Embed (v2) Testing
+place: San Francisco, CA
+
+twitter_card: summary_large_image
+image: http://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg
+description: Flickr Web Embed Tests
+---
+
+<div class="post">
+
+	<h1 class="post-title">{{ page.title }}</h1>
+	<p class="meta">18 Aug 2014{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<p>
+			Flickr Web Embed Version 2.0, how does it work?
+		</p>
+
+		<p>
+			It's easy! Just grab the standard "html" embed code for a flickr photo, it will look like this:
+		</p>
+
+		<code>
+			<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/14742549467" title="FlickrHQ Rooftop Lunching by Chris Martin, on Flickr"><img src="https://farm6.staticflickr.com/5580/14742549467_2b1878e9fe_z.jpg" width="640" height="480" alt="FlickrHQ Rooftop Lunching"></a>
+		</code>
+
+		<p>
+			And add this extra code to the end:
+		</p>
+
+		<code>
+			<script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+		</code>
+
+		<p>
+			The final embed code will look like:
+		</p>
+
+		<code>
+			<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/14742549467" title="FlickrHQ Rooftop Lunching by Chris Martin, on Flickr"><img src="https://farm6.staticflickr.com/5580/14742549467_2b1878e9fe_z.jpg" width="640" height="480" alt="FlickrHQ Rooftop Lunching"></a>
+			<script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+		</code>
+
+		<p>
+			And when entered into a web page, the result is:
+		</p>
+
+		<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/14742549467" title="FlickrHQ Rooftop Lunching by Chris Martin, on Flickr"><img src="https://farm6.staticflickr.com/5580/14742549467_2b1878e9fe_z.jpg" width="640" height="480" alt="FlickrHQ Rooftop Lunching"></a>
+		<script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+
+		<p>
+			Below are a few blog posts for reference. The first is where we started, the second is the same with a web embed.
+		</p>
+
+		<p>
+			It is my opinion that the embed should be "the same, but better." Without interaction it should look like a normal photo in a blog post. On mouse over (and at initial load) all of the extra awesome stuff should appear.
+		</p>
+
+		<p>
+			Following the test posts are a bunch of different conditions to test the embed.
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Photo Hack Day SF &mdash; The Plan (original)</h1>
+	<p class="meta">14 Jul 2012 &#8212; San Francisco, CA</p>
+
+	<div class="post-content text">
+		<a href="https://www.flickr.com/photos/cjmartin/7568719478/" title="En Route to Photo Hack Day SF"><img src="https://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg" width="640" height="478" alt="En Route to Photo Hack Day SF"></a>
+
+		<p>
+			I love hack days. I usually go into these things with either no idea, or an idea that's been bubbling in my head and will almost certainly be too ambitious for a day of hacking. Today is the latter, this should be fun
+		</p>
+
+		<p>
+			A few months ago Cal built <a href="http://thisismyj.am">http://thisismyj.am</a>, a parody of <a href="http://thisismyjam.com">http://thisismyjam.com</a>. This triggered the domain-buying lever in my brain and I wound up with <a href="https://thisismycam.com">http://thisismycam.com</a>, which has been parked ever since. The sliver of an idea that inspired the domain purchase is a site that hooks up to Flickr, looks at a user's photos, and builds a profile of all the cameras that they've used. Simple, right?
+		</p>
+
+		<p>
+			The plan, pull in photos, check exif, pull in camera info from amazon, build some pretty pages to display it all. Keep an eye on <a href="http://thisismycam.com">http://thisismycam.com</a> for progress.
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Photo Hack Day SF &mdash; The Plan (unlinked img)</h1>
+	<p class="meta">14 Jul 2012 &#8212; San Francisco, CA</p>
+
+	<div class="post-content text">
+		<img src="https://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg" width="640" height="478" alt="En Route to Photo Hack Day SF">
+
+		<p>
+			I love hack days. I usually go into these things with either no idea, or an idea that's been bubbling in my head and will almost certainly be too ambitious for a day of hacking. Today is the latter, this should be fun
+		</p>
+
+		<p>
+			A few months ago Cal built <a href="http://thisismyj.am">http://thisismyj.am</a>, a parody of <a href="http://thisismyjam.com">http://thisismyjam.com</a>. This triggered the domain-buying lever in my brain and I wound up with <a href="https://thisismycam.com">http://thisismycam.com</a>, which has been parked ever since. The sliver of an idea that inspired the domain purchase is a site that hooks up to Flickr, looks at a user's photos, and builds a profile of all the cameras that they've used. Simple, right?
+		</p>
+
+		<p>
+			The plan, pull in photos, check exif, pull in camera info from amazon, build some pretty pages to display it all. Keep an eye on <a href="http://thisismycam.com">http://thisismycam.com</a> for progress.
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Photo Hack Day SF &mdash; The Plan (web embed)</h1>
+	<p class="meta">14 Jul 2012 &#8212; San Francisco, CA</p>
+
+	<div class="post-content text">
+		<iframe src="https://www.flickr.com/photos/cjmartin/7568719478/player/" height="478" width="640"  frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+		<p>
+			I love hack days. I usually go into these things with either no idea, or an idea that's been bubbling in my head and will almost certainly be too ambitious for a day of hacking. Today is the latter, this should be fun
+		</p>
+
+		<p>
+			A few months ago Cal built <a href="http://thisismyj.am">http://thisismyj.am</a>, a parody of <a href="http://thisismyjam.com">http://thisismyjam.com</a>. This triggered the domain-buying lever in my brain and I wound up with <a href="http://thisismycam.com">http://thisismycam.com</a>, which has been parked ever since. The sliver of an idea that inspired the domain purchase is a site that hooks up to Flickr, looks at a user's photos, and builds a profile of all the cameras that they've used. Simple, right?
+		</p>
+
+		<p>
+			The plan, pull in photos, check exif, pull in camera info from amazon, build some pretty pages to display it all. Keep an eye on <a href="http://thisismycam.com">http://thisismycam.com</a> for progress.
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Rainy Thursday (original, video embed)</h1>
+	<p class="meta">24 Feb 2011 &#8212; San Francisco, CA</p>
+
+	<div class="post-content text">
+		<object type="application/x-shockwave-flash" width="640" height="360" data="http://www.flickr.com/apps/video/stewart.swf?v=137818" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&photo_secret=76b403d99f&photo_id=5475639736&hd_default=false"></param> <param name="movie" value="http://www.flickr.com/apps/video/stewart.swf?v=137818"></param> <param name="bgcolor" value="#000000"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=137818" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&photo_secret=76b403d99f&photo_id=5475639736&hd_default=false" height="360" width="640"></embed></object>
+
+		<p>
+			Even on a rainy Thursday in February, San Francisco is beautiful.
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Rainy Thursday (web embed)</h1>
+	<p class="meta">24 Feb 2011 &#8212; San Francisco, CA</p>
+
+	<div class="post-content text">
+		<iframe src="https://www.flickr.com/photos/cjmartin/5475639736/player/" height="360" width="640"  frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+		<p>
+			Even on a rainy Thursday in February, San Francisco is beautiful.
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Privatized Photo</h1>
+	<p class="meta">19 Dec 2013{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<a href="https://www.flickr.com/photos/42053363@N04/8269660913/" title="Smooshyface by doppelcjmartin, on Flickr"><img src="https://farm9.staticflickr.com/8216/8269660913_e9839b9bea_z.jpg" width="640" height="480" alt="Smooshyface"></a>
+
+		<p>
+			Standard image "embed" (old way).
+		</p>
+
+		<iframe src="https://www.flickr.com/photos/42053363@N04/8269660913/player/e9839b9bea" height="480" width="640"  frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+		<p>
+			Web Embed
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Deleted Photo</h1>
+	<p class="meta">19 Dec 2013{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<a href="https://www.flickr.com/photos/cjmartin/13705508023" title="Untitled by Chris Martin, on Flickr"><img src="https://farm3.staticflickr.com/2920/13705508023_81ca5a7b49_z.jpg" width="640" height="480" alt="Untitled"></a>
+
+		<p>
+			Standard image "embed" (old way).
+		</p>
+
+		<iframe src="https://www.flickr.com/photos/cjmartin/13705508023/player/" width="640" height="480" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+		<p>
+			Web Embed
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Sizes</h1>
+	<p class="meta">19 Dec 2013{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<p>
+			Examples of all sizes available in the select box on the photo page.
+		</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="75" height="75" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="150" height="150" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="100" height="75" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="240" height="180" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="320" height="240" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>75x75px, 150x150px, 100x75px, 240x180px, 320x240px</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="500" height="375" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>500px</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="640" height="480" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>640px</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="800" height="600" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>800px</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="1024" height="768" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>1024px</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="1600" height="1200" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>1600px</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="2048" height="1536" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>2048px</p>
+		<!--
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="4000" height="3000" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>4000px (original)</p>
+		-->
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Using CSS Max-Width</h1>
+	<p class="meta">19 Dec 2013{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<p>
+			These all have max-width: 100%, so they shouldn't break out of their container.
+		</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="640" height="480" style="max-width: 100%;" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>640px</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="800" height="600" style="max-width: 100%;" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>800px</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="1024" height="768" style="max-width: 100%;" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>1024px</p>
+		<iframe src="http://www.flickr.com/photos/cjmartin/11444155875/in/photostream/player/" width="1600" height="1200" style="max-width: 100%;" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		<p>1600px</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
+	<h1 class="post-title">Just Because</h1>
+	<p class="meta">19 Dec 2013{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<iframe src="https://www.flickr.com/photos/superic/11471687545/player/30245dc511" height="600" width="800"  frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	</div>
+  
+</div>
+
+<p>&copy;2014 Chris James Martin</p>
