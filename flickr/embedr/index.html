@@ -7,18 +7,61 @@ image: http://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg
 description: Flickr Web Embed (v2) Tests
 ---
 
-{% for post in site.posts %}
 <div class="post">
-  <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="meta">{{ post.date | date_to_string }}{% if post.place %} &#8212; {{ post.place }}{% endif %}</p>
-  
-  <div class="text">
-    {{ post.content }}
-    
-    <p><a href="{{ post.url }}/#disqus_thread">comments</a></p>
-  </div>
+
+	<h1 class="post-title">{{ page.title }}</h1>
+	<p class="meta">18 Aug 2014{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<p>
+			Flickr Web Embed Version 2.0, how does it work?
+		</p>
+
+		<p>
+			It's easy! Just grab the standard "html" embed code for a flickr photo, it will look like this:
+		</p>
+
+		<code>
+			<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/14742549467" title="FlickrHQ Rooftop Lunching by Chris Martin, on Flickr"><img src="https://farm6.staticflickr.com/5580/14742549467_2b1878e9fe_z.jpg" width="640" height="480" alt="FlickrHQ Rooftop Lunching"></a>
+		</code>
+
+		<p>
+			And add this extra code to the end:
+		</p>
+
+		<code>
+			<script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+		</code>
+
+		<p>
+			The final embed code will look like:
+		</p>
+
+		<code>
+			<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/14742549467" title="FlickrHQ Rooftop Lunching by Chris Martin, on Flickr"><img src="https://farm6.staticflickr.com/5580/14742549467_2b1878e9fe_z.jpg" width="640" height="480" alt="FlickrHQ Rooftop Lunching"></a>
+			<script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+		</code>
+
+		<p>
+			And when entered into a web page, the result is:
+		</p>
+
+		<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/14742549467" title="FlickrHQ Rooftop Lunching by Chris Martin, on Flickr"><img src="https://farm6.staticflickr.com/5580/14742549467_2b1878e9fe_z.jpg" width="640" height="480" alt="FlickrHQ Rooftop Lunching"></a>
+		<script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+
+		<p>
+			Below are a few blog posts for reference. The first is where we started, the second is the same with a web embed.
+		</p>
+
+		<p>
+			It is my opinion that the embed should be "the same, but better." Without interaction it should look like a normal photo in a blog post. On mouse over (and at initial load) all of the extra awesome stuff should appear.
+		</p>
+
+		<p>
+			Following the test posts are a bunch of different conditions to test the embed.
+		</p>
+	</div>
   
 </div>
-{% endfor %}
 
-<p>&copy;2014 Chris James Martin</p>git
+<p>&copy;2014 Chris James Martin</p>
