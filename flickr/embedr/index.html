@@ -136,6 +136,30 @@ description: Flickr Web Embed (v2) Tests
 
 <div class="post">
 
+	<h1 class="post-title">Private Photo</h1>
+	<p class="meta">19 Dec 2013{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<p>
+			This is an embedded private photo, which should show up, but only as a standard image. The embed should not load.
+
+		<a href="https://www.flickr.com/photos/cjmartin/14963953964" title="Untitled by Chris Martin, on Flickr"><img src="https://farm6.staticflickr.com/5603/14963953964_ca1ae3023f_z.jpg" width="480" height="640" alt="Untitled"></a>
+
+		<p>
+			Standard image "embed" (old way).
+		</p>
+
+		<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/14963953964" title="Untitled by Chris Martin, on Flickr"><img src="https://farm6.staticflickr.com/5603/14963953964_ca1ae3023f_z.jpg" width="480" height="640" alt="Untitled"></a><script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+
+		<p>
+			Web Embed (Should be the same as the standard image above.)
+		</p>
+	</div>
+  
+</div>
+
+<div class="post">
+
 	<h1 class="post-title">Privatized Photo</h1>
 	<p class="meta">19 Dec 2013{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
 
