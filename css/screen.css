@@ -126,6 +126,10 @@ code {
 	border-bottom:2px dashed #CCCCCC;
 }
 
+.post-content img {
+	max-width: 100%;
+}
+
 .text{
 	font-family: Palatino, Georgia, 'Times New Roman', serif;
 	line-height:1.4em;
