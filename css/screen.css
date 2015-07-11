@@ -192,6 +192,7 @@ a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
 /* Maps stuff */
 
 .full-page-map {
+	position: fixed;
 	width: 100%;
 	height: 100%;
 }
