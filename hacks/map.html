@@ -5,6 +5,10 @@ place: San Francisco, CA
 description: Testing out Mapbox.
 ---
 
-<p>
-  Hello!
-</p>
+<div id="page-map" class="full-page-map"></div>
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiY2ptYXJ0aW4iLCJhIjoiZTBjMWJmOGJhMDA3YWMwNjQ1MDYwMTc0OWVjOWRiMTUifQ.F7VGA4QNrW6vE7Crxf0ang';
+var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([40, -74.50], 9);
+</script>
