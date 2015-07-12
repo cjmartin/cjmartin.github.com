@@ -67,6 +67,10 @@ code {
 	font-family: "inconsolata-1","inconsolata-2";
 }
 
+.page-content {
+	margin-top: 40px;
+}
+
 #container{
 	width:960px;
 	margin:40px auto 0;
@@ -190,6 +194,10 @@ a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
 }
 
 /* Maps stuff */
+
+.map-page > .page-content {
+	margin-top: 400px;
+}
 
 .full-page-map {
 	position: fixed;
