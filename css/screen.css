@@ -67,7 +67,7 @@ code {
 	font-family: "inconsolata-1","inconsolata-2";
 }
 
-.page-content {
+#page-content {
 	margin-top: 40px;
 }
 
@@ -195,7 +195,7 @@ a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
 
 /* Maps stuff */
 
-.map-page > .page-content {
+.map-page > #page-content {
 	margin-top: 400px;
 }
 

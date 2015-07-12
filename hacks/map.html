@@ -35,7 +35,7 @@ description: Testing out Mapbox.
 	</head>
 	<body class="map-page">
     <div id='map' class="header-map"></div>
-    <div class="page-content">
+    <div id="page-content">
   		<div class="container">
         <div class="post">
 
@@ -116,9 +116,12 @@ description: Testing out Mapbox.
         // /* init - you can init any event */
         // throttle ("scroll", "optimizedScroll");
 
-        var mapContainer = document.getElementById('map');
-        mapContainer.style.height = window.innerHeight + 'px';
+        var mapContainer = document.getElementById('map'),
+            contentContainer = document.getElementById('page-content');
 
+        mapContainer.style.height = window.innerHeight + 'px';
+        contentContainer.style.marginTop = window.innerHeight + 'px';
+        
         window.scrollTo(0, window.innerHeight-400);
     })();
 
