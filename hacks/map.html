@@ -116,8 +116,9 @@ description: Testing out Mapbox.
         // /* init - you can init any event */
         // throttle ("scroll", "optimizedScroll");
 
+        console.log(window)
         var mapContainer = document.getElementById('map');
-        mapContainer.style.height = window.innerHeight;
+        mapContainer.style.height = window.innerHeight + 'px';
     })();
 
     // handle event
