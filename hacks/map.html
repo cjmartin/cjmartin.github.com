@@ -6,47 +6,120 @@ description: Testing out Mapbox.
 ---
 
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset=utf-8 />
-<title>A simple map</title>
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
-<link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen">
-</head>
-<body>
-<div id='map' class="header-map"></div>
-<script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiY2ptYXJ0aW4iLCJhIjoiZTBjMWJmOGJhMDA3YWMwNjQ1MDYwMTc0OWVjOWRiMTUifQ.F7VGA4QNrW6vE7Crxf0ang';
-var map = L.mapbox.map('map', 'mapbox.streets', {
-  scrollWheelZoom: false
-}).setView([40, -74.50], 9);
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-// Thanks MDN
-;(function() {
-    var throttle = function(type, name, obj) {
-        var obj = obj || window;
-        var running = false;
-        var func = function() {
-            if (running) { return; }
-            running = true;
-            requestAnimationFrame(function() {
-                obj.dispatchEvent(new CustomEvent(name));
-                running = false;
-            });
+		<title>{% if page.title %}{{ page.title }} | {% endif %}Roundhere.net by Chris Martin</title>
+		<meta name="author" content="Chris James Martin" />
+		<link href="http://feeds.feedburner.com/cjmartin" rel="alternate" title="Roundhere.net by Chris Martin" type="application/atom+xml" />
+
+		<!-- Bootstrap -->
+		<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Mapbox -->
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+
+		<link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" media="screen">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+    <div id='map' class="header-map"></div>
+
+		<div class="container">
+      <div class="post">
+
+      	<h1 class="post-title">{{ page.title }}</h1>
+      	<p class="meta">18 Aug 2014{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+      	<div class="post-content text">
+      		<p>
+      			Flickr Web Embed Version 2.0, how does it work?
+      		</p>
+
+      		<p>
+      			It's easy! Just grab the standard "html" embed code for a flickr photo, it will look like this:
+      		</p>
+
+      {% highlight html %}
+      <a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/15256093683" title="Playa Perro by Chris Martin, on Flickr"><img src="https://farm8.staticflickr.com/7579/15256093683_830dac5243_z.jpg" width="640" height="480" alt="Playa Perro"></a>
+      {% endhighlight %}
+
+      		<p>
+      			And add this extra code to the end:
+      		</p>
+
+      {% highlight html %}
+      <script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+      {% endhighlight %}
+
+      		<p>
+      			The final embed code will look like:
+      		</p>
+
+      {% highlight html %}
+      <a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/15256093683" title="Playa Perro by Chris Martin, on Flickr"><img src="https://farm8.staticflickr.com/7579/15256093683_830dac5243_z.jpg" width="640" height="480" alt="Playa Perro"></a>
+      <script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+      {% endhighlight %}
+
+      		<p>
+      			And when entered into a web page, the result is:
+      		</p>
+
+      		<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/15256093683" title="Playa Perro by Chris Martin, on Flickr"><img src="https://farm8.staticflickr.com/7579/15256093683_830dac5243_z.jpg" width="640" height="480" alt="Playa Perro"></a><script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+
+      	</div>
+
+      </div>
+
+      <p>&copy;2014 Chris James Martin</p>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoiY2ptYXJ0aW4iLCJhIjoiZTBjMWJmOGJhMDA3YWMwNjQ1MDYwMTc0OWVjOWRiMTUifQ.F7VGA4QNrW6vE7Crxf0ang';
+    var map = L.mapbox.map('map', 'mapbox.streets', {
+      scrollWheelZoom: false
+    }).setView([40, -74.50], 9);
+
+    // Thanks MDN
+    ;(function() {
+        var throttle = function(type, name, obj) {
+            var obj = obj || window;
+            var running = false;
+            var func = function() {
+                if (running) { return; }
+                running = true;
+                requestAnimationFrame(function() {
+                    obj.dispatchEvent(new CustomEvent(name));
+                    running = false;
+                });
+            };
+            obj.addEventListener(type, func);
         };
-        obj.addEventListener(type, func);
-    };
 
-    /* init - you can init any event */
-    throttle ("scroll", "optimizedScroll");
-})();
+        /* init - you can init any event */
+        throttle ("scroll", "optimizedScroll");
+    })();
 
-// handle event
-window.addEventListener("optimizedScroll", function() {
-    console.log("Resource conscious scroll callback!");
-});
-</script>
-</body>
+    // handle event
+    window.addEventListener("optimizedScroll", function() {
+        console.log("Resource conscious scroll callback!");
+    });
+    </script>
+	</body>
 </html>
