@@ -19,9 +19,9 @@ description: Testing out Mapbox.
 <div id='map' class="header-map"></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiY2ptYXJ0aW4iLCJhIjoiZTBjMWJmOGJhMDA3YWMwNjQ1MDYwMTc0OWVjOWRiMTUifQ.F7VGA4QNrW6vE7Crxf0ang';
-var map = L.mapbox.map('map', 'mapbox.streets'{
-      zoomControl: false
-    }).setView([40, -74.50], 9);
+var map = L.mapbox.map('map', 'mapbox.streets', {
+  scrollWheelZoom: false
+}).setView([40, -74.50], 9);
 
 
 </script>
