@@ -196,3 +196,10 @@ a.dsq-subscribe-email em, a.dsq-subscribe-rss em {
 	width: 100%;
 	height: 100%;
 }
+
+.header-map {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 400px;
+}
