@@ -132,7 +132,7 @@ description: Testing out Mapbox.
       console.log(window.innerHeight);
       if (contentContainer.getBoundingClientRect().top <= 400) {
         mapContainer.style.position = 'fixed';
-        mapContainer.style.top = (window.innerHeight-400)*-1 + 'px';
+        mapContainer.style.top = (mapContainer.height-400)*-1 + 'px';
       } else {
         mapContainer.style.position = 'absolute';
         mapContainer.style.top = null;
