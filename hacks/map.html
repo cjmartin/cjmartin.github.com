@@ -121,7 +121,8 @@ description: Testing out Mapbox.
 
         mapContainer.style.height = window.innerHeight + 'px';
         contentContainer.style.marginTop = window.innerHeight + 'px';
-        
+
+        map.invalidateSize();
         window.scrollTo(0, window.innerHeight-400);
     })();
 
