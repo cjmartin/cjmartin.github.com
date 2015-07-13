@@ -97,10 +97,10 @@ description: Testing out Mapbox.
         contentContainer = document.getElementById('page-content'),
         mapRect,
         contentRect,
-        mapClosed = true;
+        mapOpen = false;
         map = L.mapbox.map('map', 'mapbox.streets', {
           scrollWheelZoom: false
-        }).setView([37.733795, -122.446747], 9);
+        }).setView([37.733795, -122.446747], 5);
 
     ;(function() {
       mapContainer.style.height = window.innerHeight + 'px';
@@ -131,17 +131,17 @@ description: Testing out Mapbox.
 
     // handle event
     window.addEventListener("optimizedScroll", function() {
-      console.log(window.innerHeight);
-
       if (contentContainer.getBoundingClientRect().top <= 400) {
         mapContainer.style.position = 'fixed';
         mapContainer.style.top = (mapRect.height-400)*-1 + 'px';
-        mapClosed = true;
+        mapOpen = false;
       } else {
         mapContainer.style.position = 'absolute';
         mapContainer.style.top = null;
-        mapClosed = false;
+        mapOpen = true;
       }
+
+      console.log(mapOpen);
     });
     </script>
 	</body>
