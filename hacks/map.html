@@ -97,25 +97,7 @@ description: Testing out Mapbox.
       scrollWheelZoom: false
     }).setView([40, -74.50], 9);
 
-    // Thanks MDN
     ;(function() {
-        // var throttle = function(type, name, obj) {
-        //     var obj = obj || window;
-        //     var running = false;
-        //     var func = function() {
-        //         if (running) { return; }
-        //         running = true;
-        //         requestAnimationFrame(function() {
-        //             obj.dispatchEvent(new CustomEvent(name));
-        //             running = false;
-        //         });
-        //     };
-        //     obj.addEventListener(type, func);
-        // };
-        //
-        // /* init - you can init any event */
-        // throttle ("scroll", "optimizedScroll");
-
         var mapContainer = document.getElementById('map'),
             contentContainer = document.getElementById('page-content');
 
@@ -124,12 +106,30 @@ description: Testing out Mapbox.
 
         map.invalidateSize();
         window.scrollTo(0, window.innerHeight-400);
+
+        // Thanks MDN
+        var throttle = function(type, name, obj) {
+            var obj = obj || window;
+            var running = false;
+            var func = function() {
+                if (running) { return; }
+                running = true;
+                requestAnimationFrame(function() {
+                    obj.dispatchEvent(new CustomEvent(name));
+                    running = false;
+                });
+            };
+            obj.addEventListener(type, func);
+        };
+
+        /* init - you can init any event */
+        throttle ("scroll", "optimizedScroll");
     })();
 
     // handle event
-    // window.addEventListener("optimizedScroll", function() {
-    //     console.log(document.getElementById('map').scrollTop);
-    // });
+    window.addEventListener("optimizedScroll", function() {
+        console.log(document.getElementById('map').scrollTop);
+    });
     </script>
 	</body>
 </html>
