@@ -127,8 +127,8 @@ description: Testing out Mapbox.
 
     // handle event
     window.addEventListener("optimizedScroll", function() {
-        console.log(contentContainer.scrollTop);
-        if (contentContainer.scrollTop <= 400) {
+        console.log(contentContainer.firstChild.scrollTop);
+        if (contentContainer.firstChild.scrollTop <= 400) {
           mapContainer.style.position = 'fixed';
         } else {
           mapContainer.style.position = 'absolute';
