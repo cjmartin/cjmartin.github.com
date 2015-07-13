@@ -130,7 +130,6 @@ description: Testing out Mapbox.
     // handle event
     window.addEventListener("optimizedScroll", function() {
       console.log(window.innerHeight);
-      console.log(contentContainer.getBoundingClientRect().top);
       if (contentContainer.getBoundingClientRect().top <= 400) {
         mapContainer.style.position = 'fixed';
         mapContainer.style.top = (window.innerHeight-400)*-1 + 'px';
