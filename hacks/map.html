@@ -92,6 +92,7 @@ description: Testing out Mapbox.
 		<script src="/bootstrap/js/bootstrap.min.js"></script>
 
     <script>
+    console.log(window.innerHeight);
     L.mapbox.accessToken = 'pk.eyJ1IjoiY2ptYXJ0aW4iLCJhIjoiZTBjMWJmOGJhMDA3YWMwNjQ1MDYwMTc0OWVjOWRiMTUifQ.F7VGA4QNrW6vE7Crxf0ang';
     var mapContainer = document.getElementById('map'),
         contentContainer = document.getElementById('page-content'),
@@ -100,41 +101,43 @@ description: Testing out Mapbox.
         }).setView([40, -74.50], 9);
 
     ;(function() {
-        mapContainer.style.height = window.innerHeight + 'px';
-        contentContainer.style.marginTop = window.innerHeight + 'px';
+      console.log(window.innerHeight);
+      mapContainer.style.height = window.innerHeight + 'px';
+      contentContainer.style.marginTop = window.innerHeight + 'px';
 
-        map.invalidateSize();
-        window.scrollTo(0, window.innerHeight-400);
+      map.invalidateSize();
+      window.scrollTo(0, window.innerHeight-400);
 
-        // Thanks MDN
-        var throttle = function(type, name, obj) {
-            var obj = obj || window;
-            var running = false;
-            var func = function() {
-                if (running) { return; }
-                running = true;
-                requestAnimationFrame(function() {
-                    obj.dispatchEvent(new CustomEvent(name));
-                    running = false;
-                });
-            };
-            obj.addEventListener(type, func);
-        };
+      // Thanks MDN
+      var throttle = function(type, name, obj) {
+          var obj = obj || window;
+          var running = false;
+          var func = function() {
+              if (running) { return; }
+              running = true;
+              requestAnimationFrame(function() {
+                  obj.dispatchEvent(new CustomEvent(name));
+                  running = false;
+              });
+          };
+          obj.addEventListener(type, func);
+      };
 
-        /* init - you can init any event */
-        throttle ("scroll", "optimizedScroll");
+      /* init - you can init any event */
+      throttle ("scroll", "optimizedScroll");
     })();
 
     // handle event
     window.addEventListener("optimizedScroll", function() {
-        console.log(contentContainer.getBoundingClientRect().top);
-        if (contentContainer.getBoundingClientRect().top <= 400) {
-          mapContainer.style.position = 'fixed';
-          mapContainer.style.top = (window.innerHeight-400)*-1 + 'px';
-        } else {
-          mapContainer.style.position = 'absolute';
-          mapContainer.style.top = null;
-        }
+      console.log(window.innerHeight);
+      console.log(contentContainer.getBoundingClientRect().top);
+      if (contentContainer.getBoundingClientRect().top <= 400) {
+        mapContainer.style.position = 'fixed';
+        mapContainer.style.top = (window.innerHeight-400)*-1 + 'px';
+      } else {
+        mapContainer.style.position = 'absolute';
+        mapContainer.style.top = null;
+      }
     });
     </script>
 	</body>
