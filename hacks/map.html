@@ -93,14 +93,13 @@ description: Testing out Mapbox.
 
     <script>
     L.mapbox.accessToken = 'pk.eyJ1IjoiY2ptYXJ0aW4iLCJhIjoiZTBjMWJmOGJhMDA3YWMwNjQ1MDYwMTc0OWVjOWRiMTUifQ.F7VGA4QNrW6vE7Crxf0ang';
-    var map = L.mapbox.map('map', 'mapbox.streets', {
-      scrollWheelZoom: false
-    }).setView([40, -74.50], 9);
+    var mapContainer = document.getElementById('map'),
+        contentContainer = document.getElementById('page-content'),
+        map = L.mapbox.map('map', 'mapbox.streets', {
+          scrollWheelZoom: false
+        }).setView([40, -74.50], 9);
 
     ;(function() {
-        var mapContainer = document.getElementById('map'),
-            contentContainer = document.getElementById('page-content');
-
         mapContainer.style.height = window.innerHeight + 'px';
         contentContainer.style.marginTop = window.innerHeight + 'px';
 
@@ -128,7 +127,12 @@ description: Testing out Mapbox.
 
     // handle event
     window.addEventListener("optimizedScroll", function() {
-        console.log(document.getElementById('map').scrollTop);
+        console.log(contentContainer.scrollTop);
+        if (contentContainer.scrollTop <= 400) {
+          mapContainer.style.position = 'fixed';
+        } else {
+          mapContainer.style.position = 'absolute';
+        }
     });
     </script>
 	</body>
