@@ -19,12 +19,13 @@ description: Flickr Web Embed (v2) Tests
 <script type="text/javascript">
 var videos = null;
 
-getAndLoopVideo();
+getAndLoopEmbeddedVideo();
 
-function getAndLoopVideo(){
-  videos = document.getElementsByTagName('video');
-  if (videos != 'undefined') {
-    loopVideo(videos[0]);
+function getAndLoopEmbeddedVideo(){
+  iframes = document.getElementsByClassName('flickr-embed-frame');
+  if (iframes != 'undefined') {
+    console.log(iframes);
+    // loopVideo(videos[0]);
   } else {
     setTimeout(self, 200);
   }
