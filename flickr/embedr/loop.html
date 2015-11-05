@@ -13,15 +13,13 @@ description: Flickr Web Embed (v2) Tests
 	<p class="meta">19 Dec 2013{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
 
 	<div class="post-content text">
-		<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/15459835269/" title="Untitled by Chris Martin, on Flickr"><img src="https://farm6.staticflickr.com/5601/15459835269_6760d5ca9d.jpg" width="640" height="360" alt="Untitled"></a><script async src="//widgets.flickr.com/embedr/embedr.js" charset="utf-8"></script>
+		<figure class="tmblr-embed tmblr-full" data-provider="flickr" data-orig-width="1024" data-orig-height="576" data-url="https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fjeffbargmann%2F22400441789%2Fin%2Fdatetaken%2F"><a data-flickr-embed="true" href="https://www.flickr.com/photos/jeffbargmann/22400441789/" title="Untitled by jeffbargmann, on Flickr"><img src="https://farm6.staticflickr.com/5736/22400441789_42e94979a2_b.jpg" width="540" height="304" alt="Untitled"></a><script async="" src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></figure>
 	</div>
 	
 <script type="text/javascript">
 var videos = null;
 
-$(function() {
-  getAndLoopVideo();
-});
+getAndLoopVideo();
 
 function getAndLoopVideo(){
   videos = document.getElementsByTagName('video');
