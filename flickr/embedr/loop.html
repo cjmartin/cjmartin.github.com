@@ -23,7 +23,7 @@ getAndLoopVideo();
 
 function getAndLoopVideo(){
   videos = document.getElementsByTagName('video');
-  if (videos) {
+  if (videos != 'undefined') {
     loopVideo(videos[0]);
   } else {
     setTimeout(self, 200);
