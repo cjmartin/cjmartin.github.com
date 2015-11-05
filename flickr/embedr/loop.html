@@ -25,7 +25,7 @@ function getAndLoopEmbeddedVideo(){
   iframes = document.getElementsByClassName('flickr-embed-frame');
   if (iframes.length > 0) {
     console.log(iframes);
-    iframes[0].innerHtml = '<video src="https://www.dropbox.com/s/t80en9wruinl34b/22400441789.mp4?dl=1" width="200" autoplay="1" loop="1"/>';
+    iframes[0]..contentDocument.write('<video src="https://www.dropbox.com/s/t80en9wruinl34b/22400441789.mp4?dl=1" width="100%" autoplay="1" loop="1"/>');
     // loopVideo(videos[0]);
   } else {
     setTimeout(getAndLoopEmbeddedVideo, 200);
