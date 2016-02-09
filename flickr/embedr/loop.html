@@ -1,0 +1,50 @@
+---
+layout: page-bootstrap
+title: Flickr Web Embed (v2) Testing Video
+place: San Francisco, CA
+twitter_card: summary_large_image
+image: http://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg
+description: Flickr Web Embed (v2) Tests
+---
+
+<div class="post">
+
+	<h1 class="post-title">Video</h1>
+	<p class="meta">19 Dec 2013{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+
+	<div class="post-content text">
+		<figure class="tmblr-embed tmblr-full" data-provider="flickr" data-orig-width="1024" data-orig-height="576" data-url="https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fjeffbargmann%2F22400441789%2Fin%2Fdatetaken%2F"><a data-flickr-embed="true" href="https://www.flickr.com/photos/jeffbargmann/22400441789/" title="Untitled by jeffbargmann, on Flickr"><img src="https://farm6.staticflickr.com/5736/22400441789_42e94979a2_b.jpg" width="540" height="304" alt="Untitled"></a><script async="" src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></figure>
+	</div>
+	
+<script type="text/javascript">
+var videos = null;
+
+getAndLoopEmbeddedVideo();
+
+function getAndLoopEmbeddedVideo(){
+  iframes = document.getElementsByClassName('flickr-embed-frame');
+  if (iframes.length > 0) {
+    console.log(iframes);
+    iframes[0].contentDocument.write('<video src="https://www.dropbox.com/s/t80en9wruinl34b/22400441789.mp4?dl=1" width="100%" autoplay="1" loop="1"/>');
+    // loopVideo(videos[0]);
+  } else {
+    setTimeout(getAndLoopEmbeddedVideo, 200);
+  }
+}
+
+function loopVideo(video){
+  if (typeof video.loop == 'boolean') { // loop supported
+    video.loop = true;
+  } else { // loop property not supported
+    video.addEventListener('ended', function () {
+      this.currentTime = 0;
+      this.play();
+    }, false);
+  }
+  video.play();
+}
+</script>
+  
+</div>
+
+<p>&copy;2015 Chris James Martin</p>
