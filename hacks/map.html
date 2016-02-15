@@ -124,7 +124,7 @@ description: Testing out Mapbox.
 
     // handle event
     window.addEventListener("optimizedScroll", function() {
-      if (contentContainer.getBoundingClientRect().top <= 400) {
+      if (contentContainer.getBoundingClientRect().top <= 200) {
         mapContainer.style.position = 'fixed';
         mapContainer.style.top = (mapRect.height-200)*-1 + 'px';
         mapOpen = false;
