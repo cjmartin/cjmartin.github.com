@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pin.min.js"></script>
+    <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js"></script>
+    <script type="text/javascript" src="js/salarycalc.js"></script>
+
+    <link href="https://www.palmbeachschools.org/common/pages/PortalThemeStyle.ashx?templateId=1877" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/salarycalc.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+    	<form id="salaryForm">
+    		<div class="form-group">
+    			<label for="salaryFormEducationLevel">What is your highest level of education?</label>
+    			<div>
+    				<select id="salaryFormEducationLevel" class="salary-form-item">
+    				</select>
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<label for="salaryFormYearsTeaching">How many years have you been teaching?</label>
+    			<div>
+    				<input type="number" value="" placeholder="0" id="salaryFormYearsTeaching" class="salary-form-item"/>
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<legend for="salaryFormPreviousEmployment">Did you previously teach in Palm Beach County?</legend>
+    			<div class="inline-radios">
+    				<input type="radio" name="salaryFormPreviousEmployment" value="true" id="salaryFormPreviousEmployment" class="salary-form-item"/>
+    				<label for="salaryFormPreviousEmployment">Yes</label>
+    				<input type="radio" name="salaryFormPreviousEmployment" value="false" id="salaryFormPreviousEmploymentFalse" class="salary-form-item" checked/>
+    				<label for="salaryFormPreviousEmploymentFalse">No</label>
+    			</div>
+    		</div>
+    		<div id="salaryFormYearsPreviousEmploymentContainer" class="form-group hidden">
+    			<label for="salaryFormYearsPreviousEmployment">Welcome back! How many years have you taught in Palm Beach County?</label>
+    			<div>
+    				<input type="number" value="" placeholder="0" id="salaryFormYearsPreviousEmployment" class="salary-form-item"/>
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<legend for="salaryFormBoardCertified">Are you a National Board Certified Teacher?</legend>
+    			<div class="inline-radios">
+    				<input type="radio" name="salaryFormBoardCertified" value="true" id="salaryFormBoardCertified" class="salary-form-item"/>
+    				<label for="salaryFormBoardCertified">Yes</label>
+    				<input type="radio" name="salaryFormBoardCertified" value="false" id="salaryFormBoardCertifiedFalse" class="salary-form-item" checked/>
+    				<label for="salaryFormBoardCertifiedFalse">No</label>
+    			</div>
+    		</div>
+    		<div id="salaryFormCertificationYearContainer" class="form-group hidden">
+    			<label for="salaryFormCertificationYear">Great! When did you receive your National Board Certification?</label>
+    			<div>
+    				<select id="salaryFormCertificationYear" class="salary-form-item">
+    				</select>
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<label for="salaryFormDesiredPosition">What type of position are you interested in?</label>
+    			<div>
+    				<select id="salaryFormDesiredPosition" class="salary-form-item">
+    				</select>
+    			</div>
+    		</div>
+    		<div id="salaryFormSchoolTypeContainer" class="form-group">
+    			<label for="salaryFormSchoolType">At which type of school?</label>
+    			<div>
+    				<select id="salaryFormSchoolType">
+    				</select>
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<label for="salaryFormAdditionalWork">Do you anticipate taking on any additional work assignments at your school site? (Select any/all that apply)</label>
+    			<div id="salaryFormAdditionalWork" class="checkbox-select">
+    			</div>
+    		</div>
+    	</form>
+
+    	<div id="salaryFormResults" class="fsStyleAutoclear hidden">
+    		<div id="salaryFormTotalCompContainer">
+    			<h1>$<span id="salaryFormTotalComp"></span></h1>
+    			<div class="salaryFormCompLabel">Total Compensation</div>
+    		</div>
+    		<div id="salaryformBreakdownContainer">
+    			<div class="salaryFormCompLabel">Salary Breakdown</div>
+    			<table id="salaryFormBreakdownTable">
+    				<tr id="salaryFormBaseContainer" class="hidden">
+    					<td>Base Salary:</td><td>$<span id="salaryFormBase"></span></td>
+    				</tr>
+    				<tr id="salaryFormRetirementCreditContainer" class="hidden">
+    					<td>Retirement Credit:</td><td>$<span id="salaryFormRetirementCredit"></span></td>
+    				</tr>
+    				<tr id="salaryFormExperienceCreditContainer" class="hidden">
+    					<td>Experience Credit:</td><td>$<span id="salaryFormExperienceCredit"></span></td>
+    				</tr>
+    				<tr id="salaryFormCertificationStipendContainer" class="hidden">
+    					<td>Certification Stipend:</td><td>$<span id="salaryFormCertificationStipend"></span></td>
+    				</tr>
+    				<tr id="salaryFormPositionStipendContainer" class="hidden">
+    					<td>Position Stipend:</td><td>$<span id="salaryFormPositionStipend"></span></td>
+    				</tr>
+    				<tr id="salaryFormSpecialAssignmentsStipendContainer" class="hidden">
+    					<td>Additional Assignments:</td><td>$<span id="salaryFormSpecialAssignmentsStipend"></span></td>
+    				</tr>
+    			</table>
+    		</div>
+    		<div id="salaryFormBenefitsContainer">
+    			<div class="salaryFormCompLabel">Paid Benefits Value</div>
+    			<table id="salaryFormBenefitsTable">
+    			</table>
+    		</div>
+    	</div>
+    </div>
+  </body>
+</html>

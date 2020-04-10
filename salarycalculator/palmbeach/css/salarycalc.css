@@ -1,0 +1,160 @@
+body {
+  padding: 0;
+}
+
+.wrapper {
+  display: block;
+  width: 100%;
+  max-width: 975px;
+  position: relative;
+}
+
+/*
+  Salary form
+*/
+
+#salaryForm {
+  width: 100%;
+  float: left;
+  margin: 0 0 10px;
+}
+
+#salaryForm textarea, #salaryForm input, #salaryForm select {
+  padding: 5px;
+  max-width: 100%;
+}
+
+#salaryForm input, #salaryForm .checkbox-select {
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+}
+
+#salaryForm .form-group {
+  margin-bottom: 20px;
+}
+
+#salaryForm label, #salaryForm legend {
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+#salaryForm select {
+  width: 100%;
+}
+
+#salaryForm input[type=number] {
+  width: 55px;
+}
+
+#salaryForm .inline-radios label {
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+#salaryForm .checkbox-select {
+  width: 100%;
+  height: 200px;
+  overflow-y: auto;
+  padding: 5px 0 5px;
+}
+
+#salaryForm .checkbox-select div {
+  padding: 5px;
+}
+
+#salaryForm .checkbox-select label {
+  display: inline-block;
+  margin: 0;
+}
+
+#salaryForm .checkbox-select input[type=checkbox]{
+  margin: 0 5px 0 0;
+}
+
+#salaryForm .hidden, #salaryFormResults .hidden, #salaryFormResults.hidden {
+  display: none;
+}
+
+/*
+  Salary Form Results
+*/
+
+#salaryFormResults {
+  width: 100%;
+  float: left;
+  text-align: right;
+  margin-bottom: 30px;
+  /* padding: 20px 0 0; */
+}
+
+#salaryFormResults>div {
+  margin-bottom: 20px;
+}
+
+#salaryFormTotalCompContainer h1 {
+  font-size: 70px;
+  /* line-height: 90px; */
+  margin: 0;
+  color: #8FC04D;
+}
+
+#salaryFormTotalCompContainer .salaryFormCompLabel {
+  margin-top: -10px;
+}
+
+.salaryFormCompLabel {
+  font-weight: bold;
+}
+
+#salaryformBreakdownContainer {
+  overflow: hidden;
+}
+
+#salaryFormResults table {
+  width: 100%;
+  text-align: right;
+}
+
+#salaryFormResults tr td:last-child {
+    width:1%;
+    white-space:nowrap;
+    padding-left: 10px;
+}
+
+/*
+  Media queries for responsiveness
+*/
+
+@media (min-width: 786px) {
+  #salaryForm {
+    max-width: 425px;
+  }
+
+  #salaryFormResults {
+    width: calc(100% - 425px);
+  }
+}
+
+/*
+  Bring back placeholders.
+*/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #8E8E8E;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #8E8E8E;
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #8E8E8E;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    #8E8E8E;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:    #8E8E8E;
+}
+::placeholder { /* Most modern browsers support this now. */
+  color:    #8E8E8E;
+}
