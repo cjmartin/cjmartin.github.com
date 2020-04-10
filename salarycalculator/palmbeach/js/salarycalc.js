@@ -235,6 +235,7 @@ function calculateSalary() {
   var experienceCredit;
   var retirementCredit;
   var positionStipend;
+  var certStipend;
   var specialAssignmentsStipend;
   var totalComp;
 
@@ -335,12 +336,13 @@ function calculateSalary() {
   if (boardCertified) {
     // Show the certification year input, if it's not already visible.
     // showElement('salaryFormCertificationYearContainer', 'fadeIn');
+    certStipend = certificationStipend;
 
-    totalComp += certificationStipend;
-    document.getElementById('salaryFormCertificationStipend').innerHTML = certificationStipend.formatMoney(2);
+    totalComp += certStipend;
+    document.getElementById('salaryFormCertificationStipend').innerHTML = certStipend.formatMoney(2);
     showElement('salaryFormCertificationStipendContainer', 'fadeInLeft');
   } else {
-    certificationStipend = 0;
+    certStipend = 0;
     hideElement('salaryFormCertificationStipendContainer', 'fadeOutLeft');
     // hideElement('salaryFormCertificationYearContainer', 'fadeOut');
   }
