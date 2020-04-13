@@ -25,14 +25,8 @@ function initSalaryCalc() {
   // Salary schedule data.
   loadingData.salaryData = true;
   var salaryQuery = new google.visualization.Query(calcDataURL + '?gid=1883612601');
-  salaryQuery.setQuery('select A, B');
+  salaryQuery.setQuery('select A, B, C');
   salaryQuery.send(function(response) {handleQueryResponse(response, loadSalaryData)});
-
-  // Retention Supplement data.
-  loadingData.retentionData = true;
-  var retentionQuery = new google.visualization.Query(calcDataURL + '?gid=1887651803');
-  retentionQuery.setQuery('select A, B');
-  retentionQuery.send(function(response) {handleQueryResponse(response, loadRetentionData)});
 
   // Teaching positions + stipends.
   loadingData.positionData = true;
@@ -55,7 +49,7 @@ function initSalaryCalc() {
   // Paid Benefits
   loadingData.paidBenefits = true;
   var benefitsQuery = new google.visualization.Query(calcDataURL + '?gid=436419350');
-  benefitsQuery.setQuery('select A, B');
+  benefitsQuery.setQuery('select A, B, C');
   benefitsQuery.send(function(response) {handleQueryResponse(response, loadBenefitsData)});
 
   addListeners();
@@ -92,20 +86,12 @@ function loadSalaryData(data) {
   // Format the annual salary data to be used in the total calculation.
   data.rows.forEach(function(year, index){
     baseSalaries[year.c[0].v] = year.c[1].v;
+    retentionSupplements[year.c[0].v] = year.c[2].v;
   });
 
   console.log(baseSalaries);
-  delete loadingData.salaryData;
-}
-
-function loadRetentionData(data) {
-  // Format the retention supplement data to be used in the total calculation.
-  data.rows.forEach(function(year, index){
-    retentionSupplements[year.c[0].v] = year.c[1].v;
-  });
-
   console.log(retentionSupplements);
-  delete loadingData.retentionData;
+  delete loadingData.salaryData;
 }
 
 function loadCertificationData(data) {
@@ -178,9 +164,9 @@ function loadAssignmentsData(data) {
 }
 
 function loadBenefitsData(data) {
-  // console.log(data);
+  console.log(data);
   data.rows.forEach(function(benefit, index){
-    paidBenefits.push({label: benefit.c[0].v, value: benefit.c[1].v});
+    paidBenefits.push({label: benefit.c[0].v, value: benefit.c[1].v, percentOfBase: benefit.c[2].v});
   });
 
   console.log(paidBenefits);
@@ -232,6 +218,7 @@ function filterSpecialAssignments(recalculate) {
 function calculateSalary() {
   // Total compensation components:
   var baseSalary;
+  var educationCredit;
   var experienceCredit;
   var retirementCredit;
   var positionStipend;
@@ -245,10 +232,8 @@ function calculateSalary() {
 
   // Pull data from the form.
   var eduLevel = Number(document.getElementById('salaryFormEducationLevel').value); // Education level
-  var yearsTeaching = Number(document.getElementById('salaryFormYearsTeaching').value) || 0; // Years teaching
+  var yearsExperience = Number(document.getElementById('salaryFormYearsTeaching').value) || 0; // Years teaching
   var desiredPosition = Number(document.getElementById('salaryFormDesiredPosition').value);
-  var previousEmployment = document.getElementById('salaryFormPreviousEmployment').checked;
-  var yearsPreviousEmployment = Number(document.getElementById('salaryFormYearsPreviousEmployment').value) || 0;
   var boardCertified = document.getElementById('salaryFormBoardCertified').checked;
   var certificationYear = Number(document.getElementById('salaryFormCertificationYear').value);
   var additionalWorkOptions = document.getElementById('salaryFormAdditionalWork').getElementsByClassName('additional-work-item');
@@ -262,75 +247,51 @@ function calculateSalary() {
   }
 
   // Everything stays the same if years teaching entered is over the max year from the spreadsheet.
-  if (yearsTeaching > baseSalaries.length - 1) {
-    yearsTeaching = baseSalaries.length - 1;
+  if (yearsExperience > baseSalaries.length - 1) {
+    yearsExperience = baseSalaries.length - 1;
   }
-
-  // Same with previous employment.
-  if (yearsPreviousEmployment > retentionSupplements.length - 1) {
-    yearsPreviousEmployment = retentionSupplements.length - 1;
-  }
-
-  if (previousEmployment) {
-    // Show the previous employme years input, if it's not already visible.
-    showElement('salaryFormYearsPreviousEmploymentContainer', 'fadeIn');
-  } else {
-    yearsPreviousEmployment = 0;
-    hideElement('salaryFormYearsPreviousEmploymentContainer', 'fadeOut');
-  }
-
-  // Add previous employme service to years teaching.
-  var yearsExperience = yearsTeaching;
 
   console.log("eduLevel: " + eduLevel);
-  console.log("yearsTeaching: " + yearsTeaching);
+  console.log("yearsExperience: " + yearsExperience);
   console.log("desiredPosition: " + desiredPosition);
-  console.log("previousEmployment: " + previousEmployment);
-  console.log("yearsPreviousEmployment: " + yearsPreviousEmployment);
   console.log("boardCertified: " + boardCertified);
   console.log("certificationYear: " + certificationYear);
   console.log("additionalWork: " + additionalWork);
-  console.log("yearsExperience: " + yearsExperience);
 
   // Look up the base salary using education level and years teaching.
   baseSalary = baseSalaries[yearsExperience];
-
-  // Is there a retention supplement?
-  if (retentionSupplements[yearsPreviousEmployment]) {
-    console.log()
-    baseSalary += retentionSupplements[yearsPreviousEmployment];
-  }
 
   totalComp += baseSalary;
   document.getElementById('salaryFormBase').innerHTML = baseSalary.formatMoney(2);
   showElement('salaryFormBaseContainer', 'fadeInLeft');
   console.log("Base salary: " + baseSalary + " | totalComp is now: " + totalComp);
 
-  // Is there a teaching experience credit?
-  // if (baseSalaries[yearsExperience][10].v) {
-  //   experienceCredit = baseSalaries[yearsExperience][10].v;
-  //   totalComp += experienceCredit;
-  //   document.getElementById('salaryFormExperienceCredit').innerHTML = experienceCredit.formatMoney(2);
-  //   showElement('salaryFormExperienceCreditContainer', 'fadeInLeft');
-  //   // console.log("Teaching experience credit: " + experienceCredit + " | totalComp is now: " + totalComp);
-  // } else {
-  //   experienceCredit = 0;
-  //   document.getElementById('salaryFormExperienceCredit').innerHTML = experienceCredit.formatMoney(2);
-  //   hideElement('salaryFormExperienceCreditContainer', 'fadeOutLeft');
-  // }
+  // Advanced Degree Credit?
+  if (eduLevels[eduLevel].stipend) {
+    educationCredit = eduLevels[eduLevel].stipend;
 
-  // Retirement credit?
-  // if (baseSalaries[yearsExperience][11].v) {
-  //   retirementCredit = baseSalaries[yearsExperience][11].v;
-  //   totalComp += retirementCredit;
-  //   document.getElementById('salaryFormRetirementCredit').innerHTML = retirementCredit.formatMoney(2);
-  //   showElement('salaryFormRetirementCreditContainer', 'fadeInLeft');
-  //   // console.log("State-paid retirement credit: " + retirementCredit + " | totalComp is now: " + totalComp);
-  // } else {
-  //   retirementCredit = 0;
-  //   document.getElementById('salaryFormRetirementCredit').innerHTML = retirementCredit.formatMoney(2);
-  //   hideElement('salaryFormRetirementCreditContainer', 'fadeOutLeft');
-  // }
+    totalComp += educationCredit;
+    document.getElementById('salaryFormEducationCredit').innerHTML = educationCredit.formatMoney(2);
+    showElement('salaryFormEducationCreditContainer', 'fadeInLeft');
+    // console.log("Desired position stipend: " + positionStipend + " | totalComp is now: " + totalComp);
+  } else {
+    educationCredit = 0;
+    document.getElementById('salaryFormEducationCredit').innerHTML = educationCredit.formatMoney(2);
+    hideElement('salaryFormEducationCreditContainer', 'fadeOutLeft');
+  }
+
+  // Is there a teaching experience credit?
+  if (retentionSupplements[yearsExperience]) {
+    experienceCredit = retentionSupplements[yearsExperience];
+    totalComp += experienceCredit;
+    document.getElementById('salaryFormExperienceCredit').innerHTML = experienceCredit.formatMoney(2);
+    showElement('salaryFormExperienceCreditContainer', 'fadeInLeft');
+    // console.log("Teaching experience credit: " + experienceCredit + " | totalComp is now: " + totalComp);
+  } else {
+    experienceCredit = 0;
+    document.getElementById('salaryFormExperienceCredit').innerHTML = experienceCredit.formatMoney(2);
+    hideElement('salaryFormExperienceCreditContainer', 'fadeOutLeft');
+  }
 
   // National board certification?
   if (boardCertified) {
@@ -420,12 +381,12 @@ function calculateSalary() {
   // Paid benefits
   var benefitValue = 0;
   paidBenefits.forEach(function(benefit, index){
-    // console.log(benefit);
+    console.log(benefit);
     benefitValue = benefit.value;
 
     // Is the benefit value a % of base?
-    if (benefitValue < 1) {
-      benefitValue = (baseSalary + experienceCredit) * benefitValue;
+    if (benefit.percentOfBase) {
+      benefitValue += baseSalary * benefit.percentOfBase;
     }
 
     totalComp += benefitValue;
@@ -443,7 +404,7 @@ function calculateSalary() {
     benefitRow.innerHTML = "<td>" + benefit.label + ":</td><td>$" + benefitValue.formatMoney(2) + "</td>";
     showElement(BenefitRowId, 'fadeInLeft');
 
-    // console.log(benefit.label + ": " + benefitValue + " | totalComp is now: " + totalComp);
+    console.log(benefit.label + ": " + benefitValue + " | totalComp is now: " + totalComp);
   });
 
   document.getElementById('salaryFormTotalComp').innerHTML = totalComp.formatMoney(2);
