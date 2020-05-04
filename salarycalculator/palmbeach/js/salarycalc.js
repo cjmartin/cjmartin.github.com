@@ -4,6 +4,7 @@ var calcDataURL = "https://docs.google.com/spreadsheets/d/1z46zEJD7NCM6sEyILnlPr
 // Objects to hold raw data from datasource
 var baseSalaries = [];
 var retentionSupplements = [];
+var gladesStipends = [];
 var eduLevels = [];
 var positions = [];
 var certificationStipend = 0;
@@ -25,7 +26,7 @@ function initSalaryCalc() {
   // Salary schedule data.
   loadingData.salaryData = true;
   var salaryQuery = new google.visualization.Query(calcDataURL + '?gid=1883612601');
-  salaryQuery.setQuery('select A, B, C');
+  salaryQuery.setQuery('select A, B, C, D');
   salaryQuery.send(function(response) {handleQueryResponse(response, loadSalaryData)});
 
   // Teaching positions + stipends.
@@ -57,7 +58,7 @@ function initSalaryCalc() {
 
 function handleQueryResponse(response, next) {
   if (response.isError()) {
-    // console.log('Error querying datasource: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+    // // console.log('Error querying datasource: ' + response.getMessage() + ' ' + response.getDetailedMessage());
     return;
   }
 
@@ -67,7 +68,7 @@ function handleQueryResponse(response, next) {
   if (next) {
     next(jsonData);
   } else {
-    // console.log("Nothing else to do? Here's the data you requested: " + jsonData);
+    // // console.log("Nothing else to do? Here's the data you requested: " + jsonData);
   }
 }
 
@@ -78,7 +79,7 @@ function loadEducationLevels(data) {
     document.getElementById('salaryFormEducationLevel').appendChild(new Option(eduLevels[index].label, index));
   });
 
-  console.log(eduLevels);
+  // console.log(eduLevels);
   delete loadingData.educationData;
 }
 
@@ -87,23 +88,24 @@ function loadSalaryData(data) {
   data.rows.forEach(function(year, index){
     baseSalaries[year.c[0].v] = year.c[1].v;
     retentionSupplements[year.c[0].v] = year.c[2].v;
+    gladesStipends[year.c[0].v] = year.c[3].v;
   });
 
-  console.log(baseSalaries);
-  console.log(retentionSupplements);
+  // console.log(baseSalaries);
+  // console.log(retentionSupplements);
   delete loadingData.salaryData;
 }
 
 function loadCertificationData(data) {
-  console.log(data);
+  // console.log(data);
   certificationStipend = data.rows[0].c[0].v;
 
-  console.log(certificationStipend);
+  // console.log(certificationStipend);
   delete loadingData.certificationData;
 }
 
 function loadPositionData(data) {
-  // console.log(data);
+  // // console.log(data);
   var schoolTypes = [];
 
   data.rows.forEach(function(positionRow, index){
@@ -127,12 +129,12 @@ function loadPositionData(data) {
     document.getElementById('salaryFormDesiredPosition').appendChild(new Option(positions[index].label, index));
   });
 
-  console.log(positions);
+  // console.log(positions);
   delete loadingData.positionData;
 }
 
 function loadAssignmentsData(data) {
-  // console.log(data);
+  // // console.log(data);
   var additionalWorkContainer = document.getElementById('salaryFormAdditionalWork');
 
   data.rows.forEach(function(specialAssignment, index){
@@ -164,19 +166,19 @@ function loadAssignmentsData(data) {
 }
 
 function loadBenefitsData(data) {
-  console.log(data);
+  // console.log(data);
   data.rows.forEach(function(benefit, index){
     paidBenefits.push({label: benefit.c[0].v, value: benefit.c[1].v, percentOfBase: benefit.c[2].v});
   });
 
-  console.log(paidBenefits);
+  // console.log(paidBenefits);
   delete loadingData.paidBenefits;
 }
 
 function addListeners() {
   // Make sure we're not still loading data.
   if (Object.keys(loadingData).length) {
-    console.log("Form data is still loading, delaying listeners.");
+    // console.log("Form data is still loading, delaying listeners.");
     setTimeout(addListeners, 1000);
     return;
   }
@@ -218,17 +220,20 @@ function filterSpecialAssignments(recalculate) {
 function calculateSalary() {
   // Total compensation components:
   var baseSalary;
+  var benefitsBase; // Salary to calculate variable benefits.
   var educationCredit;
   var experienceCredit;
   var retirementCredit;
   var positionStipend;
   var certStipend;
   var specialAssignmentsStipend;
+  var gladesStipend;
   var totalComp;
 
   // Start from 0.
   totalComp = 0;
-  console.log("Starting with " + totalComp + " totalComp.");
+  benefitsBase = 0;
+  // console.log("Starting with " + totalComp + " totalComp.");
 
   // Pull data from the form.
   var eduLevel = Number(document.getElementById('salaryFormEducationLevel').value); // Education level
@@ -236,6 +241,7 @@ function calculateSalary() {
   var desiredPosition = Number(document.getElementById('salaryFormDesiredPosition').value);
   var boardCertified = document.getElementById('salaryFormBoardCertified').checked;
   var certificationYear = Number(document.getElementById('salaryFormCertificationYear').value);
+  var gladesArea = document.getElementById('salaryFormGladesArea').checked;
   var additionalWorkOptions = document.getElementById('salaryFormAdditionalWork').getElementsByClassName('additional-work-item');
 
   // Additional work needs a bit more work to pull out the selected items
@@ -251,29 +257,32 @@ function calculateSalary() {
     yearsExperience = baseSalaries.length - 1;
   }
 
-  console.log("eduLevel: " + eduLevel);
-  console.log("yearsExperience: " + yearsExperience);
-  console.log("desiredPosition: " + desiredPosition);
-  console.log("boardCertified: " + boardCertified);
-  console.log("certificationYear: " + certificationYear);
-  console.log("additionalWork: " + additionalWork);
+  // console.log("eduLevel: " + eduLevel);
+  // console.log("yearsExperience: " + yearsExperience);
+  // console.log("desiredPosition: " + desiredPosition);
+  // console.log("boardCertified: " + boardCertified);
+  // console.log("certificationYear: " + certificationYear);
+  // console.log("gladesArea: " + gladesArea);
+  // console.log("additionalWork: " + additionalWork);
 
   // Look up the base salary using education level and years teaching.
   baseSalary = baseSalaries[yearsExperience];
 
   totalComp += baseSalary;
+  benefitsBase += baseSalary;
   document.getElementById('salaryFormBase').innerHTML = baseSalary.formatMoney(2);
   showElement('salaryFormBaseContainer', 'fadeInLeft');
-  console.log("Base salary: " + baseSalary + " | totalComp is now: " + totalComp);
+  // console.log("Base salary: " + baseSalary + " | totalComp is now: " + totalComp);
 
   // Advanced Degree Credit?
   if (eduLevels[eduLevel].stipend) {
     educationCredit = eduLevels[eduLevel].stipend;
 
     totalComp += educationCredit;
+    benefitsBase += educationCredit;
     document.getElementById('salaryFormEducationCredit').innerHTML = educationCredit.formatMoney(2);
     showElement('salaryFormEducationCreditContainer', 'fadeInLeft');
-    // console.log("Desired position stipend: " + positionStipend + " | totalComp is now: " + totalComp);
+    // // console.log("Desired position stipend: " + positionStipend + " | totalComp is now: " + totalComp);
   } else {
     educationCredit = 0;
     document.getElementById('salaryFormEducationCredit').innerHTML = educationCredit.formatMoney(2);
@@ -283,10 +292,12 @@ function calculateSalary() {
   // Is there a teaching experience credit?
   if (retentionSupplements[yearsExperience]) {
     experienceCredit = retentionSupplements[yearsExperience];
+
     totalComp += experienceCredit;
+    benefitsBase += experienceCredit;
     document.getElementById('salaryFormExperienceCredit').innerHTML = experienceCredit.formatMoney(2);
     showElement('salaryFormExperienceCreditContainer', 'fadeInLeft');
-    // console.log("Teaching experience credit: " + experienceCredit + " | totalComp is now: " + totalComp);
+    // // console.log("Teaching experience credit: " + experienceCredit + " | totalComp is now: " + totalComp);
   } else {
     experienceCredit = 0;
     document.getElementById('salaryFormExperienceCredit').innerHTML = experienceCredit.formatMoney(2);
@@ -300,6 +311,7 @@ function calculateSalary() {
     certStipend = certificationStipend;
 
     totalComp += certStipend;
+    benefitsBase += certStipend;
     document.getElementById('salaryFormCertificationStipend').innerHTML = certStipend.formatMoney(2);
     showElement('salaryFormCertificationStipendContainer', 'fadeInLeft');
   } else {
@@ -320,11 +332,25 @@ function calculateSalary() {
     totalComp += positionStipend;
     document.getElementById('salaryFormPositionStipend').innerHTML = positionStipend.formatMoney(2);
     showElement('salaryFormPositionStipendContainer', 'fadeInLeft');
-    // console.log("Desired position stipend: " + positionStipend + " | totalComp is now: " + totalComp);
+    // // console.log("Desired position stipend: " + positionStipend + " | totalComp is now: " + totalComp);
   } else {
     positionStipend = 0;
     document.getElementById('salaryFormPositionStipend').innerHTML = positionStipend.formatMoney(2);
     hideElement('salaryFormPositionStipendContainer', 'fadeOutLeft');
+  }
+
+  // Glades area?
+  if (gladesArea) {
+    // Grab the glades stipend for the number of years they've been teaching.
+    gladesStipend = gladesStipends[yearsExperience];
+
+    totalComp += gladesStipend;
+    benefitsBase += gladesStipend;
+    document.getElementById('salaryFormGladesStipend').innerHTML = gladesStipend.formatMoney(2);
+    showElement('salaryFormGladesStipendContainer', 'fadeInLeft');
+  } else {
+    gladesStipend = 0;
+    hideElement('salaryFormGladesStipendContainer', 'fadeOutLeft');
   }
 
   // Update the school type selector, in case the position changed.
@@ -369,10 +395,12 @@ function calculateSalary() {
     additionalWork.forEach(function(additionalPosition, index){
       specialAssignmentsStipend += additionalPosition.stipend;
     });
+
     totalComp += specialAssignmentsStipend;
+    benefitsBase += specialAssignmentsStipend;
     document.getElementById('salaryFormSpecialAssignmentsStipend').innerHTML = specialAssignmentsStipend.formatMoney(2);
     showElement('salaryFormSpecialAssignmentsStipendContainer', 'fadeInLeft');
-    // console.log("Special assignemnts stipend: " + specialAssignmentsStipend + " | totalComp is now: " + totalComp);
+    // // console.log("Special assignemnts stipend: " + specialAssignmentsStipend + " | totalComp is now: " + totalComp);
   } else {
     document.getElementById('salaryFormSpecialAssignmentsStipend').innerHTML = specialAssignmentsStipend.formatMoney(2);
     hideElement('salaryFormSpecialAssignmentsStipendContainer', 'fadeOutLeft');
@@ -381,12 +409,12 @@ function calculateSalary() {
   // Paid benefits
   var benefitValue = 0;
   paidBenefits.forEach(function(benefit, index){
-    console.log(benefit);
+    // console.log(benefit);
     benefitValue = benefit.value;
 
     // Is the benefit value a % of base?
     if (benefit.percentOfBase) {
-      benefitValue += baseSalary * benefit.percentOfBase;
+      benefitValue += benefitsBase * benefit.percentOfBase;
     }
 
     totalComp += benefitValue;
@@ -404,12 +432,12 @@ function calculateSalary() {
     benefitRow.innerHTML = "<td>" + benefit.label + ":</td><td>$" + benefitValue.formatMoney(2) + "</td>";
     showElement(BenefitRowId, 'fadeInLeft');
 
-    console.log(benefit.label + ": " + benefitValue + " | totalComp is now: " + totalComp);
+    // console.log(benefit.label + ": " + benefitValue + " | totalComp is now: " + totalComp);
   });
 
   document.getElementById('salaryFormTotalComp').innerHTML = totalComp.formatMoney(2);
   showElement('salaryFormResults', 'fadeIn');
-  // console.log("Total compensation: " + totalComp);
+  // // console.log("Total compensation: " + totalComp);
 
   // Delay a bit, then pin the results inside their container.
   if (!$('#salaryFormResults').hasClass('pinned')) {
@@ -429,12 +457,12 @@ function calculateSalary() {
 function showElement(elementId, animation) {
   var element = $('#'+elementId);
   if (element.hasClass('hidden')) {
-    console.log("Showing element " + elementId);
+    // console.log("Showing element " + elementId);
     element.addClass('animated');
     element.addClass(animation);
     element.removeClass('hidden');
     element.one(animationEnd, function(){
-      console.log("Finished animating " + elementId);
+      // console.log("Finished animating " + elementId);
       element.removeClass(animation);
     });
   }
@@ -443,11 +471,11 @@ function showElement(elementId, animation) {
 function hideElement(elementId, animation) {
   var element = $('#'+elementId);
   if (!element.hasClass('hidden')) {
-    console.log("Hiding element " + elementId);
+    // console.log("Hiding element " + elementId);
     element.addClass('animated');
     element.addClass(animation);
     element.one(animationEnd, function(){
-      console.log("Finished animating" + elementId);
+      // console.log("Finished animating" + elementId);
       element.addClass('hidden');
       element.removeClass(animation);
     });
