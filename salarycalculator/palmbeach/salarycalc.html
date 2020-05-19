@@ -56,6 +56,15 @@
     				</select>
     			</div>
     		</div>
+        <div class="form-group">
+          <legend for="salaryFormGladesArea">Are you interested in working in a school in the Glades area?</legend>
+          <div class="inline-radios">
+            <input type="radio" name="salaryFormGladesArea" value="true" id="salaryFormGladesArea" class="salary-form-item"/>
+            <label for="salaryFormGladesArea">Yes</label>
+            <input type="radio" name="salaryFormGladesArea" value="false" id="ssalaryFormGladesAreaFalse" class="salary-form-item" checked/>
+            <label for="salaryFormGladesAreaFalse">No</label>
+          </div>
+        </div>
     		<div class="form-group">
     			<label for="salaryFormAdditionalWork">Do you anticipate taking on any additional work assignments at your school site? (Select any/all that apply)</label>
     			<div id="salaryFormAdditionalWork" class="checkbox-select">
@@ -75,17 +84,20 @@
     					<td>Base Salary:</td><td>$<span id="salaryFormBase"></span></td>
     				</tr>
             <tr id="salaryFormEducationCreditContainer" class="hidden">
-    					<td>Advanced Degree Credit:</td><td>$<span id="salaryFormEducationCredit"></span></td>
+    					<td>Advanced Degree Supplement:</td><td>$<span id="salaryFormEducationCredit"></span></td>
     				</tr>
             <tr id="salaryFormExperienceCreditContainer" class="hidden">
-    					<td>Experience Supplement:</td><td>$<span id="salaryFormExperienceCredit"></span></td>
+    					<td>Referendum Experience Supplement:</td><td>$<span id="salaryFormExperienceCredit"></span></td>
     				</tr>
     				<tr id="salaryFormCertificationStipendContainer" class="hidden">
-    					<td>Certification Stipend:</td><td>$<span id="salaryFormCertificationStipend"></span></td>
+    					<td>National Board Certification:</td><td>$<span id="salaryFormCertificationStipend"></span></td>
     				</tr>
     				<tr id="salaryFormPositionStipendContainer" class="hidden">
-    					<td>Position Stipend:</td><td>$<span id="salaryFormPositionStipend"></span></td>
+    					<td>Position Supplement:</td><td>$<span id="salaryFormPositionStipend"></span></td>
     				</tr>
+            <tr id="salaryFormGladesStipendContainer" class="hidden">
+              <td>Glades Area Supplement:</td><td>$<span id="salaryFormGladesStipend"></span></td>
+            </tr>
     				<tr id="salaryFormSpecialAssignmentsStipendContainer" class="hidden">
     					<td>Additional Assignments:</td><td>$<span id="salaryFormSpecialAssignmentsStipend"></span></td>
     				</tr>
