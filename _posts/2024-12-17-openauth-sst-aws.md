@@ -11,10 +11,19 @@ As a learning exercise, I recently used Amplify gen2 to deploy an OIDC wrapper a
 
 Enter SST's [OpenAuth](https://openauth.js.org/). Let's give it a try as an auth service and explore SST in the process.
 
-### Setup
-
 I'm going to depoy OpenAuth as it's own standalone service on AWS using SST.
+
+### Setup SST
 
 1. If you haven't used SST before, read through the [workflow](https://sst.dev/docs/workflow) and [configure you IAM credneitals](https://sst.dev/docs/iam-credentials/).
 2. Create a new directory for our project: `mkdir openauth && cd openauth`.
-3. Initialize SST: `npx sst@latest init`, use the default options: `vanilla` template and `aws`.
+3. Initialize SST: `npx sst@latest init` - use the default options: `vanilla` template and `aws`.
+
+### Add [OpenAuth Component](https://sst.dev/docs/component/aws/auth)
+
+In `sst.config.ts`:
+```typescript
+const auth = new sst.aws.Auth("MyAuth", {
+  authorizer: "src/auth.handler"
+});
+```
