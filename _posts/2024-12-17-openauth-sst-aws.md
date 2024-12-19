@@ -15,7 +15,7 @@ I'm going to depoy OpenAuth as it's own standalone service on AWS using SST.
 
 ### Setup SST
 
-1. If you haven't used SST before, read through the [workflow](https://sst.dev/docs/workflow) and [configure you IAM credneitals](https://sst.dev/docs/iam-credentials/).
+1. If you haven't used SST before, read through the [workflow](https://sst.dev/docs/workflow) and [configure your IAM credneitals](https://sst.dev/docs/iam-credentials/).
 2. Create a new directory for our project: `mkdir openauth && cd openauth`.
 3. Initialize SST: `npx sst@latest init` - use the default options: `vanilla` template and `aws`.
 
@@ -69,7 +69,6 @@ const app = authorizer({
   },
 })
 
-// @ts-ignore
 export const handler = handle(app)
 ```
 
@@ -100,6 +99,8 @@ Once SST has deployed all of the AWS resources needed for OpenAuth, it will outp
 `https://[uuid].lambda-url.us-west-2.on.aws`
 
 Add `/.well-known/oauth-authorization-server` to the url and open in a browser to test that your OpenAuth service is up and running. You should see something like this:
+
+`https://[uuid].lambda-url.us-west-2.on.aws/.well-known/oauth-authorization-server`
 
 ```json
 {
