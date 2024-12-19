@@ -19,9 +19,8 @@ I'm going to depoy OpenAuth as it's own standalone service on AWS using SST.
 2. Create a new directory for our project: `mkdir openauth && cd openauth`.
 3. Initialize SST: `npx sst@latest init` - use the default options: `vanilla` template and `aws`.
 
-### Add [OpenAuth Component](https://sst.dev/docs/component/aws/auth)
 
-In `sst.config.ts`:
+In the `run` function of `sst.config.ts` add:
 ```typescript
 const auth = new sst.aws.Auth("MyAuth", {
   authorizer: "src/auth.handler"
