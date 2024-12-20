@@ -115,4 +115,4 @@ Add `/.well-known/oauth-authorization-server` to the url and open in a browser t
 }
 ```
 
-Congratulations, you have successfully set up a basic OpenAuth service! Now let's do something with it.
+Congratulations, you have successfully set up a basic OpenAuth service! You should now be able to set up an [Auth Client](https://github.com/openauthjs/openauth/tree/master?tab=readme-ov-file#auth-client) to use with your shiny new OpenAuth server.
