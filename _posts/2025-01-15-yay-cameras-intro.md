@@ -5,21 +5,21 @@ place: Olympic Valley, CA
 time: 10:28 AM PDT
 ---
 
-I'm working on a new personal project from a very old idea, it's called **Yay Cameras**, and it will be a site about... Cameras!
+I'm working on a new personal project from a very old idea, it's called _Yay Cameras!_, and it will be a site about... Cameras!
 
 I've always loved cameras. I've never been a particularly excellent _photographer_, but I've always been interested in technology, and cameras are the coolest technology that was available to normal people like me, even before computers and video games; cameras were (are) magic.
 
 My first digital camera was a [Toshiba PDR-2](https://www.vintagedigitalcameras.com/toshiba). It was a crazy little thing with a PCMCIA card interface that flipped out of the back to interface with a PC, and I'm shocked that I (read: my mom) even had a computer with a PCMCIA slot to plug it into. I remember taking that camera with me on my first international trip when I was ~15, but I have no idea what happened to any photos that I took. The internet wasn't quite ready for them at the time.
 
-Over the subsequent years I've had dozens of cameras. Before our phones took over, I would wonder the camera section of the electronics store just to see what was new. The idea for **Yay Cameras** is a website where cameras get "profile pages" with sample photos and videos, links to photographers who use them, suggested accessories, etc. I imagine it as a place where people interested in ~photography~ cameras can go to see what's new, research a new camera, or connect with others for tips and advice.
+Over the subsequent years I've had dozens of cameras. Before our phones took over, I would wonder the camera section of the electronics store just to see what was new. The idea for _Yay Cameras!_ is a website where cameras get "profile pages" with sample photos and videos, links to photographers who use them, suggested accessories, etc. I imagine it as a place where people interested in ~~photography~~ cameras can go to see what's new, research a new camera, or connect with others for tips and advice.
 
 Will there be interest in this? I'm not sure, but that's not really the point. I want to build it for my own interest.
 
-## "This Is My Cam!"
+## "This is my Cam!"
 
-This project has roots in a hack day app I built back in 2012 called ["This Is My Cam!"](https://roundhere.net/journal/Photo-Hack-Day-SF/). The app let Flickr users generate profile pages for their cameras using their uploaded photos. It was fun, simple, and surprisingly popular.
+This project has roots in a hack day app I built back in 2012 called _[This is my Cam!](https://roundhere.net/journal/Photo-Hack-Day-SF/)_. The app let Flickr users generate profile pages for their cameras using their uploaded photos. It was fun, simple, and surprisingly popular.
 
-Here are some screenshots of "This Is My Cam!":
+Here are some screenshots of _This is my Cam!_:
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/albums/72177720323189490" title="This is my Cam!"><img src="https://live.staticflickr.com/7258/7751325904_9927b3e2a8_z.jpg" width="640" height="443" alt="This is my Cam!"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
@@ -27,7 +27,7 @@ Unfortunately, it was a victim of its own success. The app was built with Django
 
 ## Why build this?
 
-I'm not looking to build a "big thing" at the moment, but I want to put something out publicly that will give me a place to play with new tech. I'm constantly building little projects to scratch itches, but they rarely go further than satisfying my curiocity of the technology to justify a "product" or even a blog post. This is my cam is too big, I'm not really interested in having auth, user management, permissions, and everything that comes with an app with users. For whatever reason I do _really_ want Yay Cameras (and This Is My Cam) to exist (I've help on to the domains for over a decade...), so I'm going to build something and see if it's worth maintaining.
+I'm not looking to build a "big thing" at the moment, but I want to put something out publicly that will give me a place to play with new tech. I'm constantly building little projects to scratch itches, but they rarely go further than satisfying my curiocity of the technology to justify a "product" or even a blog post. _This is my Cam!_ is too big, I'm not really interested in having auth, user management, permissions, and everything that comes with an app with users. For whatever reason I do _really_ want _Yay Cameras!_ (and _This is my Cam!_) to exist (I've help on to the domains for over a decade...), so I'm going to build something and see if it's worth maintaining.
 
 ### "MVP"
 
@@ -36,7 +36,7 @@ I'm not looking to build a "big thing" at the moment, but I want to put somethin
    - A database of cameras with key details and example photos.
 
 2. **Visual Design**:
-   - Borrowing from the playful style of "This Is My Cam!" circa 2012.
+   - Borrowing from the playful style of _This is my Cam!_ circa 2012.
 
 3. **Tech Stack**:
    - Built with Next.js, hosted serverlessly on AWS using SST and DynamoDB.
