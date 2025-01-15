@@ -1,5 +1,3 @@
-
-
 ---
 layout: post
 title: Building Something: Yay Cameras!
@@ -17,21 +15,18 @@ Over the subsequent years I've had dozens of cameras. Before our phones took ove
 
 Will there be interest in this? I'm not sure, but that's not really the point. I want to build it for my own interest.
 
----
-
 ## "This Is My Cam!"
 
 This project has roots in a hack day app I built back in 2012 called ["This Is My Cam!"](https://roundhere.net/journal/Photo-Hack-Day-SF/). The app let Flickr users generate profile pages for their cameras using their uploaded photos. It was fun, simple, and surprisingly popular.
 
 Here are some screenshots of "This Is My Cam!":
 
-<iframe src="https://www.flickr.com/photos/cjmartin/7751237914/in/photostream/embed" width="500" height="375" frameborder="0" allowfullscreen></iframe>
-<iframe src="https://www.flickr.com/photos/cjmartin/7751325984/in/photostream/embed" width="500" height="375" frameborder="0" allowfullscreen></iframe>
-<iframe src="https://www.flickr.com/photos/cjmartin/7751325904/in/photostream/embed" width="500" height="375" frameborder="0" allowfullscreen></iframe>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/7751325904/in/photostream/" title="This is my Cam"><img src="https://live.staticflickr.com/7258/7751325904_9927b3e2a8_n.jpg" width="320" height="221" alt="This is my Cam"/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/7751325984/in/photostream/" title="This is my Cam"><img src="https://live.staticflickr.com/8424/7751325984_802a21e104_n.jpg" width="320" height="241" alt="This is my Cam"/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/7751237914/in/photostream/" title="This is my Cam"><img src="https://live.staticflickr.com/8422/7751237914_528c36aec3_n.jpg" width="320" height="244" alt="This is my Cam"/></a>
+<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Unfortunately, it was a victim of its own success. The app was built with Django/Python and ran on a tiny EC2 micro instance. It needed offline jobs to fetch and process Flickr photos, and the server couldn’t handle the load when ~1000 people signed up in the first few days. I wasn’t ready to scale it up (or pay for it), so it fizzled out. I've used the dream of rebuilding it to explore various technologies over the years, but I've never gotten it back out there for public consumption.
-
----
 
 ## Why build this?
 
@@ -52,8 +47,6 @@ I'm not looking to build a "big thing" at the moment, but I want to put somethin
 4. **This Week’s Goal**:
    - Get a daily process running to update the camera database.
    - Deploy a basic frontend to [yaycameras.com](http://yaycameras.com) to browse the collection.
-
----
 
 ## What’s Next
 
