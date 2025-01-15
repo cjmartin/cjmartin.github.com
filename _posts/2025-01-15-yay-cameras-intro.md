@@ -21,10 +21,7 @@ This project has roots in a hack day app I built back in 2012 called ["This Is M
 
 Here are some screenshots of "This Is My Cam!":
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/7751325904/in/photostream/" title="This is my Cam"><img src="https://live.staticflickr.com/7258/7751325904_9927b3e2a8_n.jpg" width="320" height="221" alt="This is my Cam"/></a>
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/7751325984/in/photostream/" title="This is my Cam"><img src="https://live.staticflickr.com/8424/7751325984_802a21e104_n.jpg" width="320" height="241" alt="This is my Cam"/></a>
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/7751237914/in/photostream/" title="This is my Cam"><img src="https://live.staticflickr.com/8422/7751237914_528c36aec3_n.jpg" width="320" height="244" alt="This is my Cam"/></a>
-<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/cjmartin/albums/72177720323189490" title="This is my Cam!"><img src="https://live.staticflickr.com/7258/7751325904_9927b3e2a8_z.jpg" width="640" height="480" alt="This is my Cam!"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Unfortunately, it was a victim of its own success. The app was built with Django/Python and ran on a tiny EC2 micro instance. It needed offline jobs to fetch and process Flickr photos, and the server couldn’t handle the load when ~1000 people signed up in the first few days. I wasn’t ready to scale it up (or pay for it), so it fizzled out. I've used the dream of rebuilding it to explore various technologies over the years, but I've never gotten it back out there for public consumption.
 
