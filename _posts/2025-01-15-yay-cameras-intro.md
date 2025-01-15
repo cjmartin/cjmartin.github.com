@@ -27,7 +27,7 @@ Unfortunately, it was a victim of its own success. The app was built with Django
 
 ## Why build this?
 
-I'm not looking to build a "big thing" at the moment, but I want to put something out publicly that will give me a place to play with new tech. I'm constantly building little projects to scratch itches, but they rarely go further than satisfying my curiocity of the technology to justify a "product" or even a blog post. _This is my Cam!_ is too big, I'm not really interested in having auth, user management, permissions, and everything that comes with an app with users. For whatever reason I do _really_ want _Yay Cameras!_ (and _This is my Cam!_) to exist (I've help on to the domains for over a decade...), so I'm going to build something and see if it's worth maintaining.
+I'm not looking to build a "big thing" at the moment, but I want to put something out publicly that will give me a place to play with new tech. I'm constantly building little projects to scratch itches, but they rarely go further than satisfying my curiocity of the technology to justify a "product" or even a blog post. _This is my Cam!_ is too big, I'm not really interested in having auth, user management, permissions, and everything that comes with an app with users. For whatever reason I do _really_ want _Yay Cameras!_ (and _This is my Cam!_) to exist (I've held on to the domains for over a decade...), so I'm going to build something and see if it's worth maintaining.
 
 ### "MVP"
 
