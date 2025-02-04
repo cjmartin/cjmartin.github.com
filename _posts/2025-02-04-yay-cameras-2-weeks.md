@@ -5,8 +5,6 @@ place: Alpine Meadows, CA
 time: 2:36 PM PDT
 ---
 
-# Yay Cameras Update: Two Weeks In
-
 It's been two-ish weeks since started my "Yay Cameras" project. It's been getting a couple hours of my time most days, and while the site might still look a bit rough, I'm happy with the progress I've made. If you haven't already, you can check out my initial plans for the site [here](https://roundhere.net/journal/yay-cameras-intro/).
 
 ## Backend Focus
