@@ -19,11 +19,11 @@ While the frontend might still be a work in progress, the backend is up and runn
 
 ## Just Ship It
 
-One of the key takeaways from this project is the importance of shipping imperfect things. It's easy to get stuck in perfectionism, but putting something imperfect out there, and then iterating on it is something I've been pushing myself to do. Learning in public (even though I don't really think anyone is looking). I'm also trying to develop a habit of writing something every week, and this gives me something to talk about.
+One of the key goals of project is the learning to ship imperfect things. It's easy to get stuck in perfectionism, but putting something imperfect out there and then iterating on it is something I've been pushing myself to do. Learning in public (even though I don't really think anyone is looking). I'm also trying to develop a habit of writing something every week, and this gives me something to talk about.
 
 ## Current Features
 
-Here’s a rundown of what we have so far:
+Here’s a rundown of what I have so far:
 
 - **Backend**: A script that I run manually once a day to fetch new cameras and images from Flickr, along with product information from Amazon. All this data is stored in DynamoDB/S3.
 - **Frontend**: A Next.js app with an index page that picks a random manufacturer and displays a list of cameras we’ve found. Each camera has its own page displaying an image (if available) and photos taken with that camera.
