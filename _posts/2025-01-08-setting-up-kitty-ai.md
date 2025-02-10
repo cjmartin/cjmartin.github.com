@@ -5,11 +5,11 @@ place: Incine Village, NV
 time: 9:39 AM PDT
 ---
 
-Hello Kitty!
+## Hello Kitty!
 
 I'm cheating a bit and writing/posting this a day late, but Kitty is set up! The process was super easy, although I now understand that what Dan has shared on GitHub is a very simple example of what Kitty or an AI PA can do, and not the full extent of what he is doing... which makes complete sense, as people are different, this is a personal project, and it would take a massive product team to try and make it work for everyone. (and then it would also probably suck for everyone)
 
-My first three morning questions from Kitty:
+### My first three morning questions from Kitty:
 
 ```
 "What emotions are setting the tone for your morning, and can you identify their sources?"

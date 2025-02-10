@@ -5,21 +5,21 @@ place: Alpine Meadows, CA
 time: 11:13 AM PDT
 ---
 
-# Getting Started
+## Getting Started
 
 This will have to be short, but I need to get started.
 
-## Stepping Away from Scenery
+### Stepping Away from Scenery
 
 In June 2024, I stepped away from my latest professional role as co-founder and head of engineering at [Scenery](https://scenery.video). It was a friendly parting of ways, with 5 years of work completed and a great person available to step in. I knew that I wouldn't be able to give family and the company the time and focus they each needed through the summer, and I didn't want to do both poorly.
 
 Later, while describing some issues that were concerning me, including heightened anxiety, poor sleep, and others, my wife pointed me to a few detailed descriptions of burnout. I didn't realize there were so clearly defined definitions, but yep, that was me; juggling family, startup work, and trying to find time for physical activity was proving to be too much for a bit too long.
 
-## Summer Break
+### Summer Break
 
 The summer was great. I stayed away from the computer, spent a bunch of time outside, and had a wonderful time not feeling stressed and enjoying family. Yay!
 
-## Returning to Routine
+### Returning to Routine
 
 With the start of school in August, I settled into the routine of getting the kids to school, then sitting down with at the computer for a few hours with the goal of exploring and educating myself on tech that I wasn't able to pursue while working on Scenery. I've pretty successfully done this, but haven't produced much more than a bunch of exploratory projects (and a bunch of learning on what works and what _doesn't_). I still want to roll the hundreds of hours of exploratory work into a shippable project or two, but I've found that I need to focus on structure now to give myself some accountability and track what I'm doing.
 

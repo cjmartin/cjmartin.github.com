@@ -17,13 +17,15 @@ layout: nil
   </author>
 
   {% for post in site.posts %}
-  <entry>
-    <title>{{ post.title }}</title>
-    <link href="http://roundhere.net{{ post.url }}"/>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://roundhere.net{{ post.id }}</id>
-    <content type="html">{{ post.content | xml_escape }}</content>
-  </entry>
+    {% unless post.draft %}
+    <entry>
+      <title>{{ post.title }}</title>
+      <link href="http://roundhere.net{{ post.url }}"/>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <id>http://roundhere.net{{ post.id }}</id>
+      <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endunless %}
   {% endfor %}
  
 </feed>
