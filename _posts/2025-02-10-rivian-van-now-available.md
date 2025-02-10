@@ -7,7 +7,7 @@ time: 10:30 AM PDT
 
 As of today Rivian is opening up sales of it's [commercial van](https://rivian.com/fleet) (the Amazon one) to anyone (with a business) with orders as low as a single van.
 
-I'm excited to see businesses start picking these up, I wouldn't expect to see many where I live in Truckee right away, but as I think/type this I realize that maybe that'll be proven wrong since our mountain-town gas prices make EVs a more compelling option. Too bad there isn't a 4wd version... Yet?
+I'm excited to see businesses start picking these up, I don't expect to see many where I live in Truckee right away; but as I think/type this I realize that maybe that'll be proven wrong since our mountain-town gas prices make EVs a more compelling option. Too bad there isn't a 4wd version... Yet?
 
 ### EV "Adventure Vans"?
 
