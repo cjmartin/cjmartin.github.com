@@ -3,16 +3,15 @@ layout: post
 title: The Countdown to Rivian "Adventure Vans" has Begun
 place: Truckee, CA
 time: 10:30 AM PDT
-draft: true
 ---
 
 As of today Rivian is opening up sales of it's [commercial van](https://rivian.com/fleet) (the Amazon one) to anyone (with a business) with orders as low as a single van.
 
 I'm excited to see businesses start picking these up, I wouldn't expect to see many where I live in Truckee right away, but as I think/type this I realize that maybe that'll be proven wrong since our mountain-town gas prices make EVs a more compelling option. Too bad there isn't a 4wd version... Yet?
 
-### EV "Adventure Vans"
+### EV "Adventure Vans"?
 
-But what I'm even more excited about is what the "adventure van" market will do with these. Do EV camper/adventure vans make sense? I'm not sure, I _think_ so for a large chunk of what people _actually_ use their "adventure" vans for.
+I'm even more excited about what the "adventure van" market will do with these. Do EV camper/adventure vans make sense? I'm not sure, I _think so_ for a large chunk of what people _actually_ use their "adventure" vans for, but probably not for what people _think_ they'll use their adventure vans for.
 
 My use would be 99% in trailheads/ski parking areas within 50 mi of my house, so electric would be awesome. Overlanding to Alaska, maybe not so much.
 
