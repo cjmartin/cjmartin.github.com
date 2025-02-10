@@ -16,7 +16,7 @@ layout: nil
     <email>cj@cjmart.in</email>
   </author>
 
-  {% for post in site.posts %}
+  {% for post in site.posts limit:10 %}
     {% unless post.draft %}
     <entry>
       <title>{{ post.title }}</title>
