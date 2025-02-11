@@ -29,11 +29,11 @@ Here are my notes on setting up Kitty, in case someone happens to be here wantin
 
 1. Install [kitty](https://sw.kovidgoyal.net/kitty/) terminal. _This is not required, you can run the AI PA in any terminal._
 
-While it's not mandatory to install the kitty terminal app, I'm doing it because I've never used kitty, and I want to see how it compares to the iTerm2 quake-style dropdown terminal I've been using for the last n years.
+  While it's not mandatory to install the kitty terminal app, I'm doing it because I've never used kitty, and I want to see how it compares to the iTerm2 quake-style dropdown terminal I've been using for the last n years.
 
-[kitty binary installation instructions](https://sw.kovidgoyal.net/kitty/binary/)
+  [kitty binary installation instructions](https://sw.kovidgoyal.net/kitty/binary/)
 
-Stopping myself from going down a rabbit hole of exploring kitty, I'm going to use it as-is after install and drop [this thread](https://github.com/kovidgoyal/kitty/issues/45) here to explore customizing as a replacement for iTerm later.
+  Stopping myself from going down a rabbit hole of exploring kitty, I'm going to use it as-is after install and drop [this thread](https://github.com/kovidgoyal/kitty/issues/45) here to explore customizing as a replacement for iTerm later.
 
 2. Fork and clone Dan's [Basic Kitty Journaling](https://github.com/revdancatt/basic-kitty-journaling) repo to your local machine.
 
