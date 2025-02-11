@@ -147,6 +147,11 @@ code {
 	float:left;
 }
 
+.pagination{
+	text-align: center;
+	margin: 10px 0;
+}
+
 /*------------------------------
 Comments
 ------------------------------*/
