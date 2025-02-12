@@ -11,7 +11,7 @@ Instead, I was doing dad things: attending Ski Team with my kids, helping with h
 
 That's just how it is in our family—we're more of an Olympics-watching group, and that's perfectly fine.
 
-But here's where it gets interesting...
+So, I didn't watch the game, but apparently I was destined to see one of the ads...
 
 This morning, in my groggy pre-coffee state, I was reading one of my favorite newsletters, [Garbage Day](https://www.garbageday.email/p/silicon-valley-s-delusion-machine), and chuckled at their critique of a Super Bowl ad:
 
@@ -33,5 +33,5 @@ Will I ever walk around my kitchen talking to an AI assistant? I can't say (but 
 
 I left my "professional" job to devote more time to my family. Currently, I'm exploring AI tools to improve my journaling, workflows, and time management. And yes, I'm about to jump back into searching for paid work that fits with a more balanced life. I am absolutely the target audience for this ad, and it hit the bullseye.
 
-Congratulations to the Google creative team and everyone involved in making this. Even in our hyper-critical online world, the reception seems almost universally positive (even the youtube comments!). And while Garbage Day may have rolled their eyes at it, I still had my watery-eyed morning moment.
+Congratulations to the Google creative team and everyone involved in making this. Even in our hyper-critical online world, the reception seems almost universally positive (even the youtube comments!). And while Garbage Day may have rolled their eyes at it, I thought it was beautiful. I guess I can't be smug all the time.
 
