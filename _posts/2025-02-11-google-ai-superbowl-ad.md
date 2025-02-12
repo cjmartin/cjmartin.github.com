@@ -33,5 +33,5 @@ Will I ever walk around my kitchen talking to an AI assistant? I can't say (but 
 
 I left my "professional" job to devote more time to my family. Currently, I'm exploring AI tools to improve my journaling, workflows, and time management. And yes, I'm about to jump back into searching for paid work that fits with a more balanced life. I am absolutely the target audience for this ad, and it hit the bullseye.
 
-Congratulations to the Google creative team and everyone involved in making this. Even in our hyper-critical online world, the reception has been almost universally positive. And while Garbage Day may have rolled their eyes at it, they can't take away my watery-eyed morning moment.
+Congratulations to the Google creative team and everyone involved in making this. Even in our hyper-critical online world, the reception seems almost universally positive (even the youtube comments!). And while Garbage Day may have rolled their eyes at it, I still had my watery-eyed morning moment.
 
