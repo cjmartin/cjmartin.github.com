@@ -67,6 +67,14 @@ code {
 	font-family: "inconsolata-1","inconsolata-2";
 }
 
+blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #ccc;
+  padding-left: 16px;
+  margin: 20px 0;
+}
+
 #page-content {
 	margin-top: 40px;
 }
