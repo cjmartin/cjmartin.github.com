@@ -121,6 +121,10 @@ blockquote {
 	float:right;
 }
 
+.post {
+	margin-bottom: 50px;
+}
+
 .post-title {
 	margin-bottom:0;
 }
@@ -135,6 +139,7 @@ blockquote {
 }
 
 .post-content{
+	padding-bottom: 30px;
 	border-bottom:2px dashed #CCCCCC;
 }
 
