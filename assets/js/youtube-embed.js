@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
       //     events: {
       //         "onError": function () {
       //             document.getElementById(`fallback-${videoId}`).style.display = "block";
-      //             document.getElementById(`videoContainer-${videoId}`).style.display = "none";
+      //             document.getElementById(`youtubePlayer-${videoId}`).style.display = "none";
       //         }
       //     }
       // });
       document.getElementById(`fallback-${videoId}`).style.display = "block";
-      document.getElementById(`videoContainer-${videoId}`).style.display = "none";
+      document.getElementById(`youtubePlayer-${videoId}`).style.display = "none";
   }
 
   function loadYouTubeAPI() {
