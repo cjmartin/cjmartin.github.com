@@ -1,0 +1,47 @@
+<div id="videoContainer-{{ include.id }}">
+  <div id="youtubePlayer-{{ include.id }}"></div>
+  <p id="fallback-{{ include.id }}" style="display: none;">
+      Sorry, the video couldn't load. 
+      <a href="https://www.youtube.com/watch?v={{ include.id }}" target="_blank">Watch on YouTube</a>
+  </p>
+</div>
+
+<script>
+  function onYouTubeIframeAPIReady_{{ include.id }}() {
+      let player = new YT.Player("youtubePlayer-{{ include.id }}", {
+          videoId: "{{ include.id }}",
+          events: {
+              "onError": function(event) {
+                  document.getElementById("fallback-{{ include.id }}").style.display = "block";
+                  document.getElementById("videoContainer-{{ include.id }}").style.display = "none";
+              }
+          }
+      });
+  }
+
+  function loadYouTubeAPI_{{ include.id }}() {
+      // Check if YT API is already loaded
+      if (window.YT && typeof YT.Player === "function") {
+          console.log("YouTube IFrame API already loaded.");
+          onYouTubeIframeAPIReady_{{ include.id }}();
+          return;
+      }
+
+      // Check if script is already in the document
+      if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) {
+          let script = document.createElement("script");
+          script.src = "https://www.youtube.com/iframe_api";
+          document.body.appendChild(script);
+      }
+
+      // Poll for YT API readiness
+      let checkYTReady = setInterval(() => {
+          if (window.YT && typeof YT.Player === "function") {
+              clearInterval(checkYTReady);
+              onYouTubeIframeAPIReady_{{ include.id }}();
+          }
+      }, 500);
+  }
+
+  loadYouTubeAPI_{{ include.id }}();
+</script>

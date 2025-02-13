@@ -30,7 +30,9 @@ I watched it, and damn it, my eyes started leaking. It's beautiful.
   Your browser does not support the video tag.
 </video> -->
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/-7e6g11BJc0?si=93cEn92EmboWqh8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/-7e6g11BJc0?si=93cEn92EmboWqh8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+{% include youtube.html id="-7e6g11BJc0" %}
 
 I feel seen.
 
