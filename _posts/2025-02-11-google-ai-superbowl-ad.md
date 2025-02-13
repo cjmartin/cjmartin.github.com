@@ -25,7 +25,7 @@ Then, not five minutes later, my dad texted me a link to the same commercial:
 
 I watched it, and damn it, my eyes started leaking. It's beautiful.
 
-{% include youtube.html id="-7e6g11BJc0" fallback="GoogleSuperbowlAI.mp4" width="640" height="360" %}
+{% include youtube.liquid id="-7e6g11BJc0" fallback="GoogleSuperbowlAI.mp4" width="640" height="360" %}
 
 I feel seen.
 
