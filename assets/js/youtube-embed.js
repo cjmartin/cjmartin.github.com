@@ -9,15 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function initializeYouTubePlayer(videoId) {
-      new YT.Player(`youtubePlayer-${videoId}`, {
-          videoId: videoId,
-          events: {
-              "onError": function () {
-                  document.getElementById(`fallback-${videoId}`).style.display = "block";
-                  document.getElementById(`videoContainer-${videoId}`).style.display = "none";
-              }
-          }
-      });
+      // new YT.Player(`youtubePlayer-${videoId}`, {
+      //     videoId: videoId,
+      //     events: {
+      //         "onError": function () {
+      //             document.getElementById(`fallback-${videoId}`).style.display = "block";
+      //             document.getElementById(`videoContainer-${videoId}`).style.display = "none";
+      //         }
+      //     }
+      // });
+      document.getElementById(`fallback-${videoId}`).style.display = "block";
+      document.getElementById(`videoContainer-${videoId}`).style.display = "none";
   }
 
   function loadYouTubeAPI() {

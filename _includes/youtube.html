@@ -1,9 +1,11 @@
-<div id="videoContainer-{{ include.id }}">
+<div id="videoContainer-{{ include.id }}" style="width:{{ include.width }}px; height:{{ include.height }}px;">
   <div id="youtubePlayer-{{ include.id }}" data-video-id="{{ include.id }}"></div>
-  <p id="fallback-{{ include.id }}" style="display: none;">
-      Sorry, the video couldn't load. 
-      <a href="https://www.youtube.com/watch?v={{ include.id }}" target="_blank">Watch on YouTube</a>
-  </p>
+  <div id="fallback-{{ include.id }}" style="display: none;">
+    <video width="{{ include.width }}" height="{{ include.height }}" controls>
+      <source src="{{ site.baseurl }}/assets/videos/{{ include.fallback }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 </div>
 
 <!-- Load external script (ensures it's loaded once) -->

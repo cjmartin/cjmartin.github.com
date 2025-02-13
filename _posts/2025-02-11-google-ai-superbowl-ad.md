@@ -32,7 +32,7 @@ I watched it, and damn it, my eyes started leaking. It's beautiful.
 
 <!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/-7e6g11BJc0?si=93cEn92EmboWqh8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
-{% include youtube.html id="-7e6g11BJc0" %}
+{% include youtube.html id="-7e6g11BJc0" fallback="GoogleSuperbowlAI.mp4" width="600" height="360" %}
 
 I feel seen.
 
