@@ -25,20 +25,16 @@ Then, not five minutes later, my dad texted me a link to the same commercial:
 
 I watched it, and damn it, my eyes started leaking. It's beautiful.
 
-<!-- <video width="640" height="360" controls>
-  <source src="{{ site.baseurl }}/assets/videos/GoogleSuperbowlAI.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video> -->
-
-<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/-7e6g11BJc0?si=93cEn92EmboWqh8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-
 {% include youtube.html id="-7e6g11BJc0" fallback="GoogleSuperbowlAI.mp4" width="640" height="360" %}
 
 I feel seen.
 
 Will I ever walk around my kitchen talking to an AI assistant? I can't say (but yeah, almost certainly). While I doubt it'll be Google's service, I'm firmly in the camp that believes GPT and LLMs are legitimately transformative technologies, with more useful tools being built on top of them every day.
 
-I left my "professional" job to devote more time to my family. Currently, I'm exploring AI tools to improve my journaling, workflows, and time management. And yes, I'm about to jump back into searching for paid work that fits with a more balanced life. I am absolutely the target audience for this ad, and it hit the bullseye.
+{% assign independence_post = site.posts | where: "slug", "independence-is-hard" | first %}
+{% assign kitty_post = site.posts | where: "slug", "first-day-with-ai-pa" | first %}
+
+I [left my "professional" job]({{ independence_post.url }} {{ independence_post.title }}) to devote more time to my family. Currently, [I'm exploring AI tools]({{ kitty_post.url }} {{ kitty_post.title }}) to improve my journaling, workflows, and time management. And yes, I'm about to jump back into searching for paid work that fits with a more balanced life. I am absolutely the target audience for this ad, and it hit the bullseye.
 
 Congratulations to the Google creative team and everyone involved in making this. Even in our hyper-critical online world, the reception seems almost universally positive (even the youtube comments!). And while Garbage Day may have rolled their eyes at it, I thought it was beautiful. I guess I can't be smug all the time.
 
