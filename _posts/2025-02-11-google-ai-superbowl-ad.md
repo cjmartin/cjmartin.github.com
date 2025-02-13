@@ -34,7 +34,7 @@ Will I ever walk around my kitchen talking to an AI assistant? I can't say (but 
 {% assign independence_post = site.posts | where: "slug", "independence-is-hard" | first %}
 {% assign kitty_post = site.posts | where: "slug", "first-day-with-ai-pa" | first %}
 
-I [left my "professional" job]({{ independence_post.url }} {{ independence_post.title }}) to devote more time to my family. Currently, [I'm exploring AI tools]({{ kitty_post.url }} {{ kitty_post.title }}) to improve my journaling, workflows, and time management. And yes, I'm about to jump back into searching for paid work that fits with a more balanced life. I am absolutely the target audience for this ad, and it hit the bullseye.
+I [left my "professional" job]({{ independence_post.url }} "{{ independence_post.title }}") to devote more time to my family. Currently, [I'm exploring AI tools]({{ kitty_post.url }} "{{ kitty_post.title }}") to improve my journaling, workflows, and time management. And yes, I'm about to jump back into searching for paid work that fits with a more balanced life. I am absolutely the target audience for this ad, and it hit the bullseye.
 
 Congratulations to the Google creative team and everyone involved in making this. Even in our hyper-critical online world, the reception seems almost universally positive (even the youtube comments!). And while Garbage Day may have rolled their eyes at it, I thought it was beautiful. I guess I can't be smug all the time.
 
