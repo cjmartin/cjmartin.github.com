@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   function onYouTubeIframeAPIReady() {
+    window.YT.ready(function() {
       document.querySelectorAll("[id^='youtubePlayer-']").forEach(playerDiv => {
           const videoId = playerDiv.getAttribute("data-video-id");
           initializeYouTubePlayer(videoId);
       });
+    });
   }
 
   function initializeYouTubePlayer(videoId) {
