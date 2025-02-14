@@ -4,7 +4,6 @@ title: SF2000 Updates and Improvements
 place: Truckee, CA
 time: 11:47 PM PDT
 tags: ['notetoself', 'howto', 'sf2000']
-draft: true
 ---
 
 Today was a snow day, that means my kids got much more video game time than usual, and in our house video game time means "retro" games powered by the amazing ~$20 SF2000 (Super Mario Brothers 3 is still the pinnicle of game design, and I will die on this hill).
@@ -14,10 +13,10 @@ The SF2000 is a marvel, and being able to hook it up to the TV and play multipla
 I'm sharing what I did here, because there is *a lot* of information to be found about the SF2000, enough that it can be overwhelming if you're just looking to make it better without watching a bunch of youtube videos and reading way more than you need to get the job done. I've now done both of those for you, and can share the basics.
 
 Goals:
-✅ Update/fix the bootloader.
-✅ Install Multicore firmware, as it has the fixes and improvements we're looking for and it's based on the official firmware.
-✅ Fix screen tearing (seems that multicore has software fixes).
-☐ [Change default games for each system](https://vonmillhausen.github.io/sf2000/#how-do-i-change-the-four-shortcutsgames-listed-on-each-systems-main-menu-page), make all the good Marios the defaults, maybe Sonic, Zelda, try to remember the best games for each system.
+- ✅ Update/fix the bootloader.
+- ✅ Install Multicore firmware, as it has the fixes and improvements we're looking for and it's based on the official firmware.
+- ✅ Fix screen tearing (seems that multicore has software fixes).
+- ☐ [Change default games for each system](https://vonmillhausen.github.io/sf2000/#how-do-i-change-the-four-shortcutsgames-listed-on-each-systems-main-menu-page), make all the good Marios the defaults, maybe Sonic, Zelda, try to remember the best games for each system.
   I didn't get this one done, but multicore has slightly better defaults than the stock firmware, so it's not urgent anymore.
 
 This guy has written many, many more words about the SF2000 than I ever will. If you want to get deep, go check it out: [https://vonmillhausen.github.io/sf2000/](https://vonmillhausen.github.io/sf2000/)
@@ -48,26 +47,25 @@ It's tough to track down the best sources of information about this. Apparently 
 
 Firmware installation steps:
 
-14. Make sure you've fixed the bootloader, above.
-15. Download the 10GB zip file, found [here](https://archive.org/details/purple-neo-multicore-0.10-23365b-6-2024-07-11-b).
-16. Either use a new Fat32 formatted microSD card, or back up and format the stock microSD card as Fat32.
-	I'm using the card that came with the SF2000, so I'll create a .zip of the original contents of the card in case I need to restore later. Instructions for MacOS:
-	1. Insert the microSD card and determine it's name. Mine is called 'NO NAME'.
-		```sh
-		% ls /Volumes
-		Macintosh HD	NO NAME
-		```
-	2. Create a zip, I'll store it on the desktop for now.
-	    ```sh
-		% zip -r ~/Desktop/SF2000_backup.zip /Volumes/NO\ NAME/
-		```
-	3. Use Disk Utility to erase (format) the microSD card, and choose MS-DOS (FAT) as the format. You now have a clean, FAT32 formatted microSD card.
-17. Extract the contents of the 10GB zip you downloaded earlier to the microSD card.
+1. Make sure you've fixed the bootloader, above.
+2. Download the 10GB zip file, found [here](https://archive.org/details/purple-neo-multicore-0.10-23365b-6-2024-07-11-b).
+3. Either use a new Fat32 formatted microSD card, or back up and format the stock microSD card as Fat32.
+4. Insert the microSD card and determine it's name. Mine is called 'NO NAME'.
+	```sh
+	% ls /Volumes
+	Macintosh HD	NO NAME
+	```
+5. (Optional) Create a zip of the original contents, I'll store it on the desktop for now.
+  ```sh
+	% zip -r ~/Desktop/SF2000_backup.zip /Volumes/NO\ NAME/
+	```
+6. Use Disk Utility to erase (format) the microSD card, and choose MS-DOS (FAT) as the format.
+7. Extract the contents of the 10GB zip you downloaded earlier to the microSD card.
 	```sh
 	% unzip ~/Downloads/PurpleNeo_Multicore_0.10_23365b6_2024-07-11_b.zip -d /Volumes/NO\ NAME/
 	```
-18. Do the screen tearing fix below.
-19. Eject the microSD card, put it back in the SF2000, and boot.
+8. Do the screen tearing fix below.
+9. Eject the microSD card, put it back in the SF2000, and boot.
 
 ## Improve Screen Tearing
 
