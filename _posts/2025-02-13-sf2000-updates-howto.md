@@ -6,7 +6,7 @@ time: 11:47 PM PDT
 tags: ['notetoself', 'howto', 'sf2000']
 ---
 
-Today was a snow day, that means my kids got much more video game time than usual, and in our house video game time means "retro" games powered by the amazing ~$20 SF2000 (Super Mario Brothers 3 is still the pinnicle of game design, and I will die on this hill).
+Today was a snow day, that means my kids got much more video game time than usual, and in our house video game time means "retro" games powered by the amazing [~$20 SF2000](https://www.aliexpress.us/w/wholesale-sf2000.html) (Super Mario Brothers 3 is still the pinnicle of game design, and I will die on this hill).
 
 The SF2000 is a marvel, and being able to hook it up to the TV and play multiplayer NES and SNES games with my kids makes me *so* happy. But the screen tearing and other miscellaneous issues that it comes with out of the box motivated me to do some research and updating today.
 
