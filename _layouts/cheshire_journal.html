@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="cheshire-journal-entry">
+  <header>
+    <h1>Cheshire Journal: {{ page.date | date: "%A, %B %d, %Y" }}</h1>
+    <div class="entry-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    </div>
+  </header>
+
+  <div class="entry-content">
+    {{ content }}
+  </div>
+
+  <footer>
+    <div class="entry-navigation">
+      {% assign journal_entries = site.cheshire | where: "categories", "journal" | sort: 'date' %}
+      
+      {% for entry in journal_entries %}
+        {% if entry.date == page.date %}
+          {% assign current_index = forloop.index0 %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if current_index > 0 %}
+        {% assign prev_index = current_index | minus: 1 %}
+        {% assign prev_entry = journal_entries[prev_index] %}
+        <a class="prev-entry" href="{{ prev_entry.url }}">&larr; {{ prev_entry.date | date: "%B %d, %Y" }}</a>
+      {% endif %}
+      
+      {% assign next_index = current_index | plus: 1 %}
+      {% if next_index < journal_entries.size %}
+        {% assign next_entry = journal_entries[next_index] %}
+        <a class="next-entry" href="{{ next_entry.url }}">{{ next_entry.date | date: "%B %d, %Y" }} &rarr;</a>
+      {% endif %}
+    </div>
+    
+    <p>
+      <a href="/cheshire/journal/{{ page.date | date: '%Y' }}/{{ page.date | date: '%m' }}/">&larr; Back to {{ page.date | date: '%B %Y' }}</a>
+    </p>
+  </footer>
+</article>

@@ -1,6 +1,21 @@
 plugins:
   - jekyll-paginate
+
 paginate: 10
 paginate_path: /journal/page:num/
 permalink: /journal/:title/
+
 pygments: true
+
+collections:
+  cheshire:
+    output: true
+    permalink: /cheshire/:categories/:year/:month/:day/
+
+defaults:
+  - scope:
+      path: "_cheshire/journal"
+      type: "cheshire"
+    values:
+      layout: "cheshire_journal"
+      categories: ["journal"]
