@@ -133,7 +133,7 @@ blockquote {
 	color:#333333;
 }
 
-.meta{
+.meta, .post-meta{
 	margin-top:0.2em;
 	color:#CCCCCC;
 }
@@ -160,9 +160,31 @@ blockquote {
 	float:left;
 }
 
+footer {
+	margin: 20px 0;
+	font-size:13px;
+}
+
 .pagination{
 	text-align: center;
 	margin: 10px 0;
+}
+
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-entry, .next-entry {
+  padding: 0 10px;
+}
+
+.prev-entry {
+  margin-right: auto;
+}
+
+.next-entry {
+  margin-left: auto;
 }
 
 /*------------------------------

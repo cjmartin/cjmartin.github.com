@@ -1,20 +1,20 @@
 ---
 layout: default
 ---
-<article class="cheshire-journal-entry">
+<article class="post cheshire-journal-entry">
   <header>
-    <h1>Cheshire Journal: {{ page.date | date: "%A, %B %d, %Y" }}</h1>
-    <div class="entry-meta">
+    <h1 class="post-title">Cheshire Journal</h1>
+    <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    </div>
+    </p>
   </header>
 
-  <div class="entry-content">
+  <div class="post-content text">
     {{ content }}
   </div>
 
   <footer>
-    <div class="entry-navigation">
+    <div class="post-navigation">
       {% assign journal_entries = site.cheshire | where: "categories", "journal" | sort: 'date' %}
       
       {% for entry in journal_entries %}
@@ -37,8 +37,9 @@ layout: default
       {% endif %}
     </div>
     
-    <p>
+    <!-- <p>
       <a href="/cheshire/journal/{{ page.date | date: '%Y' }}/{{ page.date | date: '%m' }}/">&larr; Back to {{ page.date | date: '%B %Y' }}</a>
-    </p>
+    </p> -->
+    <p>&copy;2025 Chris James Martin (with help from Cheshire)</p>
   </footer>
 </article>

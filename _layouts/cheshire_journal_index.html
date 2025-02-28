@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<div class="cheshire-journal-index">
+  <article class="post cheshire-journal-entry">
+    <header>
+      <h1 class="post-title">
+        <a href="{{ page.latest_entry.url }}">{{ page.title }}</a>
+      </h1>
+      <p class="post-meta">
+        <time datetime="{{ page.latest_entry.date | date_to_xmlschema }}">{{ page.latest_entry.date | date: "%B %d, %Y" }}</time>
+      </p>
+    </header>
+    <div class="post-content text">
+      {{ page.latest_entry.content | markdownify }}
+    </div>
+  </article>
+  
+  {% if page.current_month.has_entries %}
+  <div class="current-month-entries">
+    <h2>More from {{ page.current_month.name }} {{ page.current_month.year }}</h2>
+    <ul class="entry-list">
+      {% for entry in page.current_month.entries %}
+        <li>
+          <a href="{{ entry.url }}">
+            {{ entry.weekday }} {{ entry.formatted_day }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <p><a href="/cheshire/journal/{{ page.current_month.year }}/{{ page.current_month.month_num }}/">
+      View all {{ page.current_month.name }} entries &rarr;
+    </a></p>
+  </div>
+  {% endif %}
+  
+  {% if page.previous_month.has_entries %}
+  <div class="previous-month-entries">
+    <h2>{{ page.previous_month.name }} {{ page.previous_month.year }}</h2>
+    <ul class="entry-list">
+      {% for entry in page.previous_month.entries %}
+        <li>
+          <a href="{{ entry.url }}">
+            {{ entry.weekday }} {{ entry.formatted_day }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <p><a href="/cheshire/journal/{{ page.previous_month.year }}/{{ page.previous_month.month_num }}/">
+      View all {{ page.previous_month.name }} entries &rarr;
+    </a></p>
+  </div>
+  {% endif %}
+  
+  <div class="archive-links">
+    <h2>Journal Archives</h2>
+    <ul class="year-list">
+      {% for year in page.years %}
+        <li><a href="/cheshire/journal/{{ year }}/">{{ year }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy;2025 Chris James Martin (with help from Cheshire)</p>
+  </footer>
+</div>

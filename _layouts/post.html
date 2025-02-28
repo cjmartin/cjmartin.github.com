@@ -2,13 +2,19 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date_to_string }}{% if page.place %} &#8212; {{ page.place }}{% endif %}</p>
+<article class="post">
+  <header>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      {{ page.date | date_to_string }}{% if page.place %} &#8212; {{ page.place }}{% endif %}
+    </p>
+  </header>
   
   <div class="post-content text">
     {{ content }}
-  </div>  
-</div>
+  </div>
 
-<p>&copy;2025 Chris James Martin</p>
+  <footer>
+    <p>&copy;2025 Chris James Martin</p>
+  </footer>
+</article>

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="cheshire-month-index">
+  <h1>{{ page.title }}</h1>
+  
+  <div class="month-entries">    
+    <ul class="entry-list">
+      {% for entry in page.month_data.entries %}
+        <li>
+          <a href="{{ entry.url }}">
+            {{ entry.weekday }} {{ entry.formatted_day }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <p><a href="/cheshire/journal/{{ page.month_data.year }}/">&larr; Back to {{ page.month_data.year }}</a></p>
+  </div>
+</div>

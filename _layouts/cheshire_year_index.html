@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="cheshire-year-index">
+  <h1>{{ page.title }}</h1>
+  
+  <div class="year-months">    
+    <ul class="month-list">
+      {% for month in page.year_data.months %}
+        <li>
+          <a href="/cheshire/journal/{{ page.year_data.year }}/{{ month.number }}/">
+            {{ month.name }} {{ page.year_data.year }} ({{ month.entry_count }} entries)
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <p><a href="/cheshire/journal/">&larr; Back to all years</a></p>
+  </div>
+</div>
