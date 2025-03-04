@@ -11,13 +11,11 @@ I'm cheating a bit and writing/posting this a day late, but Kitty is set up! The
 
 ### My first three morning questions from Kitty:
 
-```
-"What emotions are setting the tone for your morning, and can you identify their sources?"
+`"What emotions are setting the tone for your morning, and can you identify their sources?"`
 
-"In consideration of your physical and emotional state, what's the key thing you would like to achieve today?"
+`"In consideration of your physical and emotional state, what's the key thing you would like to achieve today?"`
 
-"As you envision your day, is there any particular activity or short break you could incorporate to recharge?"
-```
+`"As you envision your day, is there any particular activity or short break you could incorporate to recharge?"`
 
 All three are clearly inspired by but not directly pulled from the default question set, and having been run through GPT they feel much more natural than the defaults. Weird, but huge thanks to Dan for being miles ahead of me in his thoughtfulness towards what to ask to help one write useful answers.
 

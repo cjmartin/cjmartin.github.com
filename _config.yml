@@ -1,17 +1,23 @@
+# Jekyll Configuration
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
 plugins:
   - jekyll-paginate
 
+# Pagination Settings
 paginate: 10
 paginate_path: /journal/page:num/
 permalink: /journal/:title/
 
-pygments: true
-
+# Collections
 collections:
   cheshire:
     output: true
     permalink: /cheshire/:categories/:year/:month/:day/
 
+# Default Page Settings
 defaults:
   - scope:
       path: "_cheshire/journal"
@@ -19,3 +25,10 @@ defaults:
     values:
       layout: "cheshire_journal"
       categories: ["journal"]
+
+# Kramdown Settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
