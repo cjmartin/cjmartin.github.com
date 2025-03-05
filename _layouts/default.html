@@ -35,16 +35,26 @@
   </head>  
   <body>
     <div id="container">
-      <!--
-      <div id="header">
-        <h1 id="rh-dot-net">Roundhere.net</h1>
-      </div>
-      -->
       <div id="sider">
         <p class="side">
           <a href="/" id="tagline">A collection of things.</a><br/>
           <span class="sidebar-note">By <a href="http://about.me/cjmartin" title="About Chris">Chris James Martin</a></span><br/>
         </p>
+        
+        <!-- Mobile Navigation Toggle -->
+        <button id="mobile-nav-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav id="main-nav" class="main-navigation">
+          <ul>
+            <li><a href="/journal/">Journal</a></li>
+            <li><a href="/cheshire/journal/">Cheshire AI</a></li>
+          </ul>
+        </nav>
       </div>
       
       <div id="page" class="narrow">
@@ -54,5 +64,16 @@
       <div id="footer">
       </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.getElementById('mobile-nav-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        navToggle.addEventListener('click', function() {
+          mainNav.classList.toggle('mobile-active');
+          navToggle.classList.toggle('active');
+        });
+      });
+    </script>
   </body>
 </html>
