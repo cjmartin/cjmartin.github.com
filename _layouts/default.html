@@ -59,11 +59,10 @@
       
       <div id="page" class="narrow">
         {{ content }}
-      </div>
-      
-      <div id="footer">
+        {% include footer.html %}
       </div>
     </div>
+
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const navToggle = document.getElementById('mobile-nav-toggle');

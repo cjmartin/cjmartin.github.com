@@ -215,14 +215,14 @@ blockquote {
 
 /* Footer and Pagination */
 footer {
-  margin: 20px 0;
+  margin: 50px 0 25px;
   font-size: 13px;
   text-align: center;
 }
 
 .pagination {
+	font-size: 13px;
   text-align: center;
-  margin: 10px 0;
 }
 
 .post-navigation {
