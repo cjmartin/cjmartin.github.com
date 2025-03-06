@@ -113,23 +113,25 @@ blockquote {
 }
 
 #tagline {
-  text-decoration: none;
   color: var(--color-text);
 }
 
 .sidebar-note, .sidebar-note a {
   font-size: 11px;
-  text-decoration: none;
   color: var(--color-light-gray);
-}
-
-.sidebar-note a:hover {
-  color: var(--color-text);
 }
 
 /* Navigation Styles */
 .main-navigation {
   margin-top: 20px;
+}
+
+.main-navigation a {
+  color: var(--color-text);
+}
+
+.main-navigation a:hover {
+  color: var(--color-link);
 }
 
 .main-navigation ul {
@@ -142,17 +144,6 @@ blockquote {
   margin-bottom: 10px;
 }
 
-.main-navigation ul li a {
-  color: var(--color-text);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.main-navigation ul li a:hover {
-  color: var(--color-link);
-  text-decoration: none;
-}
-
 /* Mobile Navigation Styles */
 #mobile-nav-toggle {
   display: none;
@@ -160,9 +151,6 @@ blockquote {
   border: none;
   cursor: pointer;
   padding: 5px;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 #mobile-nav-toggle span {
@@ -177,7 +165,7 @@ blockquote {
 
 /* Hamburger Animation */
 #mobile-nav-toggle.active span:nth-child(1) {
-	transform: rotate(-45deg) translate(0, 10px);
+	transform: rotate(-405deg) translate(0, 10px);
 }
 
 #mobile-nav-toggle.active span:nth-child(2) {
@@ -185,7 +173,7 @@ blockquote {
 }
 
 #mobile-nav-toggle.active span:nth-child(3) {
-	transform: rotate(45deg) translate(0, -10px);
+	transform: rotate(405deg) translate(0, -10px);
 }
 
 /* Post Styles */
@@ -313,12 +301,6 @@ footer {
 
   #mobile-nav-toggle {
     display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    position: static;
-    margin-left: 10px;
   }
 
   .main-navigation {
