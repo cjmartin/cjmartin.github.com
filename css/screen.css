@@ -292,6 +292,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .side {
@@ -304,23 +305,25 @@ footer {
   }
 
   .main-navigation {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin-top: 0;
     width: 100%;
-    margin-top: 10px;
-    z-index: 10;
+    order: 3;
+    flex-basis: 100%;
   }
 
   .main-navigation.mobile-active {
-    display: block;
+    max-height: 300px;
   }
 
   .main-navigation ul {
     background-color: var(--color-background);
     border-radius: 4px;
     padding: 10px;
+    margin-top: 10px;
   }
 
   .main-navigation ul li {
