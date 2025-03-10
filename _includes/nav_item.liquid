@@ -1,0 +1,2 @@
+{% assign url_parts = page.url | split: '/' %}
+<li class="{% if url_parts[1] == include.startswith %}active{% endif %}">{% if url_parts[1] == include.startswith %}<span>You are here →</span>{% endif %}<a href={{ include.href }}>{{ include.text }}</a></li>

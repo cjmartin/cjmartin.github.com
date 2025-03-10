@@ -144,6 +144,14 @@ blockquote {
   margin-bottom: 10px;
 }
 
+.main-navigation li.active span {
+  font-style: italic;
+  font-weight: normal;
+	font-size: 11px;
+  color: var(--color-light-gray);
+  margin-right: 5px;
+}
+
 /* Mobile Navigation Styles */
 #mobile-nav-toggle {
   display: none;

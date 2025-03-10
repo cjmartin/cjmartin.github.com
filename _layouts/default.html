@@ -51,8 +51,8 @@
         <!-- Navigation Menu -->
         <nav id="main-nav" class="main-navigation">
           <ul>
-            <li><a href="/journal/">Journal</a></li>
-            <li><a href="/cheshire/journal/">Cheshire AI</a></li>
+            {% include nav_item.liquid href="/journal/" text="Journal" startswith="journal" %}
+            {% include nav_item.liquid href="/cheshire/journal/" text="Cheshire AI" startswith="cheshire" %}
           </ul>
         </nav>
       </div>
