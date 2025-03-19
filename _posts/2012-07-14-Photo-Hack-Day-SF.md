@@ -4,7 +4,6 @@ title: Photo Hack Day SF &mdash; The Plan
 place: San Francisco, CA
 time: 9:13am
 
-twitter_card: summary_large_image
 image: http://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg
 description: I love hack days. I usually go into these things with either no idea, or an idea that's been bubbling in my head and will almost certainly be too ambitious for a day of hacking. Today is the latter, this should be fun.
 ---
