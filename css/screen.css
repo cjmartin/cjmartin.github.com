@@ -9,9 +9,10 @@
   --color-background: #f8f8f8;
   
   /* Font Variables */
-  --font-primary: Verdana, Helvetica, Arial, sans-serif;
-  --font-heading: museo-1, museo-2, Verdana, Helvetica, Arial, sans-serif;
-  --font-text: Palatino, Georgia, 'Times New Roman', serif;
+  --font-heading: museo-1, museo-2, sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Palatino, 'Cormorant', serif;
+  --font-mono: 'JetBrains Mono', monospace;
   
   /* Spacing Variables */
   --spacing-standard: 1em;
@@ -32,7 +33,7 @@ html, body {
 
 body {
   color: var(--color-text);
-  font-family: var(--font-primary);
+  font-family: var(--font-sans);
   font-size: 16px;
 }
 
@@ -88,7 +89,7 @@ blockquote {
 }
 
 .text {
-  font-family: var(--font-text);
+  font-family: var(--font-serif);
   line-height: 1.4em;
 }
 
