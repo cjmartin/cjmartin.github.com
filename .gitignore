@@ -1,64 +1,36 @@
-# Built site
-_site
+# Jekyll site
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
 
-#Old posts, to be updated/posted based on merit.
+# Ruby
+*.gem
 
-#_posts/2005-08-30-intro-to-podcasts.markdown
-_posts/2005-08-30-michaels-podcast-2.markdown
-_posts/2005-08-30-purpose.markdown
-_posts/2005-09-08-have-you-got-podcast-skills.markdown
-_posts/2005-09-09-who-is-john-galt.markdown
-_posts/2005-09-14-east-clayton-podguide.markdown
-_posts/2005-09-14-mms-wiki-and-delicious-bookmarks.markdown
-_posts/2005-09-16-6620-video-success.markdown
-_posts/2005-09-22-clatecam-to-be-archcam.markdown
-_posts/2005-09-28-3g-compatible-wireless-internet-cam.markdown
-_posts/2005-09-28-streaming-rant.markdown
-_posts/2005-09-29-streaming-is-a-go.markdown
-_posts/2005-09-30-everyone-hates-jimbo.markdown
-_posts/2005-09-30-this-is-cool-free-cellphones-to-connect-to-campus-network.markdown
-_posts/2005-10-07-playstation-portable-solution.markdown
-_posts/2005-10-12-little-big-screen.markdown
-_posts/2005-10-18-updates-and-too-cool-for-ie.markdown
-_posts/2005-10-19-lbc-proposal.markdown
-_posts/2005-10-20-music-video-filmed-with-cellphones-4.markdown
-_posts/2005-10-20-new-how-to-capture-screenshots-on-a-nokia-series-60.markdown
-_posts/2005-10-20-old-work.markdown
-_posts/2005-10-24-streaming-server-throwdown.markdown
-_posts/2005-10-26-idea.markdown
-_posts/2005-10-26-streaming-video-to-cellphones.markdown
-_posts/2005-10-27-34-person-video-chat-without-a-g5.markdown
-_posts/2005-11-01-geo-goodness-with-plazes.markdown
-_posts/2005-11-02-first-look-at-the-nokia-n90.markdown
-_posts/2005-11-03-moving-forward-and-ultimately-wrapping-up.markdown
-_posts/2005-11-08-arch-cam-rollin-2.markdown
-_posts/2005-11-14-ipod-uga-bus-map.markdown
-_posts/2005-11-18-sony-loves-new-media-sortof-finally.markdown
-_posts/2005-11-22-microsoft-says-use-another-browser.markdown
-_posts/2005-11-30-resources-for-the-slam-videos.markdown
-_posts/2005-12-11-changing-your-darwin-quicktime-streaming-server-password.markdown
-_posts/2006-02-15-archcam-in-the-news.markdown
-_posts/2006-03-29-cool-visualizations-in-mythmusic.markdown
-#_posts/2006-03-30-unofficial-flickr-badge.markdown
-_posts/2006-04-10-voiplandline-calls-with-jajah.markdown
-_posts/2006-05-02-new-mac-commercials-theyre-funny.markdown
-_posts/2006-07-11-isight-fun.markdown
-_posts/2006-09-11-remembrance.markdown
-_posts/2006-09-15-live-on-macbook.markdown
-_posts/2006-10-19-tangerine.markdown
-_posts/2006-10-26-electronic-voting-machines.markdown
-_posts/2006-10-31-and-so-it-begins.markdown
-_posts/2006-11-30-download-flash-or-any-other-video-on-osx-with-curl.markdown
-_posts/2007-01-17-joost-beta.markdown
-_posts/2007-01-30-easy-windows-vista-use-a-mac.markdown
-_posts/2007-02-07-iphone-skin-for-megafon-softphone.markdown
-_posts/2007-03-26-nokia-n76-symbian-with-style.markdown
-_posts/2007-03-26-nokia-n95-x-lite-universal.markdown
-_posts/2007-03-28-forum-nokia-wiki.markdown
-_posts/2007-04-05-css-naked-day-2007.markdown
-_posts/2007-04-19-eric-schmidts-thoughts-on-the-mobile-space.markdown
-_posts/2007-04-19-flash-lite-s60-python-with-flyer.markdown
-_posts/2007-07-10-my-personal-triptracker.markdown
-_posts/2007-07-11-n95-firmware-v12-helps-gps-not-suck-video.markdown
+# Logs
+*.log
 
-*.DS_Store
+# Environment
+.env
+.env.*
+
+# IDE and Editor folders
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Claude Code
+CLAUDE.md
