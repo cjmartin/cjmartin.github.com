@@ -34,7 +34,7 @@ html, body {
 body {
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -91,6 +91,7 @@ blockquote {
 
 .text {
   font-family: var(--font-serif);
+  font-size: 20px;
   line-height: 1.4em;
 }
 
@@ -111,7 +112,6 @@ blockquote {
   width: 100%;
   text-align: left;
   padding: 15px 0;
-  font-size: 16px;
 }
 
 #tagline {
@@ -201,6 +201,7 @@ blockquote {
 
 .meta, .post-meta {
   margin-top: 0.2em;
+  font-size: 14px;
   color: var(--color-light-gray);
 }
 
@@ -289,13 +290,17 @@ footer {
 @media screen and (max-width: 767px) {
   /* Smaller screens */
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   h1 { font-size: 22px; }
   h2 { font-size: 20px; }
   h3 { font-size: 18px; }
   h4 { font-size: 16px; }
+
+  .text {
+    font-size: 16px;
+  }
 
   #sider {
     position: relative;
