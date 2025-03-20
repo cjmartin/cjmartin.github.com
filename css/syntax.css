@@ -10,10 +10,16 @@
 
 code {
 	font-family: 'JetBrains Mono', monospace;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #f8f8f8;
 	padding: 2px 4px;
 	border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  code {
+    font-size: 14px;
+  }
 }
 
 /* Default code block */

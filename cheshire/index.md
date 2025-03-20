@@ -20,7 +20,7 @@ Cheshire follows a structured daily workflow:
 2. **Daily Suggestions:** Based on my responses, it generates personalized suggestions
 3. **To-Do List:** It helps me organize my tasks for the day
 4. **Evening Reflection:** A second set of questions prompts me to reflect on my day
-5. **Journal Entry:** Using my morning and evening responses, plus context from previous days, Cheshire generates a comprehensive daily journal entry
+5. **Journal Entry:** Using my morning and evening responses, plus context from previous days, Cheshire generates a daily journal entry
 
 I typically journal on weekdays, occasionally missing weekend entries when I'm away from my computer.
 

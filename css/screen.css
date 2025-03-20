@@ -34,7 +34,8 @@ html, body {
 body {
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 /* Typography */
@@ -56,10 +57,10 @@ h1, h2, h3, h4 {
   margin: var(--spacing-standard) 0;
 }
 
-h1 { font-size: 22px; }
-h2 { font-size: 20px; }
-h3 { font-size: 18px; }
-h4 { font-size: 16px; }
+h1 { font-size: 26px; }
+h2 { font-size: 24px; }
+h3 { font-size: 22px; }
+h4 { font-size: 20px; }
 
 p, ul, ol {
   margin: var(--spacing-standard) 0;
@@ -96,7 +97,7 @@ blockquote {
 /* Layout */
 #container {
   width: 100%;
-  max-width: 960px;
+  max-width: 1080px;
   margin: 40px auto 0;
   padding: 0 15px;
 }
@@ -110,7 +111,7 @@ blockquote {
   width: 100%;
   text-align: left;
   padding: 15px 0;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 #tagline {
@@ -118,7 +119,7 @@ blockquote {
 }
 
 .sidebar-note, .sidebar-note a {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--color-light-gray);
 }
 
@@ -225,12 +226,12 @@ blockquote {
 /* Footer and Pagination */
 footer {
   margin: 50px 0 25px;
-  font-size: 13px;
+  font-size: 14px;
   text-align: center;
 }
 
 .pagination {
-	font-size: 13px;
+	font-size: 14px;
   text-align: center;
 }
 
@@ -274,13 +275,13 @@ footer {
 
   #sider {
     position: fixed;
-    width: 280px;
+    width: 250px;
     float: left;
     text-align: right;
   }
 
   #page {
-    width: calc(100% - 320px);
+    width: calc(100% - 280px);
     float: right;
   }
 }
@@ -288,13 +289,13 @@ footer {
 @media screen and (max-width: 767px) {
   /* Smaller screens */
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  h1 { font-size: 20px; }
-  h2 { font-size: 18px; }
-  h3 { font-size: 16px; }
-  h4 { font-size: 14px; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 20px; }
+  h3 { font-size: 18px; }
+  h4 { font-size: 16px; }
 
   #sider {
     position: relative;
