@@ -1,3 +1,8 @@
+title: Roundhere.net by Chris Martin
+description: A collection of things, by Chris James Martin
+author: Chris James Martin
+url: "https://roundhere.net"
+
 # Jekyll Configuration
 markdown: kramdown
 highlighter: rouge
@@ -5,6 +10,7 @@ highlighter: rouge
 # Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-feed
 
 # Pagination Settings
 paginate: 10
