@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filed Under&#58; I can&rsquo;t believe I live here.
+title: "Filed Under: I can't believe I live here."
 place: San Francisco, CA
 time: 10:10am
 ---

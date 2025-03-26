@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serverless Auth&#58; OpenAuth on AWS with SST
+title: 'Serverless Auth: OpenAuth on AWS with SST'
 place: Truckee, CA
 time: 11:34 AM PDT
 ---

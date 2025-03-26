@@ -3,6 +3,10 @@ layout: post
 title: I Skipped the Super Bowl, but This Ad Was Made for Me
 place: Truckee, CA
 time: 6:13 PM PDT
+
+video: https://www.youtube.com/embed/-7e6g11BJc0
+video_height: 720
+video_width: 1280
 ---
 
 I didn't watch the Super Bowl this year. I had absolutely no connection to it and no preference for either team. While I generally enjoy football (college football, specifically) and spending time with friends—and yes, the commercials and halftime show are usually worth watching, if only for the water cooler conversations—I was elsewhere.
@@ -25,7 +29,7 @@ Then, not five minutes later, my dad texted me a link to the same commercial:
 
 I watched it, and damn it, my eyes started leaking. It's beautiful.
 
-{% include youtube.liquid id="-7e6g11BJc0" fallback="GoogleSuperbowlAI.mp4" width="640" height="360" %}
+{% include youtube.liquid id="-7e6g11BJc0" fallback="GoogleSuperbowlAI.mp4" width="800" height="450" %}
 
 I feel seen.
 

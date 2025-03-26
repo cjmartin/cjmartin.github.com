@@ -1,12 +1,19 @@
 ---
 layout: post
-title: Things I Think are Great&#58; "Context Window" by Matt Webb
+title: 'Things I Think are Great: "Context Window" by Matt Webb'
 place: Alpine Meadows, CA
 time: 2:44 PM PDT
 draft: true
 
-tags: ['talks', 'ai']
-categories: ['titag']
+tags: ['talks', 'ai', 'claude', 'code', 'development']
+categories: ['links', 'titag']
+
+video: https://www.youtube.com/embed/vDP24ARdGDA
+video_height: 720
+video_width: 1280
+
+link: https://www.youtube.com/watch?v=vDP24ARdGDA
+via: https://bsky.app/profile/lectures.bsky.social/post/3ljsjf64els2n
 ---
 
 This post is going to do some heavy lifting.

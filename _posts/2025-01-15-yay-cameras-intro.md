@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Something&#58; Yay Cameras!
+title: 'Building Something: Yay Cameras!'
 place: Olympic Valley, CA
 time: 10:28 AM PDT
 ---

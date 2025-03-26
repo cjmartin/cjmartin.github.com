@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Photo Hack Day SF &mdash; The Plan
+title: Photo Hack Day SF — The Plan
 place: San Francisco, CA
 time: 9:13am
 

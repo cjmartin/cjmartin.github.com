@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Useful LLM AI&#58; First Day With an AI Assistant
+title: 'Useful LLM AI: First Day With an AI Assistant'
 place: Olympic Valley, CA
 time: 12:17 PM PDT
 ---

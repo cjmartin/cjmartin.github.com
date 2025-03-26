@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yay Cameras Update&#58; Two Weeks In
+title: 'Yay Cameras Update: Two Weeks In'
 place: Alpine Meadows, CA
 time: 2:36 PM PDT
 ---
