@@ -1,41 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    function resizeVideoContainers() {
-        document.querySelectorAll("[id^='videoContainer-']").forEach(container => {
-            const videoId = container.getAttribute("data-video-id");
-
-            const parent = container.parentElement;
-            const originalWidth = parseInt(container.style.width, 10); // Get the original width
-
-            if (parent.clientWidth < originalWidth) {
-                const setWidth = parent.clientWidth;
-                const setHeight = parent.clientWidth / (originalWidth / parseInt(container.style.height, 10));
-                // Resize the container
-                container.style.width = setWidth + "px";
-                container.style.height = setHeight + "px";
-
-                resizeYoutubePlayer(videoId, setWidth, setHeight);
-            }
-        });
-    }
-
-    async function resizeYoutubePlayer(videoId, width, height) {
-        // Resize the youtube iFrame, if loaded
-        let playerResized = false;
-        let attempts = 0;
-        const maxRetries = 5;
-        while (attempts < maxRetries && !playerResized) {
-            console.log('Attempting to resize youtube player for video', videoId);
-            const youtubePlayer = document.getElementById(`youtubePlayer-${videoId}`);
-            if (youtubePlayer && youtubePlayer instanceof HTMLIFrameElement) {
-                youtubePlayer.style.width = width + "px";
-                youtubePlayer.style.height = height + "px";
-                playerResized = true;
-            }
-            await new Promise(resolve => setTimeout(resolve, 500));
-            attempts++;
-        }
-    }
-
     function onYouTubeIframeAPIReady() {
     window.YT.ready(function() {
         document.querySelectorAll("[id^='videoContainer-']").forEach(container => {
@@ -81,5 +44,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Run on load
     loadYouTubeAPI();
-    resizeVideoContainers();
 });
