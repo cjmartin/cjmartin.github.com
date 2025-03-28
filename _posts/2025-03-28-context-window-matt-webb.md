@@ -23,7 +23,7 @@ via: https://bsky.app/profile/lectures.bsky.social/post/3ljsjf64els2n
 
 > Difficult things becoming easy is not the story here, because on the one hand, we have difficult things become easy; on the other hand, we have easy things become absolutely trivial — and that, for me, is the interesting part.
 
-{% include youtube.liquid id="vDP24ARdGDA" fallback="ContextWindowMattWebb.mp4" width="640" height="360" %}
+{% include youtube.liquid id="vDP24ARdGDA" width="640" height="360" %}
 
 I'm a few weeks late sharing this. I've been sitting on it and spending too much time thinking about how I want to share links here. I'm still thinking about it...
 
