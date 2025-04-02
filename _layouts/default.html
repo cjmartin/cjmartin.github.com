@@ -50,6 +50,7 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌛</button>
     <div id="container">
       <div id="sider">
         <picture class="sidebar-icon">
@@ -91,16 +92,6 @@
       </div>
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const navToggle = document.getElementById('mobile-nav-toggle');
-        const mainNav = document.getElementById('main-nav');
-
-        navToggle.addEventListener('click', function() {
-          mainNav.classList.toggle('mobile-active');
-          navToggle.classList.toggle('active');
-        });
-      });
-    </script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
 </html>
