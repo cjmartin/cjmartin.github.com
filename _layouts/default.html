@@ -52,6 +52,18 @@
   <body>
     <div id="container">
       <div id="sider">
+        <picture class="sidebar-icon">
+          <!-- Desktop Light Mode (Summer) -->
+          <source media="(min-width: 768px) and (prefers-color-scheme: light)" srcset="{{ '/assets/images/favicons/favicon-summer-152.png' | relative_url }}">
+          <!-- Desktop Dark Mode (Winter) -->
+          <source media="(min-width: 768px) and (prefers-color-scheme: dark)" srcset="{{ '/assets/images/favicons/favicon-winter-152.png' | relative_url }}">
+          <!-- Mobile Light Mode (Summer) -->
+          <source media="(max-width: 767px) and (prefers-color-scheme: light)" srcset="{{ '/assets/images/favicons/favicon-summer-48.png' | relative_url }}">
+          <!-- Mobile Dark Mode (Winter) -->
+          <source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="{{ '/assets/images/favicons/favicon-winter-48.png' | relative_url }}">
+          <!-- Fallback -->
+          <img src="{{ '/assets/images/favicons/favicon-winter-48.png' | relative_url }}" alt="Site logo">
+        </picture>
         <p class="side">
           <a href="/" id="tagline">A collection of things.</a><br/>
           <span class="sidebar-note">By <a href="https://www.cjmart.in" title="About Chris">Chris James Martin</a></span><br/>
