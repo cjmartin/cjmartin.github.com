@@ -38,3 +38,8 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: 'highlight'
+
+# Feed Settings
+feed:
+  icon: /assets/images/favicons/favicon-summer-64.png
+  logo: /assets/images/favicons/favicon-summer-512.png
