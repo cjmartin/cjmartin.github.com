@@ -22,6 +22,7 @@ vendor/
 *.swp
 *.swo
 *~
+.obsidian
 
 # OS specific files
 .DS_Store
