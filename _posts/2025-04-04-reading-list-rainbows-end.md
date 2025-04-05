@@ -13,7 +13,7 @@ description: >-
 link: https://amzn.to/4ljhRzP
 ---
 
-{% include link.html link="https://amzn.to/3FX8WUw" link_text='"Rainbows End" by Vernor Vinge' %}
+{% include link.html link="https://amzn.to/3FX8WUw" link_text='"Rainbows End" by Vernor Vinge' via="https://www.youtube.com/watch?v=d-H1nzWHLoI&t=33m30s" %}
 
 In the Q&A of [Blaine](https://bsky.app/profile/blaine.bsky.social)'s ATmosphereConf talk [someone made a book recommendation](https://www.youtube.com/watch?v=d-H1nzWHLoI&t=33m30s) of [*Rainbows End* by Vernor Vinge](https://amzn.to/3FX8WUw).
 

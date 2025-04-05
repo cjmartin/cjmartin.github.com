@@ -85,4 +85,4 @@ Paul is a clear communicator. He has extensive experience and I'm impressed with
 
 After listening, I am significantly more interested in learning about the AT protocol. It's great to feel excited about a _protocol_ again, and feels similar to the bygone days of REST APIs and RSS being novel new things to play with.
 
-One idea that I might throw some "vide coding" at: an RSS reader backed by ATProto, where you can follow what your Bluesky contacts are reading or listening to, as well as aggregate links shared by friends (and find new feeds) — kind of like the Breaker podcast app (RIP). Absolutely not something the world is crying out for, but it would be fun.
+One idea that I might throw some "vibe coding" at: an RSS reader backed by ATProto, where you can follow what your Bluesky contacts are reading or listening to, as well as aggregate links shared by friends (and find new feeds) — kind of like the Breaker podcast app (RIP). Absolutely not something the world is crying out for, but it would be fun.
