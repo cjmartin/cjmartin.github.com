@@ -15,7 +15,9 @@ link: https://se-radio.net/2025/01/se-radio-651-paul-frazee-on-bluesky-and-the-a
 
 {% include link.html link="https://se-radio.net/2025/01/se-radio-651-paul-frazee-on-bluesky-and-the-at-protocol/" link_text="SE Radio 651: Paul Frazee on Bluesky and the AT Protocol" %}
 
-[This Software Engineering Radio episode](https://se-radio.net/2025/01/se-radio-651-paul-frazee-on-bluesky-and-the-at-protocol/) is one of the best overviews I’ve come across so far for how the AT Protocol (Authenticated Transfer Protocol) that Bluesky is built on actually works. It's from January 2025 and features an in-depth conversation with [Paul Frazee](https://www.pfrazee.com) ([@pfrazee.com](https://bsky.app/profile/pfrazee.com)), CTO of Bluesky. I’d recommend it to anyone curious about decentralized social networks, especially if you're wondering how Bluesky differs from protocols like ActivityPub (used by Mastodon).
+[This Software Engineering Radio episode](https://se-radio.net/2025/01/se-radio-651-paul-frazee-on-bluesky-and-the-at-protocol/) is one of the best overviews I’ve come across so far for how the AT Protocol (Authenticated Transfer Protocol) that Bluesky is built on actually works. It's from January 2025 and features an in-depth conversation with [Paul Frazee](https://www.pfrazee.com) ([@pfrazee.com](https://bsky.app/profile/pfrazee.com)), CTO of Bluesky.
+
+I’d recommend it to anyone curious about decentralized social networks, especially if you're wondering how Bluesky differs from protocols like ActivityPub (used by Mastodon).
 
 One thing I really appreciate about this podcast is the format — it’s structured and well-moderated, with thoughtful, prepared questions that keep the conversation focused. It's much more focused and clear than the more meandering tech talk formats out there.
 
@@ -37,7 +39,7 @@ Although blockchain is mentioned, it’s not a big part of the conversation. Pau
 
 - **DIDs (Decentralized Identifiers)**, based on a W3C spec — these allow users to have portable identities not tied to any single server.
 - **PDS (Personal Data Servers)**, where each user’s data lives.
-- A **relay-and-aggregation system** (inspired by search engines) that pulls in updates from across the network to power app-level features like timelines, threads, and search.
+- A **relay-and-aggregation system** that pulls in updates from across the network to power app-level features like timelines, threads, and search.
 
 This setup enables a decentralized (although still server based), yet scalable, architecture.
 
