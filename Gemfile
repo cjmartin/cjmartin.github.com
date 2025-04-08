@@ -5,7 +5,7 @@ gem "jekyll", "~> 4.2"
 
 # Plugins specified in _config.yml
 group :jekyll_plugins do
-  gem "jekyll-paginate", "~> 1.1"
+  gem "jekyll-paginate-v2"
   gem "jekyll-feed", github: "jekyll/jekyll-feed"
 end
 
