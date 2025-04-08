@@ -12,6 +12,8 @@
   --color-aside-background: rgba(240, 248, 255, 0.5);
   --color-prompt-background: rgba(247, 245, 235, 0.7);
   --color-prompt-border: #E6DFC8;
+  --color-tooltip-background: #f0f7ff;
+  --color-tooltip-border: #a0c8ff;
   
   /* Font Variables */
   --font-heading: museo-1, museo-2, sans-serif;
@@ -40,6 +42,8 @@
     --color-code-background: rgba(20, 30, 40, 0.6);
     --color-prompt-background: rgba(35, 35, 40, 0.6);
     --color-prompt-border: #3a3a45;
+    --color-tooltip-background: #1e3450;
+    --color-tooltip-border: #345980;
   }
   
   body {
@@ -322,6 +326,65 @@ aside code {
 
 .alignleft {
   float: left;
+}
+
+/* Hover Notes */
+span[data-tooltip], span[data-note] {
+  position: relative;
+  cursor: help;
+  color: var(--color-link);
+}
+
+span[data-tooltip]::after, span[data-note]::after {
+  font-size: 0.7em;
+  vertical-align: super;
+  margin-left: 2px;
+  opacity: 0.7;
+}
+
+span[data-tooltip]::after {
+  content: "ℹ";
+}
+
+span[data-note]::after {
+  content: "*";
+}
+
+span[data-tooltip]::before, span[data-note]::before {
+  position: absolute;
+  left: 0;
+  bottom: 125%;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: var(--color-tooltip-background);
+  border: 1px solid var(--color-tooltip-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  color: var(--color-text);
+  z-index: 10;
+  white-space: normal;
+  line-height: 1.4;
+  
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+span[data-tooltip]::before {
+  content: attr(data-tooltip);
+}
+
+span[data-note]::before {
+  content: attr(data-note);
+}
+
+/* Show tooltip on hover */
+span[data-tooltip]:hover::before, span[data-note]:hover::before {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Footer and Pagination */
