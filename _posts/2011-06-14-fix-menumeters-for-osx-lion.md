@@ -3,6 +3,9 @@ layout: post
 title: Fix MenuMeters for OSX Lion
 place: San Francisco, CA
 time: 6:46pm
+
+categories: ['til']
+
 redirect_from:
 - /journal/fix-menumeters-for-osx-lion/
 ---

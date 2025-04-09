@@ -3,7 +3,10 @@ layout: post
 title: SF2000 Updates and Improvements
 place: Truckee, CA
 time: 11:47 PM PDT
+
 tags: ['notetoself', 'howto', 'sf2000']
+categories: ['til']
+
 redirect_from:
 - /journal/sf2000-updates-howto/
 ---

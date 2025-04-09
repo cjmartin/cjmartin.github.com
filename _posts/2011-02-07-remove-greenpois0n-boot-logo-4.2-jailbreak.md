@@ -3,6 +3,9 @@ layout: post
 title: Remove greenpois0n Boot Logo After 4.2 Jailbreak
 place: San Francisco, CA
 time: 11:33am
+
+categories: ['til']
+
 redirect_from:
 - /journal/remove-greenpois0n-boot-logo-4.2-jailbreak/
 ---
