@@ -5,7 +5,7 @@ place: Athens, GA
 wordpress_id: 54
 wordpress_url: http://nmi.roundhere.net/2005/12/11/changing-your-darwin-quicktime-streaming-server-password/
 
-categories: ['til']
+categories: ['fieldnotes']
 
 redirect_from:
 - /journal/changing-your-darwin-quicktime-streaming-server-password/

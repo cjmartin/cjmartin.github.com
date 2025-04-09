@@ -4,7 +4,7 @@ title: 'Serverless Auth: OpenAuth on AWS with SST'
 place: Truckee, CA
 time: 11:34 AM PDT
 
-categories: ['til']
+categories: ['fieldnotes']
 
 redirect_from:
 - /journal/openauth-sst-aws/

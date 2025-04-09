@@ -4,7 +4,7 @@ title: Flickr Heatmap Tiles in Satellite Eyes
 place: San Francisco, CA
 time: 10:40pm
 
-categories: ['til']
+categories: ['fieldnotes']
 
 redirect_from:
 - /journal/flickr-heatmap-satellite-eyes/
