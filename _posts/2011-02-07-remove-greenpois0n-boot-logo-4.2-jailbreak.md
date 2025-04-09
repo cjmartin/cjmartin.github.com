@@ -1,8 +1,10 @@
---- 
+---
 layout: post
 title: Remove greenpois0n Boot Logo After 4.2 Jailbreak
 place: San Francisco, CA
 time: 11:33am
+redirect_from:
+- /journal/remove-greenpois0n-boot-logo-4.2-jailbreak/
 ---
 
 I greatly appreciate the work of the iOS hacking community; I really do. I've never used a non-jailbroken iPhone (for long), and I can't imagine upgrading to a new iOS version without a jailbreak and all the goodies I've come to rely on in my iPhone world.

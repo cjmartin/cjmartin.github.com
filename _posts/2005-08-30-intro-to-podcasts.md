@@ -1,9 +1,11 @@
---- 
+---
 layout: post
 title: Intro To PodCasts
 place: Athens, GA
 time: 4:42pm
 wordpress_id: 3
+redirect_from:
+- /journal/intro-to-podcasts/
 ---
 
 I started off this Mobile Media Adventure by cracking open my New Media "toy-box" and pulling out the shiny new [15in PowerBook](http://www.apple.com/powerbook/index15.html) and the amazing color screen [60gig iPod](http://www.apple.com/ipod/color/) to dive into this world of [podcasting](http://en.wikipedia.org/wiki/Podcast) a little deeper.

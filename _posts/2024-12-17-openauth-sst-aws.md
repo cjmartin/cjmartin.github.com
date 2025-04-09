@@ -3,6 +3,8 @@ layout: post
 title: 'Serverless Auth: OpenAuth on AWS with SST'
 place: Truckee, CA
 time: 11:34 AM PDT
+redirect_from:
+- /journal/openauth-sst-aws/
 ---
 
 I've been playing with a bunch of "serverless" solutions lately. I used [Amplify](https://aws-amplify.github.io/) to configure and bootstrap various AWS services for [Scenery](https://scenery.video) and the projects that preceeded it, and I'd say it provided equal parts convenience and frustration.

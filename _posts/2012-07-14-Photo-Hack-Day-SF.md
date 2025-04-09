@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Photo Hack Day SF — The Plan
 place: San Francisco, CA
@@ -6,6 +6,8 @@ time: 9:13am
 
 image: http://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg
 description: I love hack days. I usually go into these things with either no idea, or an idea that's been bubbling in my head and will almost certainly be too ambitious for a day of hacking. Today is the latter, this should be fun.
+redirect_from:
+- /journal/Photo-Hack-Day-SF/
 ---
 
 [![En Route to Photo Hack Day SF](http://farm8.staticflickr.com/7277/7568719478_4d4d8dcf72_z.jpg)](http://www.flickr.com/photos/cjmartin/7568719478/in/photostream)

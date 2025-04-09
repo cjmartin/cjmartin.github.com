@@ -1,9 +1,11 @@
---- 
+---
 layout: post
 title: Download Flash (or any other) Video on OSX with Curl
 place: Atlanta, GA
 wordpress_id: 78
 wordpress_url: http://cjmart.in/2006/11/30/download-flash-or-any-other-video-on-osx-with-curl/
+redirect_from:
+- /journal/download-flash-or-any-other-video-on-osx-with-curl/
 ---
 
 So say you come across a video online that is so great you would really like to save a copy locally to watch over and over again (assuming you are allowed to). For sites such as YouTube and the other majors this might not be a problem... there are numerous tools available to grab content. However, some sites don't work with the commonly available tools, or maybe you would just rather use tools that are already included in OSX, well here's how.

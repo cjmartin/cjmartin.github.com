@@ -12,6 +12,8 @@ description: >-
   Adding "My Airships" to my reading list.
 
 link: https://amzn.to/4jfE9AC
+redirect_from:
+- /journal/reading-list-my-airships/
 ---
 
 {% include link.html link="https://amzn.to/4jfE9AC" link_text='"My Airships" by Alberto Santos-Dumont' via="https://kolektiva.social/@sidereal/114291686401542039" %}

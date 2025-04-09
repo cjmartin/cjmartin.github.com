@@ -18,6 +18,8 @@ video_width: 1280
 
 link: https://www.youtube.com/watch?v=vDP24ARdGDA
 via: https://bsky.app/profile/lectures.bsky.social/post/3ljsjf64els2n
+redirect_from:
+- /journal/context-window-matt-webb/
 ---
 
 {% include link.html link="https://www.youtube.com/watch?v=vDP24ARdGDA" link_text="\"Context Window\" by Matt Webb at TH/NGS 2024" via="https://bsky.app/profile/lectures.bsky.social/post/3ljsjf64els2n" %}

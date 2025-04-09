@@ -1,7 +1,9 @@
---- 
+---
 layout: post
 title: Install X11 on OS X 10.4 Tiger Without the Install DVD
 place: Atlanta, GA
+redirect_from:
+- /journal/install-x11-on-mac-os-x-10-4-tiger-without-dvd/
 ---
 
 The other day I was at school and I needed to install [X11](http://images.apple.com/macosx/features/x11/) on my Intel Mac in order to run an [NX Client](http://www.nomachine.com/download-client-macosx.php) session into my Linux box at home.

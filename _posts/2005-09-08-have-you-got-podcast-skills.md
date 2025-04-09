@@ -1,9 +1,11 @@
---- 
+---
 layout: post
 title: Have you got Podcast Skills?
 place: Athens, GA
 time: 5:16pm
 wordpress_id: 6
+redirect_from:
+- /journal/have-you-got-podcast-skills/
 ---
 
 Been learning tons about podcasting, not only how to actually make podcasts and post them on the net so that our fans can listen, but also how important it is to have the right equipment and ideas.

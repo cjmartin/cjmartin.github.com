@@ -3,6 +3,8 @@ layout: post
 title: Working Towards Sustainable Indepence
 place: Alpine Meadows, CA
 time: 11:13 AM PDT
+redirect_from:
+- /journal/independence-is-hard/
 ---
 
 ## Getting Started

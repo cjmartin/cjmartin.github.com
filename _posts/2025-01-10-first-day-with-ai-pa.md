@@ -3,6 +3,8 @@ layout: post
 title: 'Useful LLM AI: First Day With an AI Assistant'
 place: Olympic Valley, CA
 time: 12:17 PM PDT
+redirect_from:
+- /journal/first-day-with-ai-pa/
 ---
 
 ### What am I talking about?

@@ -1,9 +1,11 @@
---- 
+---
 layout: post
 title: Who is John Galt?
 place: Athens, GA
 time: 11:24am
 wordpress_id: 7
+redirect_from:
+- /journal/who-is-john-galt/
 ---
 
 It's come to my attention that people reading all about this cool mobile media stuff might actually like to know who this "Chris Martin" person really is...

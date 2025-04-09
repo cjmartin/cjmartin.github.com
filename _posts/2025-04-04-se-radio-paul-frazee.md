@@ -12,6 +12,8 @@ description: >-
   My notes on the Software Engineering Radio Podcast with Paul Frazee.
 
 link: https://se-radio.net/2025/01/se-radio-651-paul-frazee-on-bluesky-and-the-at-protocol/
+redirect_from:
+- /journal/se-radio-paul-frazee/
 ---
 
 {% include link.html link="https://se-radio.net/2025/01/se-radio-651-paul-frazee-on-bluesky-and-the-at-protocol/" link_text="SE Radio 651: Paul Frazee on Bluesky and the AT Protocol" %}

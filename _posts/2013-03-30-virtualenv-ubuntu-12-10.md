@@ -3,6 +3,8 @@ layout: post
 title: Virtualenv with Virtualenvwrapper on Ubuntu
 place: San Francisco, CA
 time: 1:20pm
+redirect_from:
+- /journal/virtualenv-ubuntu-12-10/
 ---
 
 I'm a big fan of using virtualenv to create isolated environments for Python projects. Here's how I set everything up on Ubuntu 12.10.

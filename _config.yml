@@ -7,13 +7,25 @@ url: "https://roundhere.net"
 markdown: kramdown
 highlighter: rouge
 
-# Post Settings
-permalink: /journal/:title/
-
 # Plugins
 plugins:
   - jekyll-paginate-v2
   - jekyll-feed
+  - jekyll-redirect-from
+
+# Default Settings
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /journal/:year/:month/:slug/
+  - scope:
+      path: "_cheshire/journal"
+      type: "cheshire"
+    values:
+      layout: "cheshire_journal"
+      categories: ["journal"]
 
 # Pagination Settings
 pagination:
@@ -28,15 +40,6 @@ collections:
   cheshire:
     output: true
     permalink: /cheshire/:categories/:year/:month/:day/
-
-# Default Page Settings
-defaults:
-  - scope:
-      path: "_cheshire/journal"
-      type: "cheshire"
-    values:
-      layout: "cheshire_journal"
-      categories: ["journal"]
 
 # Kramdown Settings
 kramdown:

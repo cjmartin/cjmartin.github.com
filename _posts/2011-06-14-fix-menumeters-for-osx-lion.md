@@ -1,8 +1,10 @@
---- 
+---
 layout: post
 title: Fix MenuMeters for OSX Lion
 place: San Francisco, CA
 time: 6:46pm
+redirect_from:
+- /journal/fix-menumeters-for-osx-lion/
 ---
 
 Update: The current version of [MenuMeters (1.5)](http://www.ragingmenace.com/software/menumeters/) supports Lion. Get it [here](http://www.ragingmenace.com/software/menumeters/).

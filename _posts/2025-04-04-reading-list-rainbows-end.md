@@ -12,6 +12,8 @@ description: >-
   Adding "Rainbows End" to my reading list.
 
 link: https://amzn.to/4ljhRzP
+redirect_from:
+- /journal/reading-list-rainbows-end/
 ---
 
 {% include link.html link="https://amzn.to/3FX8WUw" link_text='"Rainbows End" by Vernor Vinge' via="https://www.youtube.com/watch?v=d-H1nzWHLoI&t=33m30s" %}

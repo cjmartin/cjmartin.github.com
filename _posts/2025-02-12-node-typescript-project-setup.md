@@ -4,6 +4,8 @@ title: Node.js with TypeScript Project Setup Guide
 place: Truckee, CA
 time: 10:33 AM PDT
 draft: true
+redirect_from:
+- /journal/node-typescript-project-setup/
 ---
 
 Every time I start up a new project I have to remember all of this, so I'm writing it down. I'll do my best to keep it up to date as things change.

@@ -3,6 +3,8 @@ layout: post
 title: Flickr Heatmap Tiles in Satellite Eyes
 place: San Francisco, CA
 time: 10:40pm
+redirect_from:
+- /journal/flickr-heatmap-satellite-eyes/
 ---
 
 I love [Satellite Eyes](http://satelliteeyes.tomtaylor.co.uk/). I've been using it for the last few years(?) to beautify my desktop with local [Stamen Watercolor Maps](http://maps.stamen.com/#watercolor/).

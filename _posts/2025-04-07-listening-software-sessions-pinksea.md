@@ -12,6 +12,8 @@ description: >-
   ATProto is a massive network, and at least for me, when I saw the initial graph, I was just very confused. I absolutely did not know what I was looking at. But let's start with the base building block… the PDS.
 
 link: https://www.softwaresessions.com/episodes/pinksea/
+redirect_from:
+- /journal/listening-software-sessions-pinksea/
 ---
 
 {% include link.html link="https://www.softwaresessions.com/episodes/pinksea/" link_text="Sorfware Sessions: Prefetcher on Building PinkSea on the AT Protocol" %}

@@ -3,6 +3,8 @@ layout: post
 title: The Countdown to Rivian "Adventure Vans" has Begun
 place: Truckee, CA
 time: 10:30 AM PDT
+redirect_from:
+- /journal/rivian-van-now-available/
 ---
 
 As of today Rivian is opening up sales of it's [commercial van](https://rivian.com/fleet) (the Amazon one) to anyone (with a business) with orders as low as a single van.

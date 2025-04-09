@@ -7,6 +7,8 @@ time: 6:13 PM PDT
 video: https://www.youtube.com/embed/-7e6g11BJc0
 video_height: 720
 video_width: 1280
+redirect_from:
+- /journal/google-ai-superbowl-ad/
 ---
 
 I didn't watch the Super Bowl this year. I had absolutely no connection to it and no preference for either team. While I generally enjoy football (college football, specifically) and spending time with friends—and yes, the commercials and halftime show are usually worth watching, if only for the water cooler conversations—I was elsewhere.

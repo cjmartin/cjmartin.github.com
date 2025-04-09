@@ -3,6 +3,8 @@ layout: post
 title: 'Building Something: Yay Cameras!'
 place: Olympic Valley, CA
 time: 10:28 AM PDT
+redirect_from:
+- /journal/yay-cameras-intro/
 ---
 
 I'm working on a new personal project from a very old idea, it's called _Yay Cameras!_, and it will be a site about... Cameras!

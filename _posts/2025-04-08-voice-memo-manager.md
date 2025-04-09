@@ -11,6 +11,8 @@ link_category: tools
 image: /assets/images/vmm.gif
 description: >-
   I built a simple voice memo tool with ChatGPT to organize and transcribe thoughts captured with the iOS/MacOS/WatchOS voice memos app. Inspired by Whisper Memos, it helps me turn scattered thoughts into something usable.
+redirect_from:
+- /journal/voice-memo-manager/
 ---
 
 I spend a lot of time in the car driving my kids to and from school and (many, many) other activities. This means that roughly half of my driving time is occupied with conversation and kid-centric audio, but the other half is great for thinking, listening to podcasts, and turning over thoughts and ideas in my head.

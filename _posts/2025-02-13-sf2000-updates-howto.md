@@ -4,6 +4,8 @@ title: SF2000 Updates and Improvements
 place: Truckee, CA
 time: 11:47 PM PDT
 tags: ['notetoself', 'howto', 'sf2000']
+redirect_from:
+- /journal/sf2000-updates-howto/
 ---
 
 Today was a snow day, that means my kids got much more video game time than usual, and in our house video game time means "retro" games powered by the amazing [~$20 SF2000](https://www.aliexpress.us/w/wholesale-sf2000.html) (Super Mario Brothers 3 is still the pinnicle of game design, and I will die on this hill).

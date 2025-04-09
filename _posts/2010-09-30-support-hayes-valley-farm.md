@@ -1,8 +1,10 @@
---- 
+---
 layout: post
 title: Support Hayes Valley Farm on Kickstarter
 place: San Francisco, CA
 time: 5:51pm
+redirect_from:
+- /journal/support-hayes-valley-farm/
 ---
 
 For the next month and a half, anyone visiting this site will see a widget on the left side of the page showing the progress of the [Hayes Valley Farm Kickstarter project](http://www.kickstarter.com/projects/hayesvalleyfarm/hayes-valley-farm-a-freeway-food-forest-and-educat) to help fund the farm in the coming year. Here's why:
