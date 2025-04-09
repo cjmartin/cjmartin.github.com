@@ -4,7 +4,7 @@ title: How To Install wkhtmltopdf PHP Bindings
 place: San Francisco, CA
 time: 11:55am
 
-categories: ['fieldnotes']
+categories: ['field-notes']
 
 redirect_from:
 - /journal/install-wkhtmltopdf-php-bindings/

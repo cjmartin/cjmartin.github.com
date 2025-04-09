@@ -5,7 +5,7 @@ place: Truckee, CA
 time: 10:33 AM PDT
 draft: true
 
-categories: ['fieldnotes']
+categories: ['field-notes']
 
 redirect_from:
 - /journal/node-typescript-project-setup/

@@ -4,7 +4,7 @@ title: Getting Started with Kitty
 place: Incine Village, NV
 time: 9:39 AM PDT
 
-categories: ['fieldnotes']
+categories: ['field-notes']
 
 redirect_from:
 - /journal/setting-up-kitty-ai/

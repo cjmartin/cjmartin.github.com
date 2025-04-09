@@ -5,7 +5,7 @@ place: Truckee, CA
 time: 4:32 PM
 
 tags: ['podcast', 'atprotocol', 'bluesky', 'development']
-categories: ['links', 'titag']
+categories: ['links', 'great-things']
 link_category: links
 
 description: >-

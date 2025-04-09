@@ -5,7 +5,7 @@ place: Truckee, CA
 time: 11:47 PM PDT
 
 tags: ['notetoself', 'howto', 'sf2000']
-categories: ['fieldnotes']
+categories: ['field-notes']
 
 redirect_from:
 - /journal/sf2000-updates-howto/

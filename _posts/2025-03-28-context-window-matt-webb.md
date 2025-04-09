@@ -5,7 +5,7 @@ place: Alpine Meadows, CA
 time: 2:30 PM PDT
 
 tags: ['talks', 'ai', 'claude', 'code', 'development']
-categories: ['links', 'titag']
+categories: ['links', 'great-things']
 link_category: links
 
 image: /assets/videos/ContextWindowMattWebb.jpg

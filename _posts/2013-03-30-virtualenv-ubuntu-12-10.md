@@ -4,7 +4,7 @@ title: Virtualenv with Virtualenvwrapper on Ubuntu
 place: San Francisco, CA
 time: 1:20pm
 
-categories: ['fieldnotes']
+categories: ['field-notes']
 
 redirect_from:
 - /journal/virtualenv-ubuntu-12-10/

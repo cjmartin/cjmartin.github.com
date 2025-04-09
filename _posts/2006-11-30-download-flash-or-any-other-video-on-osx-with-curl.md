@@ -5,7 +5,7 @@ place: Atlanta, GA
 wordpress_id: 78
 wordpress_url: http://cjmart.in/2006/11/30/download-flash-or-any-other-video-on-osx-with-curl/
 
-categories: ['fieldnotes']
+categories: ['field-notes']
 
 redirect_from:
 - /journal/download-flash-or-any-other-video-on-osx-with-curl/

@@ -3,7 +3,7 @@ layout: post
 title: Install X11 on OS X 10.4 Tiger Without the Install DVD
 place: Atlanta, GA
 
-categories: ['fieldnotes']
+categories: ['field-notes']
 
 redirect_from:
 - /journal/install-x11-on-mac-os-x-10-4-tiger-without-dvd/
