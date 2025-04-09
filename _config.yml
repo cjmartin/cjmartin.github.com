@@ -7,6 +7,9 @@ url: "https://roundhere.net"
 markdown: kramdown
 highlighter: rouge
 
+# Post Settings
+permalink: /journal/:title/
+
 # Plugins
 plugins:
   - jekyll-paginate-v2
@@ -16,7 +19,7 @@ plugins:
 pagination:
   enabled: true
   per_page: 10
-  permalink: /page/:num/
+  permalink: /page:num/
   sort_field: datetime
   sort_reverse: true
 
