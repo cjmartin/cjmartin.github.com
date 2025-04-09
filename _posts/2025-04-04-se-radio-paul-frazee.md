@@ -77,7 +77,7 @@ He also describes how building apps works in practice. You authenticate users vi
 
 Paul mentions that Bluesky has scaled to over 11 million users (at that time, I believe they're at 30M+ now) and 1.5–2 million daily actives — with no major architecture bottlenecks ([1:05](https://www.youtube.com/watch?v=0sCaHN-pl2M&t=1h5m)). That’s huge, especially for a new + decentralized protocol, but it sounds like they also have massive infrastructure and funding. I'm curious how much bootstrapping an app on ATProto would realistically cost, especially if it took off. I'm working my way through the talks from the recent [ATmosphereConf](https://www.youtube.com/playlist?list=PLyIg0j_mbb2tVegEMBg5ke2Z-1ALksU-I) now, and I hope there's more insight from independent developers in there.
 
-I was also surprised to learn that **all the source code for BlueSky is open source** and [available on GitHub](https://github.com/bluesky-social) ([1:07](https://www.youtube.com/watch?v=0sCaHN-pl2M&t=1h5m)).[developer blog](https://pfrazee.com).
+I was also surprised to learn that **all the source code for BlueSky is open source** and [available on GitHub](https://github.com/bluesky-social) ([1:07](https://www.youtube.com/watch?v=0sCaHN-pl2M&t=1h5m)).
 
 ## Final Thoughts
 
