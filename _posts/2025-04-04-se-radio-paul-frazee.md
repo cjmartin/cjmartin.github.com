@@ -6,6 +6,7 @@ time: 4:32 PM
 
 tags: ['podcast', 'atprotocol', 'bluesky', 'development']
 categories: ['links', 'titag']
+link_category: links
 
 description: >-
   My notes on the Software Engineering Radio Podcast with Paul Frazee.

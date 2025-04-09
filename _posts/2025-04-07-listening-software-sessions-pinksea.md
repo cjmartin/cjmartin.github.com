@@ -6,6 +6,7 @@ time: 4:04 PM
 
 tags: ['podcast', 'atprotocol', 'development']
 categories: ['links']
+link_category: links
 
 description: >-
   ATProto is a massive network, and at least for me, when I saw the initial graph, I was just very confused. I absolutely did not know what I was looking at. But let's start with the base building block… the PDS.

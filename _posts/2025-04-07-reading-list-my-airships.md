@@ -5,7 +5,8 @@ place: Truckee, CA
 time: 9:53 AM
 
 tags: ['books', 'biography', 'toread']
-categories: ['books']
+categories: ['books', 'links']
+link_category: books
 
 description: >-
   Adding "My Airships" to my reading list.

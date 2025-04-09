@@ -6,6 +6,7 @@ time: 2:03 PM
 
 tags: ['tools', 'ai', 'code', 'openai', 'development', 'vibe code']
 categories: ['tools']
+link_category: tools
 
 image: /assets/images/vmm.gif
 description: >-

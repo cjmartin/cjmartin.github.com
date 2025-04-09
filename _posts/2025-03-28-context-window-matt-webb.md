@@ -6,6 +6,7 @@ time: 2:30 PM PDT
 
 tags: ['talks', 'ai', 'claude', 'code', 'development']
 categories: ['links', 'titag']
+link_category: links
 
 image: /assets/videos/ContextWindowMattWebb.jpg
 description: >-

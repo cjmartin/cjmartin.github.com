@@ -5,7 +5,8 @@ place: Truckee, CA
 time: 6:48 PM
 
 tags: ['books', 'science fiction', 'toread']
-categories: ['books']
+categories: ['books', 'links']
+link_category: books
 
 description: >-
   Adding "Rainbows End" to my reading list.
