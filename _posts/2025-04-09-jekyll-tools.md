@@ -11,19 +11,19 @@ tags: ['jekyll', 'development', 'tools']
 
 My to-do list for this morning says "Work on Taxes." Instead, I'm writing tools to make updates here.
 
-A few things had been bugging me since I've started posting more:
+A few things had been bugging me:
 
-* Posts were being sorted by date but not time, so any posts on the same day would be sorted alphabetically rather than chronologically.
-* My permalinks were overly simplistic. All posts were simply `/journal/title-slug`. I don't think there would ever be a namespace issue there; I can pretty easily give every post a unique title. But as I add categories, date-based index pages, etc., it would be nice for the post URLs to reflect some of that data.
-* Jekyll's built-in method of including categories in permalinks adds *all* categories like `/category1/category2`. I don't like this; I'd like to set a `link_category` for only the post's main category to be included in the URL.
+* Posts were sorted by date but not time, so posts on the same day were sorted alphabetically instead of chronologically.
+* My permalinks were overly simplistic. All posts used the format `/journal/title-slug`. While unique titles avoided namespace issues, as I added categories and date-based index pages, I wanted the URLs to reflect some of that data.
+* Jekyll's method of including categories in permalinks adds *all* categories like `/category1/category2`. I would like to only show a "main" category in the url.
 
-These issues could be solved by a variety of methods, but I came up with a combination of plugins to do things dynamically at build time, and scripts to generate and bake some data into the posts themselves.
+I solved these issues with a combination of plugins to handle things dynamically at build time and scripts to bake some data into the posts.
 
 ### Sorting
 
-Jekyll sorts posts by date from the filename. If you have a [properly formatted](https://en.wikipedia.org/wiki/ISO_8601) `datetime` value in your posts' front matter, you can pretty easily use it to sort by date + time, but I don't. I have a simple `time` value that I set to 12-hour time wherever I am because I'm lazy and don't want to think about date formats.
+Jekyll sorts posts by date from the filename. If you have a [properly formatted](https://en.wikipedia.org/wiki/ISO_8601) `datetime` value in your posts' front matter, you can sort by date + time. I don't. I use a simple `time` value in 12-hour format because I’m lazy and don’t want to think about date formats.
 
-This one I solved with a quick custom plugin to calculate an ISO 8601 datetime value at build time from the `filename date` and post `time`.
+I solved this with a custom plugin to calculate an ISO 8601 datetime value at build time from the `filename date` and post `time`.
 
 ```ruby
 # _plugins/add_datetime_field.rb
@@ -47,7 +47,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
 end
 ```
 
-With that `datetime` value added to each post sorting posts by date + time is as easy as:
+With the `datetime` value added, sorting posts by date + time is as easy as:
 
 {% raw %}
 ```liquid
@@ -64,7 +64,7 @@ With that `datetime` value added to each post sorting posts by date + time is as
 ```
 {% endraw %}
 
-In paginated pages, it's necessary to use the `jekyll-pagination-v2` plugin which supports sorting.
+For paginated pages, I used the `jekyll-pagination-v2` plugin, which supports sorting.
 
 The v2 plugin is drop-in compatible with `jekyll-pagination`, all I had to do was update my `_config.yml` from:
 
@@ -84,28 +84,28 @@ pagination:
   sort_reverse: true
 ```
 
-My posts are now sorted by date + time on my main index page and paginated `/journal` page. Yay!
+Now posts are sorted by date + time on the main index and paginated `/journal` pages. Yay!
 
 ### Updating Permalinks
 
-Before I could update my permalinks, I needed to make sure that any existing links would continue working. The [`jekyll-redirect-plugin`](https://github.com/jekyll/jekyll-redirect-from) is the most straightforward way to map the old permalinks to the new ones.
+Before updating permalinks, I ensured existing links would still work. The [`jekyll-redirect-plugin`](https://github.com/jekyll/jekyll-redirect-from) maps old permalinks to new ones.
 
-> Redirects are performed by serving an HTML file with an HTTP-REFRESH meta tag which points to your destination. No .htaccess file, nginx conf, xml file, or anything else will be generated. It simply creates HTML files.
+> Redirects are performed by serving an HTML file with an HTTP-REFRESH meta tag pointing to your destination. No .htaccess file, nginx conf, xml file, or anything else is generated. It simply creates HTML files.
 
-Not as great as a proper 301 or 302, but perfectly fine for my needs.
+Not as great as a proper 301 or 302, but fine for my needs.
 
-After installing the plugin, I added this to my `_config.yml` so that it doesn't generate a `redirects.json` in the built site that I won't use.
+After installing the plugin, I added this to `_config.yml` to avoid generating a `redirects.json` that I don't need:
 
 ```yaml
 redirect_from:
   json: false
 ```
 
-Since I knew that all existing posts needed redirects, and new posts going forward don't, I used a python script to write the old permalink into each post's front matter.
+Since all existing posts needed redirects, I used a Python script to write the old permalink into each post's front matter.
 
-See [`add_redirects.py`](https://github.com/cjmartin/jekyll-tools/blob/main/add_redirects.py) and its [section in the README](https://github.com/cjmartin/jekyll-tools/blob/main/README.md#add_redirectspy) on GitHub.
+See [`add_redirects.py`](https://github.com/cjmartin/jekyll-tools/blob/main/add_redirects.py) and its [README section](https://github.com/cjmartin/jekyll-tools/blob/main/README.md#add_redirectspy).
 
-Once redirects for the old permalinks were set up, I updated my default post permalink in `_config.yaml`:
+Once redirects were set up, I updated the default post permalink in `_config.yaml`:
 
 ```yaml
 defaults:
@@ -116,15 +116,15 @@ defaults:
       permalink: /journal/:year/:month/:slug/
 ```
 
-Now my posts all had permalinks including the year and month, which will be nice when I add year and month index pages later, and the old `/journal/:title` links redirect nicely. Huzzah.
+Now posts have permalinks with year and month, which will be useful for future index pages. Old `/journal/:title` links redirect nicely. Huzzah.
 
 ### Single Category Permalinks
 
-Jekyll supports `:categories` in permalinks out of the box, but I don't like how it handles posts that are in multiple categories. For example, this post is in both the `tools` and `field-notes` categories, since it's about tools and it has this overview of why I built the tools. Eventually it will show up on the main `/journal`, but also on `/tools` and `/field-notes` category pages.
+Jekyll supports `:categories` in permalinks, but I dislike how it handles posts in multiple categories. For example, this post is in both `tools` and `field-notes`. It will appear on `/tools` and `/field-notes` category pages.
 
-If I used `/:categories/:year/:month/:slug/` the post permalink would be `/tools/field-notes/2025/04/jekyll-tools`. I don't like this because `/tools/field-notes` will never be a valid category url.
+Using `/:categories/:year/:month/:slug/` would result in `/tools/field-notes/2025/04/jekyll-tools`. I dislike this because `/tools/field-notes` will never be a valid category URL.
 
-I would prefer to specify a `link_category` value in the post front matter that specifies which category should be used in the permalink. This can be considered the post's "primary category" even though it's also included in others.
+I prefer specifying a `link_category` in the post front matter to specify the primary category in the permalink.
 
 ```yaml
 categories:
@@ -133,16 +133,12 @@ categories:
 link_category: tools
 ```
 
-So the post would have a permalink of `/tools/2025/04/jekyll-tools`.
+So the post permalink becomes `/tools/2025/04/jekyll-tools`.
 
-Of course this isn't so simple. Jekyll doesn't support custom front matter variables in permalinks.
-
-I solved this with another small custom plugin to set a permalink on any posts that have the `link_category` or `collections` variables set.
+Jekyll doesn't support custom front matter variables in permalinks, so I created a plugin to set a permalink for posts with `link_category` or `categories`.
 
 * If `link_category` is set, it is used as the primary category in the permalink.
-* If `link_category` is not set but the post has `categories`, the first category is used in the permalink.
-
-I like the specificity of setting `link_category` and not worrying about the order of `categories`, but the fallback seemed like a good idea.
+* If `link_category` is not set but the post has `categories`, the first category is used.
 
 ```ruby
 # _plugins/add_custom_permalink.rb
@@ -173,13 +169,11 @@ Jekyll::Hooks.register :site, :post_read do |site|
 end
 ```
 
-Now any post with categories has a permalink including one primary category instead of the default `/journal`. Hooray!
+Now posts with categories have permalinks including one primary category instead of the default `/journal`. Hooray!
 
-The second tool that I've added to the [Jekyll tools repo](https://github.com/cjmartin/jekyll-tools/tree/main) isn't necessary for everything above to work, but I wanted to add a `link_category` to all of my posts with existing categories so I threw together a script to do that too.
+I also added a script to set `link_category` for all posts with existing categories. See [`set_link_category.py`](https://github.com/cjmartin/jekyll-tools/blob/main/set_link_category.py) and its [README section](https://github.com/cjmartin/jekyll-tools/blob/main/README.md#set_link_categorypy).
 
-See [`set_link_category.py`](https://github.com/cjmartin/jekyll-tools/blob/main/set_link_category.py) and its [section in the README](https://github.com/cjmartin/jekyll-tools/blob/main/README.md#set_link_categorypy) on GitHub.
+This script scans posts and sets the first category as `link_category` in their front matter. While the plugin fallback handles this, the script ensures permalinks won't break if I add categories to old posts.
 
-This script scans existing posts and sets the first category as `link_category` in their front matter. This was just a nice to have and would have been handled by the fallback in the plugin above, but now I don't have to worry about breaking a permalink if I go and add a category to one of those old posts and forget about the importance of the order.
-
-Now I have nicely sorted posts with permalinks that will play nicely with index pages I plan to add later. Not a bad result for a morning of not getting my taxes done!
+Now I have sorted posts with permalinks that will work well with future index pages. Not bad for a morning of not getting my taxes done!
 
