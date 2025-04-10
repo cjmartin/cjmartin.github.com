@@ -42,7 +42,6 @@
     --color-white: #2a2a2a;
     --color-background: #2c3e50;
     --color-aside-background: rgba(30, 40, 55, 0.5);
-    --color-code-background: rgba(20, 30, 40, 0.6);
     --color-prompt-background: rgba(35, 35, 40, 0.6);
     --color-prompt-border: #3a3a45;
     --color-tooltip-background: #1e3450;
@@ -51,11 +50,6 @@
   
   body {
     background-color: var(--color-background);
-  }
-  
-  code, pre {
-    background-color: var(--color-code-background);
-    color: #e0e0e0;
   }
 }
 
