@@ -24,6 +24,9 @@
   /* Spacing Variables */
   --spacing-standard: 1em;
   --spacing-small: 0.25em;
+  --spacing-medium: 0.5em;
+  --spacing-large: 1.5em;
+  --spacing-xlarge: 2em;
 }
 
 /* Dark Mode */
@@ -121,7 +124,7 @@ ul, ol {
 }
 
 li {
-  margin-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing-medium);
 }
 
 hr {

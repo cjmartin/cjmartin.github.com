@@ -52,3 +52,7 @@ kramdown:
 feed:
   icon: /assets/images/favicons/favicon-summer-64.png
   logo: /assets/images/favicons/favicon-summer-512.png
+
+# Redirect Settings
+redirect_from:
+  json: false

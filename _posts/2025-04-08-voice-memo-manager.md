@@ -15,6 +15,8 @@ redirect_from:
 - /journal/voice-memo-manager/
 ---
 
+{% include link.html link="https://github.com/cjmartin/Voice-Memo-Manager" link_text='Voice Memo Manager on Github' %}
+
 I spend a lot of time in the car driving my kids to and from school and (many, many) other activities. This means that roughly half of my driving time is occupied with conversation and kid-centric audio, but the other half is great for thinking, listening to podcasts, and turning over thoughts and ideas in my head.
 
 The non-kid car time generally adds up to _at least_ an hour a day. Unfortunately much of the thoughts and ideas I might have during this time are lost or forgotten because I don't have a good system for documenting them in the moment.
