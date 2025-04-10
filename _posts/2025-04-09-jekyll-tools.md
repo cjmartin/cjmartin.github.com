@@ -101,9 +101,18 @@ redirect_from:
   json: false
 ```
 
-Since all existing posts needed redirects, I used a Python script to write the old permalink into each post's front matter.
+**Since all existing posts needed redirects**, I used a Python script to write the old permalink into each post's front matter.
 
 See [`add_redirects.py`](https://github.com/cjmartin/jekyll-tools/blob/main/add_redirects.py) and its [README section](https://github.com/cjmartin/jekyll-tools/blob/main/README.md#add_redirectspy).
+
+After running ↑ that script ↑ every existing post had an entry in it's front matter like:
+
+```yaml
+redirect_from:
+- /journal/voice-memo-manager/
+```
+
+To handle requests to the old url.
 
 Once redirects were set up, I updated the default post permalink in `_config.yaml`:
 
