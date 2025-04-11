@@ -5,6 +5,8 @@ place: Truckee, CA
 time: 9:30 AM
 categories: ['projects']
 tags: ['launchcalendar', 'rockets', 'space', 'jekyll', 'development']
+
+image: /assets/images/launchcalendar/gcal-list.png
 description: "Reviving my 2016 side project, launchcalendar.org, to track rocket launches with new tools and workflows"
 ---
 
