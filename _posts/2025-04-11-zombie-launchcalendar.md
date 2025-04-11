@@ -22,7 +22,7 @@ I still think it's a good idea, and the scope is small enough to be a good proje
 
 With those two things done, the project was up and running just as I left it in 2016: [launchcalendar.org](https://launchcalendar.org).
 
-![List of launches from 2016](/assets/images/launchcalendar/index-2016.png)
+<img src="/assets/images/launchcalendar/index-2016.png" alt="List of launches from 2016" width="500px" />
 "Ugly list of launch schedule!" - Still ugly, but back up and running.
 
 There's a solid foundation for a working system. With newer technologies and workflows, I believe I can make this project better. My immediate plan is to clean up the website and finalize design ideas for each launch page. Finish it to the point I wanted it to be in 2016, which still doesn't solve the issue of data input.
