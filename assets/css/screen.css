@@ -7,13 +7,14 @@
   --color-blockquote: #555555;
   --color-blockquote-background: rgba(0, 0, 0, 0.02);
   --color-blockquote-border: var(--color-light-gray);
-  --color-white: #ffffff;
-  --color-background: #f8f8f8;
+  --color-background: #ffffff;
   --color-aside-background: rgba(240, 248, 255, 0.5);
   --color-prompt-background: rgba(247, 245, 235, 0.7);
   --color-prompt-border: #E6DFC8;
   --color-tooltip-background: #f0f7ff;
   --color-tooltip-border: #a0c8ff;
+  --color-card-background: #ffffff;
+
   
   /* Font Variables */
   --font-heading: museo-1, museo-2, sans-serif;
@@ -39,17 +40,13 @@
     --color-blockquote: #c0c0c0;
     --color-blockquote-background: rgba(30, 30, 35, 0.2);
     --color-blockquote-border: #5a5a60;
-    --color-white: #2a2a2a;
     --color-background: #2c3e50;
     --color-aside-background: rgba(30, 40, 55, 0.5);
     --color-prompt-background: rgba(35, 35, 40, 0.6);
     --color-prompt-border: #3a3a45;
     --color-tooltip-background: #1e3450;
     --color-tooltip-border: #345980;
-  }
-  
-  body {
-    background-color: var(--color-background);
+    --color-card-background: #f8f8f8;
   }
 }
 
@@ -70,6 +67,7 @@ body {
   font-family: var(--font-sans);
   font-size: 16px;
   font-weight: 300;
+  background-color: var(--color-background);
 }
 
 /* Theme toggle button */
@@ -317,6 +315,28 @@ aside code {
   height: auto;
 }
 
+.captioned {
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  background: var(--color-card-background);
+}
+
+.captioned img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.captioned figcaption {
+  padding: var(--spacing-small);
+  font-size: 14px;
+  color: var(--color-light-gray);
+  font-style: italic;
+}
+
 /* Helper Classes */
 .alignright {
   float: right;
@@ -411,7 +431,6 @@ footer {
 /* Maps Specific Styles */
 .map-page > #page-content {
   margin-top: 200px;
-  background: var(--color-white);
 }
 
 .full-page-map {
@@ -502,7 +521,6 @@ footer {
   }
 
   .main-navigation ul {
-    background-color: var(--color-background);
     border-radius: 4px;
     padding: 10px;
     margin-top: 10px;
