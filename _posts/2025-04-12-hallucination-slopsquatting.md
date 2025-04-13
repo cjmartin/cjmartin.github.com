@@ -17,7 +17,7 @@ From the department of 🤦‍♂️
 
 {% include link.html link="https://www.theregister.com/2025/04/12/ai_code_suggestions_sabotage_supply_chain/" link_text="LLMs can't stop making up software dependencies and sabotaging everything" via="https://bsky.app/profile/daviddlevine.com/post/3lmnllla4vr2q" %}
 
-Apparently LLMs don't just hallucinate package names (and include unnecessary *real* packages), but they hallucinate the *same* non-existent package names, enough that it's possible bad actors could register malicious packages under the made up names.
+Apparently LLMs don't just hallucinate package names (and include unnecessary *real* packages), but they hallucinate the *same* non-existent package names enough that it's possible bad actors could register malicious packages under the made up names.
 
 > As noted by security firm Socket recently, the academic researchers who explored the subject last year found that re-running the same hallucination-triggering prompt ten times resulted in 43 percent of hallucinated packages being repeated every time and 39 percent never reappearing.
 
