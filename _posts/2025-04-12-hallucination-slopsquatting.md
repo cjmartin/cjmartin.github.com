@@ -57,4 +57,6 @@ And got the response:
 I should clarify something important: the MCP (Model Context Protocol) libraries used in my example (mcp.agent, mcp.tools, etc.) are conceptual and don't currently exist as published packages in this exact form. I created a hypothetical implementation based on what an ideal MCP framework might look like.
 </blockquote>
 
-Thanks for the clarification, Claude. So, how would one profit off of malicious mcp libraries? Asking for a friend.
+Thanks for the clarification, Claude.
+
+So, how would one profit off of malicious mcp libraries? Asking for a friend.
