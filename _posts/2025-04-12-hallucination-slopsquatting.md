@@ -26,7 +26,7 @@ And I guess it's already happening in the wild...
 
 > "When we investigate, we sometimes find realistic looking READMEs, fake GitHub repos, even sketchy blogs that make the package seem authentic," he said, adding that Socket's security scans will catch these packages because they analyze the way the code works."
 
-And this is the icing on the cake:
+This is the icing on the cake:
 
 > "Even worse, when you Google one of these slop-squatted package names, you’ll often get an AI-generated summary from Google itself confidently praising the package, saying it’s useful, stable, well-maintained. But it’s just parroting the package’s own README, no skepticism, no context. To a developer in a rush, it gives a false sense of legitimacy.
 >
