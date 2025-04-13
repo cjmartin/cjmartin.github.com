@@ -7,6 +7,7 @@ time: 6:15 AM
 tags: ['ai', 'llm', 'security']
 categories: ['links']
 
+image: /assets/images/LIEbraries.png
 description: "Practice safe vibecoding, kids."
 
 link: https://www.theregister.com/2025/04/12/ai_code_suggestions_sabotage_supply_chain/
