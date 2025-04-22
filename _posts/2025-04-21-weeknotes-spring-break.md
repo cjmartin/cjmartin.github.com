@@ -96,7 +96,7 @@ While Lucas worked away on his project, I dug through my electronics toolbox and
   title="Raspberry Pis"
 %}
 
-I set up one of the version 1 boards with [Pi-hole](https://pi-hole.net) for DNS-powered ad blocking and [Cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/) to play with Cloudflare tunnels. Pretty good little side project for an hour or so's work!
+I set up one of the version 1 boards with [Pi-hole](https://pi-hole.net) for DNS-powered ad blocking and [Cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/) to play with Cloudflare tunnels. Pretty fun little side project!
 
 I'm not sure what I'll do with the version 3 with the screen, but it's a good excuse to [3D print an enclosure](https://www.thingiverse.com/thing:1601055)! So that'll be happening soon.
 
