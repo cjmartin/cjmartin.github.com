@@ -27,7 +27,7 @@ description: "I found an unused Raspberry Pi and used it to add AirPrint to my o
 
 I have an old [Brother HL-2170W](https://support.brother.com/g/b/producttop.aspx?c=us&lang=en&prod=hl2170w_all) laser printer. It's bomb-proof, and doesn't have any weird toner subscriptions, DRM, or whatever else they're doing to printers these days.
 
-However, it does not support modern protocols like **AirPrint**, and while it *technically* has WiFi, the firmware hasn't been updated in a decade(?) and only supports **WEP**, so that's not going to work.
+However, it does not support modern protocols like AirPrint, and while it *technically* has WiFi, the firmware hasn't been updated in a decade(?) and only supports WEP, so that's not going to work.
 
 Right now, it's connected via Ethernet to the AP in my living room, and we just print to it from whichever computer feels like working with it directly that day. But I'd really rather not have a printer in my living room.
 
@@ -214,8 +214,9 @@ This ensures that CUPS is restarted once the network is available.
 
 You should now be able to print via. AirPrint or network printing from devices on your local network.
 
-- ✅ The printer shows up via **AirPrint** on iPhones and iPads
-- ✅ It appears as a network printer on **MacOS**
+- ✅ The printer shows up via AirPrint on iPhones and iPads
+- ✅ It appears as a network printer on MacOS
+- ✅ I can move my printer out of my living room 
 - ☐ It should also work on Windows/Android/etc, but I haven't tried...
 
 <small>Reference: [This archived post](https://web.archive.org/web/20240614070401/https://developer.com/mobile/cups-and-raspberry-pi-airprinting/) gives a pretty solid walkthrough of similar steps to setting up a Raspberry Pi print server, but I don't need the full foomatic-db as I'm only interested in setting up my brother laser (for now).</small>
