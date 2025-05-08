@@ -1,3 +1,6 @@
+{% if include.caption -%}
+<figure class="captioned" style="padding: 5px 5px 0">
+{% endif -%}
 <a
   data-flickr-embed="true"
   data-sharing="false"
@@ -9,3 +12,7 @@
     height="{{ include.height }}"
     alt="{{ include.alt }}" />
 </a>
+{% if include.caption -%}
+<figcaption>{{ include.caption }}</figcaption>
+</figure>
+{% endif -%}

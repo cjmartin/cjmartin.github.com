@@ -315,6 +315,22 @@ aside code {
   height: auto;
 }
 
+.side-by-side-images {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.side-by-side-images .captioned {
+  flex: 1 1 0;
+  max-width: 100%;
+}
+
+.flickr-embed-photo {
+  background-color: inherit;
+}
+
 .captioned {
   text-align: center;
   border-radius: 4px;
@@ -547,6 +563,17 @@ footer {
   blockquote.prompt {
     font-size: 14px;
     padding: 10px 14px;
+  }
+
+  .side-by-side-images {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .side-by-side-images .captioned {
+    flex-basis: auto;
+    width: 100%;
+    min-width: 0;
   }
 
   .prev-entry, .next-entry {
