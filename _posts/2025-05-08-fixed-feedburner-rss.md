@@ -21,6 +21,6 @@ This blog has been <span data-note="Not particularly active, but around...">arou
 
 2 months ago I fixed the RSS feed and updated the link to remove feedburner, since it's utility seems to've gone the way of Google Reader 🪦
 
-This is all great for new subscribers like Phil (❤️), but I wonder if there are any other RSS-lovers out there with my old feedburner link in their reeders?
+This is all great for new subscribers like Phil (❤️), but I wonder if there are any other RSS-lovers out there with my old feedburner link in their readers?
 
 If so, **hello**! As of today I've pointed the old feedburner proxy at the working feed.
