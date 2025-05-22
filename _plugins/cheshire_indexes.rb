@@ -11,6 +11,9 @@ module Jekyll
       journal_entries = site.collections['cheshire'].docs.select { |doc| doc.data['categories'].include?('journal') }
       # puts "Journal entries found: #{journal_entries.length}"
       
+      # If there are no entries, do nothing
+      return if journal_entries.empty?
+      
       # Create the main journal index page (shows latest entry and recent months)
       site.pages << JournalIndexPage.new(site, journal_entries)
       
