@@ -23,4 +23,4 @@ I love our local library. My kids go multiple times a week after school, get hom
   alt="Public Libraries are Amazing"
 %}
 
-They recently upgraded their 3D printer, and yesterday I was able to take the intro class to be "certified" to use it. Now I can book time and print projects! First up is a case/stand for my Raspberry Pi media server (next week), but I plan to have a batch of projects lined up monthly. I'm excited to start designing some original stuff, the kids mainly want to print dragons.
+They recently upgraded their 3D printer, and yesterday I was able to take the intro class to be "certified" to use it. Now I can book time and print projects! First up is a [case/stand for my Raspberry Pi media server](https://www.thingiverse.com/thing:1601055) (next week), but I plan to have a batch of projects lined up monthly. I'm excited to start designing some original stuff, the kids mainly want to print dragons.
