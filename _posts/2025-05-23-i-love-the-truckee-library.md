@@ -12,7 +12,7 @@ description: "The Library has a new 3D printer!"
 image: https://live.staticflickr.com/65535/54539300908_db1b077d7b_c.jpg
 ---
 
-I love our local library. My kids go multiple times a week after school, get homework help, and read books for hours.
+I love our local library. My kids go multiple times a week after school to get homework help and read books for hours.
 
 {% include flickr.liquid
   href="https://www.flickr.com/photos/cjmartin/54539300908/in/datetaken/"
