@@ -1,9 +1,8 @@
-
 ---
 layout: post
 title: "SSH via Cloudflare tunnel using iSH on iPad"
-place: "Truckee"
-time: "11:30AM"
+place: Truckee CA
+time: 11:30AM
 tags:
   - SSH
   - Cloudflare
