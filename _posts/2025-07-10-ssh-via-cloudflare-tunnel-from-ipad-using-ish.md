@@ -26,19 +26,19 @@ The following assumes you already have a CF tunnel set up for SSH. If not you sh
 Here's how I went about setting up [https://ish.app/](iSH) on my iPad to make everything work.
 
 1. Install iSH, which is a piece of wizardry that gives you an x86 Alpine Linux shell on your iPad.
-2. Install required packages:
+2. Install required packages:  
   `apk add openssh-client curl nano`
-
-At this point `ssh user@your.cloudflare.tunnel` will fail with a timeout error.
-
-Since we're in a full Linux shell, we can use the x86 cloudflared binary to proxy the connection, just as we would on any other Linus system.
-
+  
+  At this point `ssh user@your.cloudflare.tunnel` will fail with a timeout error.
+  
+  Since we're in a full Linux shell, we can use the x86 cloudflared binary to proxy the connection, just as we would on any other Linus system.
 3. `mkdir ~/bin && cd ~/bin` - create a user `bin` directory to hold the cloudflared binary.
-
 4. Grab the latest x86 (32 bit) binary from [GitHub](https://github.com/cloudflare/cloudflared/releases). The current release is 2025.7.0, you'll want to update the curl command below to the latest `linux-386` version.  
+  
   `curl -LO https://github.com/cloudflare/cloudflared/releases/download/2025.7.0/cloudflared-linux-386`
 
-5. Tell SSH to proxy connections to `your.cloudflare.tunnel` through the cloudflared client.
+5. Tell SSH to proxy connections to `your.cloudflare.tunnel` through the cloudflared client.  
+  
   `nano ~/.ssh/config`
   
   Add the following:
