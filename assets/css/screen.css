@@ -337,12 +337,13 @@ aside code {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   background: var(--color-card-background);
+  max-width: 100%;
+  width: auto !important;
 }
 
 .captioned img {
   display: block;
   max-width: 100%;
-  width: auto;
   height: auto;
   margin: 0 auto;
 }
@@ -580,5 +581,10 @@ footer {
   .prev-entry, .next-entry {
     width: 100%;
     text-align: center;
+  }
+
+  .captioned {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
