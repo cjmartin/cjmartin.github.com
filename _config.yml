@@ -13,6 +13,9 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
 
+exclude_plugins:
+  - cheshire_indexes
+
 # Default Settings
 defaults:
   - scope:
