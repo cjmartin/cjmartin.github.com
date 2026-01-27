@@ -3,6 +3,7 @@ module Jekyll
   # Generates index pages for Cheshire journal entries organized by year and month
   class CheshireIndexGenerator < Generator
     safe true
+    disabled true
 
     def generate(site)
       # puts "CheshireIndexGenerator: Starting index generation"

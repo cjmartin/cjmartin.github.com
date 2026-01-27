@@ -20,12 +20,12 @@ defaults:
       type: "posts"
     values:
       permalink: /journal/:year/:month/:slug/
-  - scope:
-      path: "_cheshire/journal"
-      type: "cheshire"
-    values:
-      layout: "cheshire_journal"
-      categories: ["journal"]
+  # - scope:
+  #     path: "_cheshire/journal"
+  #     type: "cheshire"
+  #   values:
+  #     layout: "cheshire_journal"
+  #     categories: ["journal"]
 
 # Pagination Settings
 pagination:
@@ -37,9 +37,9 @@ pagination:
 
 # Collections
 collections:
-  cheshire:
-    output: true
-    permalink: /cheshire/:categories/:year/:month/:day/
+  # cheshire:
+  #   output: true
+  #   permalink: /cheshire/:categories/:year/:month/:day/
 
 # Kramdown Settings
 kramdown:
